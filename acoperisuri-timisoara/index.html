@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=melodrama@300,400&f[]=switzer@300,400,500&display=swap">
 <style>
 /* Hallmark · shape: a roof drawn in section, one layer per screen of the pinned chapter · genre: editorial · theme: custom · job: hire · idea: "the page builds the roof the way this crew does, timber first, then membrane, battens, metal and the gutter, each layer shown on their own photograph" · vibe: "slate dusk, clay red, timber, quiet craft"
- * paper: oklch(21.5% 0.022 250) · accent: oklch(69% 0.14 33) · display: Melodrama 300 · body: Switzer · hero: their own roof seen from the ridge, full bleed, the head set low on it · nav: a floating pill, menu, wordmark, the quote action · footer: the address, the hours and the phone set as the close · imagery: photographs (the firm's own, from its Google profile) · signature: the roof cross-section drawing itself layer by layer while their photo of that stage changes beside it
+ * paper: oklch(21.5% 0.022 250) · accent: oklch(69% 0.14 33) · display: Melodrama 300 · body: Switzer · hero: frosted clay tiles, full bleed, the head set low on it · nav: a floating pill, menu, wordmark, the quote action · footer: the address, the hours and the phone set as the close · imagery: photographs (the firm's own, from its Google profile) · signature: the roof cross-section drawing itself layer by layer while their photo of that stage changes beside it
  * axes: dark/high-contrast-serif/chromatic-red · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H5 E4 S5 R4 V5 · weakest: E, few photographs and several small ones; the small ones sit only in the chapter frames at their own size, the two large ones carry the hero and the close */
 /* Hallmark · waive 80 · .fig-wrap is the roof in section, the five layers this crew builds · a labelled diagram, each layer named in the legend and in the text beside its photograph */
@@ -103,7 +103,7 @@ button, input, select, textarea { font: inherit; }
 /* ---------- hero ---------- */
 .hero { position: relative; min-height: 100svh; display: grid; align-items: end; isolation: isolate; overflow: hidden; }
 .hero__photo { position: absolute; inset: 0; z-index: -2; margin: 0; }
-.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
 .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, var(--color-wash) 0%, var(--color-scrim-soft) 34%, var(--color-scrim) 78%, var(--color-paper) 100%); }
 .hero__inner { padding-block: calc(var(--nav-h) + var(--space-3xl)) var(--space-2xl); display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: var(--space-xl) var(--gap-columns); align-items: end; }
 .hero h1 { font-size: var(--text-display); line-height: 0.88; max-width: 11ch; }
@@ -298,9 +298,9 @@ input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-foc
 
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Meniu" hidden>
   <ol>
-    <li><a href="#straturi"><small>01</small>Strat cu strat</a></li>
-    <li><a href="#problema"><small>02</small>Ce s-a stricat?</a></li>
-    <li><a href="#cifre"><small>03</small>Din recenzii</a></li>
+    <li><a href="#straturi"><small>01</small>Cum lucrăm</a></li>
+    <li><a href="#problema"><small>02</small>Servicii</a></li>
+    <li><a href="#cifre"><small>03</small>Păreri clienți</a></li>
     <li><a href="#lucrari"><small>04</small>Lucrări</a></li>
     <li><a href="#oferta"><small>05</small>Cere o ofertă</a></li>
   </ol>
@@ -310,11 +310,11 @@ input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-foc
 
 <main id="main">
 <section class="hero" id="top" aria-labelledby="h-hero">
-  <figure class="hero__photo"><img src="img/ridge.webp" srcset="img/ridge-s.webp 900w, img/ridge.webp 2000w" sizes="100vw" width="2000" height="1500" alt="Acoperiș în patru ape din țiglă metalică roșie, văzut de pe coamă, cu un coleg care montează ultimele șuruburi" fetchpriority="high"></figure>
+  <figure class="hero__photo"><img src="img/tigla.webp" srcset="img/tigla-s.webp 1600w, img/tigla.webp 3840w" sizes="100vw" width="3840" height="2560" alt="Țigle ceramice roșii acoperite de brumă, în prim-plan, pe un acoperiș" fetchpriority="high"></figure>
   <div class="container hero__inner">
-    <h1 id="h-hero">Acoperișul tău, de la lemn la coamă.</h1>
+    <h1 id="h-hero">Acoperișuri pe mâini bune.</h1>
     <div class="hero__side">
-      <p>Șarpante, tablă, jgheaburi și reparații, în Timișoara.</p>
+      <p>Acoperișuri noi, renovări, jgheaburi și reparații în Timișoara.</p>
       <div class="hero__acts">
         <a class="btn" href="#oferta"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.4.4 0 0 0 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Cere o ofertă</a>
         <a class="btn btn--quiet" href="tel:+40751854810">Sună 0751 854 810</a>
@@ -327,11 +327,11 @@ input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-foc
 <section class="promise" aria-labelledby="h-promise">
   <div class="container promise__grid">
     <div>
-      <h2 id="h-promise" class="rv">Prețul îl stabilim înainte, curățenia o facem la final.</h2>
+      <h2 id="h-promise" class="rv">Știți prețul de la început. La final, găsiți totul curat.</h2>
       <ul class="rv">
-        <li><b>1</b><p><strong>Vedem acoperișul și vă spunem prețul.</strong> „… prețul evaluat și agreat dinainte …”, scrie un client.</p></li>
-        <li><b>2</b><p><strong>Lucrăm cu grijă la casă și la curte.</strong> „Au grija cu obiectele din casa si curte”, scrie altul.</p></li>
-        <li><b>3</b><p><strong>Plecăm când e totul curat.</strong> „… la final au lăsat totul curat.”</p></li>
+        <li><b>1</b><p><strong>Venim, ne uităm la acoperiș și vă spunem cât costă.</strong> „… prețul evaluat și agreat dinainte …”, scrie un client.</p></li>
+        <li><b>2</b><p><strong>Avem grijă de casă și de curte.</strong> „Au grija cu obiectele din casa si curte”, scrie altul.</p></li>
+        <li><b>3</b><p><strong>Plecăm doar după ce facem curat.</strong> „… la final au lăsat totul curat.”</p></li>
       </ul>
     </div>
     <figure class="shapes rv" aria-label="Două lucrări ale echipei">
@@ -347,7 +347,7 @@ input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-foc
 <section class="layers" id="straturi" aria-labelledby="h-layers">
   <div class="layers__pin container">
     <div class="layers__head">
-      <h2 id="h-layers">Un acoperiș, strat cu strat</h2>
+      <h2 id="h-layers">Cum lucrăm, pas cu pas</h2>
       <p class="count num" aria-hidden="true"><b id="cnt">01</b> / 05</p>
     </div>
     <div class="layers__body">
@@ -369,25 +369,25 @@ input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-foc
 <section class="triage" id="problema" aria-labelledby="h-triage">
   <div class="container triage__grid">
     <div>
-      <h2 id="h-triage" class="rv">Ce s-a stricat sus?</h2>
-      <div class="triage__pick" role="group" aria-label="Alege problema" id="issues"></div>
+      <h2 id="h-triage" class="rv">Servicii</h2>
+      <div class="triage__pick" role="group" aria-label="Alege serviciul" id="issues"></div>
     </div>
     <div class="answer" id="answer" aria-live="polite">
       <h3 data-a id="aTitle"></h3>
       <p data-a id="aText"></p>
       <blockquote data-a id="aQuote"><p id="aQ"></p><cite id="aWho"></cite></blockquote>
-      <div data-a><a class="btn" id="aBtn" href="#oferta" target="_blank" rel="noopener">Trimite problema pe WhatsApp</a></div>
+      <div data-a><a class="btn" id="aBtn" href="#oferta" target="_blank" rel="noopener">Scrieți-ne pe WhatsApp</a></div>
     </div>
   </div>
 </section>
 
 <section class="ledger" id="cifre" aria-labelledby="h-ledger">
   <div class="container">
-    <h2 id="h-ledger" class="rv">Ce scriu clienții, în cifre</h2>
+    <h2 id="h-ledger" class="rv">Ce spun clienții</h2>
     <div class="ledger__row">
-      <div class="fig rv"><b class="num">4,9</b><p>Nota pe Google. 58 din cele 64 de recenzii au cinci stele.</p><cite>Profilul Google al firmei</cite></div>
-      <div class="fig rv"><b class="num">150<small> m²</small></b><p>Acoperiș vechi curățat și tablă nouă montată de la A la Z, în 4 zile.</p><cite>Dintr-o recenzie Google</cite></div>
-      <div class="fig rv"><b class="num">290<small> m²</small></b><p>Acoperiș de casă veche renovat, cu streașina îmbrăcată, în cam o săptămână.</p><cite>Dintr-o recenzie Google</cite></div>
+      <div class="fig rv"><b class="num">4,9</b><p>Nota pe Google. Din 64 de recenzii, 58 sunt de cinci stele.</p><cite>Profilul Google al firmei</cite></div>
+      <div class="fig rv"><b class="num">150<small> m²</small></b><p>Am dat jos acoperișul vechi și am montat tablă nouă de la zero, în 4 zile.</p><cite>Dintr-o recenzie Google</cite></div>
+      <div class="fig rv"><b class="num">290<small> m²</small></b><p>Acoperiș de casă veche renovat complet, cu streașina îmbrăcată, în aproximativ o săptămână.</p><cite>Dintr-o recenzie Google</cite></div>
     </div>
   </div>
 </section>
@@ -412,7 +412,7 @@ input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-foc
     <div class="quote__grid">
       <div>
         <h2 id="h-quote" class="rv">Cere o ofertă</h2>
-        <p class="quote__lead">Spuneți-ne ce lucrare aveți și cam câți metri. Pozele cu acoperișul le puteți trimite apoi în conversația de WhatsApp.</p>
+        <p class="quote__lead">Spuneți-ne ce lucrare aveți și cam câți metri are acoperișul. Pozele ni le puteți trimite apoi pe WhatsApp.</p>
         <dl class="facts">
           <div><dt>Telefon</dt><dd><a class="link num" href="tel:+40751854810">0751 854 810</a></dd></div>
           <div><dt>Program</dt><dd>De duminică până vineri, non-stop<br>Sâmbătă: închis</dd></div>
@@ -441,7 +441,7 @@ input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-foc
         </div>
         <div class="field"><label for="f-msg">Detalii (opțional)</label><textarea id="f-msg" name="msg" placeholder="ex. curge la coș după ploaie, casă cu etaj"></textarea></div>
         <p class="err" role="alert"></p>
-        <div class="form-end"><button class="btn" type="submit">Trimite pe WhatsApp</button><span class="note">Se deschide WhatsApp cu mesajul scris. Nu trimitem nimic altundeva.</span></div>
+        <div class="form-end"><button class="btn" type="submit">Trimite pe WhatsApp</button><span class="note">Se deschide WhatsApp cu mesajul gata scris. Datele nu ajung nicăieri altundeva.</span></div>
       </form>
     </div>
     <div class="map"><iframe title="Harta: Reparații Acoperișuri Timișoara, Str. Constantin Titel Petrescu 9" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Repara%C8%9Bii%20Acoperisuri%20Timisoara%2C%20Strada%20Constantin%20Titel%20Petrescu%209%2C%20Timi%C8%99oara&amp;output=embed"></iframe></div>
@@ -468,20 +468,20 @@ input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-foc
 window.BF_CHAT = {
   name: 'Vlad', phone: '40751854810',
   role: { ro: 'asistentul de pe site' },
-  hello: { ro: 'Bună ziua, sunt Vlad. Vă spun ce lucrări facem, programul, unde suntem sau cum cereți o ofertă. Ce vă interesează?' },
+  hello: { ro: 'Bună ziua! Sunt Vlad 😊 Cu ce vă pot ajuta? Vă pot spune cam cât costă o lucrare, când suntem disponibili sau cum ne trimiteți poze cu acoperișul.' },
   topics: [
-    { k: ['pret', 'cost', 'costa', 'tarif', 'oferta', 'deviz', 'cat'], generic: true, chip: { ro: 'Cât costă?' }, ro: 'Prețul depinde de suprafață și de starea acoperișului. Venim, vedem și stabilim prețul împreună înainte de lucru. Cel mai repede: trimiteți formularul de ofertă sau câteva poze pe WhatsApp.' },
-    { k: ['program', 'ora', 'deschis', 'sambata', 'duminica', 'non', 'stop'], generic: true, chip: { ro: 'Program' }, ro: 'De duminică până vineri suntem disponibili non-stop. Sâmbătă: închis.' },
-    { k: ['adresa', 'unde', 'sediu', 'zona', 'oras'], generic: true, chip: { ro: 'Unde sunteți?' }, ro: 'Str. Constantin Titel Petrescu 9, 300116 Timișoara.' },
-    { k: ['telefon', 'suna', 'numar', 'contact', 'whatsapp'], generic: true, ro: 'Ne găsiți la 0751 854 810, telefon sau WhatsApp.' },
-    { k: ['curge', 'infiltr', 'picura', 'apa', 'ploua', 'reparat', 'reparatie'], chip: { ro: 'Îmi curge în casă' }, ro: 'Pentru o infiltrație, trimiteți-ne pe WhatsApp o poză din pod și una de afară, plus adresa. Vedem de unde intră apa și vă spunem ce e de făcut.' },
-    { k: ['nou', 'tabla', 'tigla', 'invelitoare', 'montaj'], chip: { ro: 'Acoperiș nou' }, ro: 'Facem acoperișul de la A la Z: șarpanta, folia, șipcile, tabla sau țigla metalică, coama, streașina și jgheaburile.' },
-    { k: ['sarpanta', 'lemn', 'capriori', 'grinzi'], ro: 'Montăm șarpante noi din lemn și consolidăm șarpantele existente, inclusiv pentru panouri fotovoltaice.' },
-    { k: ['jgheab', 'burlan', 'scurgere', 'streasina'], ro: 'Montăm jgheaburi și burlane și ducem scurgerea unde nu face rău casei, inclusiv prin pământ.' },
-    { k: ['porumb', 'pasari', 'pod'], ro: 'Închidem accesul porumbeilor în pod, cu casete de tablă și benzi cu țepi anti-păsări.' },
-    { k: ['fotovolt', 'panou', 'solar'], ro: 'Consolidăm acoperișul ca să susțină panourile fotovoltaice.' }
+    { k: ['pret', 'cost', 'costa', 'tarif', 'oferta', 'deviz', 'cat'], generic: true, chip: { ro: 'Cât costă?' }, ro: 'Depinde mult de suprafață și de starea acoperișului, așa că nu vreau să vă dau un preț din burtă. Cel mai simplu e să ne trimiteți câteva poze pe WhatsApp sau să completați formularul de ofertă. Venim, ne uităm și stabilim prețul împreună înainte să începem.' },
+    { k: ['program', 'ora', 'deschis', 'sambata', 'duminica', 'non', 'stop'], generic: true, chip: { ro: 'Când lucrați?' }, ro: 'Suntem disponibili de duminică până vineri, oricând, inclusiv pentru urgențe. Sâmbăta e singura zi liberă.' },
+    { k: ['adresa', 'unde', 'sediu', 'zona', 'oras'], generic: true, chip: { ro: 'Unde sunteți?' }, ro: 'Suntem pe Str. Constantin Titel Petrescu 9, în Timișoara. Dar de obicei venim noi la dvs., să vedem acoperișul.' },
+    { k: ['telefon', 'suna', 'numar', 'contact', 'whatsapp'], generic: true, ro: 'Ne puteți suna sau scrie pe WhatsApp la 0751 854 810.' },
+    { k: ['curge', 'infiltr', 'picura', 'apa', 'ploua', 'reparat', 'reparatie'], chip: { ro: 'Îmi plouă în casă' }, ro: 'Of, neplăcut, mai ales pe vremea asta. Trimiteți-ne pe WhatsApp o poză din pod și una de afară, plus adresa. Ne uităm de unde intră apa și vă spunem ce e de făcut.' },
+    { k: ['nou', 'tabla', 'tigla', 'invelitoare', 'montaj'], chip: { ro: 'Acoperiș nou' }, ro: 'Facem acoperișul de la zero: șarpanta, folia, șipcile, tabla sau țigla metalică, coama, streașina și jgheaburile. Spuneți-mi cam câți metri are casa și vă ajutăm cu o ofertă.' },
+    { k: ['sarpanta', 'lemn', 'capriori', 'grinzi'], ro: 'Da, facem șarpante noi din lemn și le întărim pe cele vechi, inclusiv când vreți să puneți panouri solare.' },
+    { k: ['jgheab', 'burlan', 'scurgere', 'streasina'], ro: 'Montăm jgheaburi și burlane noi și ducem apa departe de casă, ca să nu vă ude pereții. La nevoie o trecem și prin pământ.' },
+    { k: ['porumb', 'pasari', 'pod'], ro: 'Știm problema 😅 Închidem locurile pe unde intră porumbeii, cu casete din tablă și benzi cu țepi.' },
+    { k: ['fotovolt', 'panou', 'solar'], ro: 'Înainte de panouri, e bine să vedem dacă acoperișul le duce greutatea. Dacă nu, îl întărim noi, ca să stați liniștit.' }
   ],
-  wa: { ro: 'Pentru asta e mai simplu să vorbiți direct cu echipa pe WhatsApp:' }
+  wa: { ro: 'Pentru asta e mai bine să vorbiți direct cu colegii mei. Ne găsiți pe WhatsApp aici:' }
 };
 </script>
 <script src="bf-chat.js"></script>
@@ -558,11 +558,11 @@ window.BF_CHAT = {
   const groups = $$('g[data-l]', svg);
 
   const STEPS = [
-    { img: 'gable', alt: 'Fronton de șarpantă din lemn, cu căpriori îmbinați la coamă', t: 'Șarpanta', p: 'Căpriori, grinzi și contrafișe din lemn, îmbinate cu plăci și buloane. Facem șarpante noi și consolidăm cele vechi.' },
-    { img: 'battens', alt: 'Folie anticondens întinsă pe căpriori, cu șipci bătute peste ea', t: 'Folia', p: 'Folia anticondens ține apa și condensul departe de lemn și de pod.' },
-    { img: 'house', alt: 'Casă cu acoperișul în lucru: folie și șipci montate pe toată suprafața', t: 'Șipci și contrașipci', p: 'Contrașipcile lasă aerul să circule, șipcile dau pasul pe care se prinde tabla.' },
-    { img: 'tiles', alt: 'Țiglă metalică roșie montată în rânduri drepte', t: 'Învelitoarea', p: 'Tablă sau țiglă metalică, prinsă cu șuruburi cu garnitură, rând cu rând până la streașină.' },
-    { img: 'gutter', alt: 'Streașină cu jgheab și burlan roșu la colțul casei, iarna', t: 'Coamă, streașină, jgheaburi', p: 'Coama închide acoperișul sus. Jgheabul și burlanul duc apa departe de pereți, chiar și prin pământ.' }
+    { img: 'gable', alt: 'Fronton de șarpantă din lemn, cu căpriori îmbinați la coamă', t: '1. Șarpanta', p: 'Totul pornește de la lemn. Facem șarpante noi și le întărim pe cele vechi, cu îmbinări prinse bine, cu plăci și buloane.' },
+    { img: 'battens', alt: 'Folie anticondens întinsă pe căpriori, cu șipci bătute peste ea', t: '2. Folia', p: 'Peste lemn punem folie anticondens, ca să nu ajungă apa și umezeala în pod.' },
+    { img: 'house', alt: 'Casă cu acoperișul în lucru: folie și șipci montate pe toată suprafața', t: '3. Șipci și contrașipci', p: 'Lasă aerul să circule pe sub tablă și țin învelitoarea dreaptă și bine prinsă.' },
+    { img: 'tiles', alt: 'Țiglă metalică roșie montată în rânduri drepte', t: '4. Învelitoarea', p: 'Montăm tablă sau țiglă metalică, rând cu rând, cu șuruburi cu garnitură, ca să nu intre apa.' },
+    { img: 'gutter', alt: 'Streașină cu jgheab și burlan roșu la colțul casei, iarna', t: '5. Coamă, streașină și jgheaburi', p: 'La final închidem coama și montăm jgheaburile și burlanele, ca apa să plece departe de pereți.' }
   ];
   const ph = $('#stagePhoto');
   ph.innerHTML = STEPS.map((s, i) => `<img src="img/${s.img}-s.webp" alt="" width="900" height="675" ${i ? 'loading="lazy"' : ''} data-i="${i}">`).join('');
@@ -585,12 +585,12 @@ window.BF_CHAT = {
 
   /* ===== what happened up there ===== */
   const ISS = [
-    { k: 'Îmi curge în casă', t: 'Infiltrații și reparații', p: 'Căutăm de unde intră apa (coș, dolie, coamă, tablă desprinsă) și reparăm acolo, nu doar unde se vede pata.', msg: 'Îmi curge apa în casă de la acoperiș.' },
-    { k: 'Acoperiș nou', t: 'Acoperiș nou, de la A la Z', p: 'Șarpantă, folie, șipci, tablă, coamă, streașină și jgheaburi, făcute de aceeași echipă.', q: '… A durat 4 zile curatarea acoperisului vechi plus montaj A-Z acoperis nou din tabla 150mp cu protectie pentru lemnaria laterala. …', msg: 'Vreau un acoperiș nou.' },
-    { k: 'Acoperiș vechi', t: 'Renovare', p: 'Scoatem învelitoarea veche, verificăm lemnul și montăm acoperișul nou, cu streașina îmbrăcată.', q: 'Renovare acoperis casa veche aprox 290 mp + imbracare streasina. Baietii s-au miscat foarte repede au terminat cam intr- o saptamana. …', msg: 'Am un acoperiș vechi de renovat.' },
-    { k: 'Jgheab sau burlan', t: 'Jgheaburi și burlane', p: 'Montăm jgheaburi și burlane noi și ducem apa departe de casă, la nevoie prin pământ.', q: 'Echipa a montat un burlan nou la colțul unde apa dădea peste jgheab și au dus scurgerea prin pământ. …', msg: 'Am o problemă la jgheaburi sau burlane.' },
-    { k: 'Porumbei în pod', t: 'Protecție anti-păsări', p: 'Închidem accesul păsărilor cu casete de tablă și benzi cu țepi pe acoperiș.', q: '… S-a aplicat o caseta de tabla alaturi de benzi cu tepi anti pasari pe acoperisul balconului de la etajul 5. Echipa este foarte serioasa si prompta. …', msg: 'Am porumbei care intră în pod.' },
-    { k: 'Panouri solare', t: 'Consolidare pentru panouri', p: 'Întărim acoperișul ca să ducă greutatea panourilor fotovoltaice, înainte de montajul lor.', q: 'Am avut nevoie de consolidarea acoperișului pentru a susține panouri fotovoltaice. Au venit la ora anunțată, au lucrat intens, au terminat mai repede decât ne așteptam și au făcut treabă de calitate. …', msg: 'Vreau să consolidez acoperișul pentru panouri fotovoltaice.' }
+    { k: 'Reparații și infiltrații', t: 'Vă plouă în casă?', p: 'Găsim exact pe unde intră apa (la coș, la dolie, la coamă sau pe sub o tablă desprinsă) și reparăm problema de la sursă, nu doar pata din tavan.', msg: 'Îmi curge apa în casă de la acoperiș.' },
+    { k: 'Acoperiș nou', t: 'Acoperiș nou, de la zero', p: 'Ne ocupăm de tot: șarpantă, folie, șipci, tablă, coamă, streașină și jgheaburi. O singură echipă, de la început până la final.', q: '… A durat 4 zile curatarea acoperisului vechi plus montaj A-Z acoperis nou din tabla 150mp cu protectie pentru lemnaria laterala. …', msg: 'Vreau un acoperiș nou.' },
+    { k: 'Renovare acoperiș', t: 'Renovare acoperiș', p: 'Dăm jos învelitoarea veche, verificăm lemnul, schimbăm ce e de schimbat și montăm acoperișul nou, cu streașina îmbrăcată.', q: 'Renovare acoperis casa veche aprox 290 mp + imbracare streasina. Baietii s-au miscat foarte repede au terminat cam intr- o saptamana. …', msg: 'Am un acoperiș vechi de renovat.' },
+    { k: 'Jgheaburi și burlane', t: 'Jgheaburi și burlane', p: 'Montăm jgheaburi și burlane noi și ducem apa departe de casă, iar la nevoie o trecem prin pământ.', q: 'Echipa a montat un burlan nou la colțul unde apa dădea peste jgheab și au dus scurgerea prin pământ. …', msg: 'Am o problemă la jgheaburi sau burlane.' },
+    { k: 'Protecție anti-porumbei', t: 'Scăpați de porumbei', p: 'Închidem locurile pe unde intră păsările în pod, cu casete din tablă și benzi cu țepi pe acoperiș.', q: '… S-a aplicat o caseta de tabla alaturi de benzi cu tepi anti pasari pe acoperisul balconului de la etajul 5. Echipa este foarte serioasa si prompta. …', msg: 'Am porumbei care intră în pod.' },
+    { k: 'Consolidare pentru panouri solare', t: 'Pregătim acoperișul pentru panouri', p: 'Înainte să montați panourile fotovoltaice, întărim acoperișul ca să le ducă greutatea fără probleme.', q: 'Am avut nevoie de consolidarea acoperișului pentru a susține panouri fotovoltaice. Au venit la ora anunțată, au lucrat intens, au terminat mai repede decât ne așteptam și au făcut treabă de calitate. …', msg: 'Vreau să consolidez acoperișul pentru panouri fotovoltaice.' }
   ];
   const box = $('#issues'), ans = $('#answer');
   box.innerHTML = ISS.map((x, i) => `<button class="issue" type="button" aria-pressed="${i === 0}" data-i="${i}">${x.k}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>`).join('');
