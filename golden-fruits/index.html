@@ -400,14 +400,13 @@ window.BF_CHAT = {
   /* demo catalogue: replace with the real products and prices */
   const P = [
     { id: 'rodii', img: 'rodie', f: 'exotice', ro: 'Rodii', ru: 'Гранаты', sro: 'dulci-acrișoare, cu boabe mari', sru: 'кисло-сладкие, крупное зерно', p: 45, u: 'kg', step: 1 },
-    { id: 'portocale', img: 'portocale', f: 'citrice', ro: 'Portocale', ru: 'Апельсины', sro: 'pentru suc și desert', sru: 'для сока и десерта', p: 28, u: 'kg', step: 1 },
+    { id: 'mango', img: 'mango', f: 'exotice', ro: 'Mango', ru: 'Манго', sro: 'dulce, copt la soare', sru: 'сладкое, спелое', p: 70, u: 'kg', step: 0.5 },
     { id: 'avocado', img: 'avocado', f: 'exotice', ro: 'Avocado', ru: 'Авокадо', sro: 'gata de mâncat', sru: 'готов к еде', p: 22, u: 'buc', step: 1 },
+    { id: 'pitaya', img: 'pitaya', f: 'exotice', ro: 'Pitaya', ru: 'Питахайя', sro: 'fructul dragonului, dulce și răcoros', sru: 'драконий фрукт, сладкий и освежающий', p: 40, u: 'buc', step: 1 },
+    { id: 'portocale', img: 'portocale', f: 'citrice', ro: 'Portocale', ru: 'Апельсины', sro: 'pentru suc și desert', sru: 'для сока и десерта', p: 28, u: 'kg', step: 1 },
     { id: 'lamai', img: 'lamai', f: 'citrice', ro: 'Lămâi', ru: 'Лимоны', sro: 'zemoase, coajă subțire', sru: 'сочные, тонкая кожура', p: 35, u: 'kg', step: 1 },
-    { id: 'lychee', img: 'lychee', f: 'exotice', ro: 'Lychee', ru: 'Личи', sro: 'parfumat, ca un trandafir', sru: 'ароматное, как роза', p: 120, u: 'kg', step: 0.5 },
     { id: 'lime', img: 'lime', f: 'citrice', ro: 'Lime', ru: 'Лайм', sro: 'pentru limonadă și mâncare', sru: 'для лимонада и блюд', p: 60, u: 'kg', step: 0.5 },
-    { id: 'kiwi', img: 'kiwi', f: 'exotice', ro: 'Kiwi', ru: 'Киви', sro: 'dulce-acrișor, plin de vitamina C', sru: 'кисло-сладкий, много витамина C', p: 40, u: 'kg', step: 1 },
-    { id: 'mere', img: 'mere', f: 'clasice', ro: 'Mere roșii', ru: 'Красные яблоки', sro: 'crocante și dulci', sru: 'хрустящие и сладкие', p: 18, u: 'kg', step: 1 },
-    { id: 'pere', img: 'pere', f: 'clasice', ro: 'Pere asiatice', ru: 'Азиатские груши', sro: 'zemoase, ca un măr-pară', sru: 'сочные, хрустящие', p: 48, u: 'kg', step: 1 }
+    { id: 'capsuni', img: 'capsuni', f: 'clasice', ro: 'Căpșuni', ru: 'Клубника', sro: 'dulci, parfumate', sru: 'сладкая, ароматная', p: 90, u: 'kg', step: 0.5 }
   ];
   const cart = new Map();
   const fmt = (n) => (Math.round(n * 10) / 10).toString().replace('.', ',');
@@ -417,7 +416,7 @@ window.BF_CHAT = {
   const grid = $('#grid');
   const render = () => {
     grid.innerHTML = P.map((x) => `<article class="card rv in" data-id="${x.id}" data-f="${x.f}" >
-      <div class="card__pic"><span class="tag card__badge">${EG}${T('Egipt', 'Египет')}</span><img src="img/${x.img}.webp" width="640" height="640" loading="lazy" alt="${T(x.ro, x.ru)}"></div>
+      <div class="card__pic"><span class="tag card__badge">${EG}${T('Egipt', 'Египет')}</span><img src="img/${x.img}.webp" width="1200" height="960" loading="lazy" alt="${T(x.ro, x.ru)}"></div>
       <div class="card__body"><h3>${T(x.ro, x.ru)}</h3><p class="card__sub">${T(x.sro, x.sru)}</p>
         <div class="card__row"><span class="price num">${x.p}<small>lei/${unit(x.u)}</small></span>
           <div class="step" role="group" aria-label="${T('Cantitate', 'Количество')} ${T(x.ro, x.ru)}"><button type="button" data-d="-1" aria-label="${T('Mai puțin', 'Меньше')}">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="${T('Mai mult', 'Больше')}">+</button></div></div>
