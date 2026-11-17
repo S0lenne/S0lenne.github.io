@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ro" data-key="bst">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Barbershop Testemițanu 21/1, Chișinău</title>
+<meta name="description" content="Barbershop pe Str. Nicolae Testemițanu 21/1, Chișinău. Taper fade, tunsori clasice și barbă. Deschis zilnic 09 la 20. Programare pe WhatsApp.">
+<meta property="og:title" content="Barbershop Testemițanu 21/1">
+<meta property="og:description" content="4,9 din 65 de recenzii. Deschis zilnic, 09 la 20.">
+<meta property="og:image" content="img/mural.webp">
+<meta name="theme-color" content="#18181a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318181a'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%23101012'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23ffcf3a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Barlow:wght@400;500;700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "the shop has a hip-hop legends mural on the wall, so the site plays like a record: every service is a track, the tonearm drops on the one you pick and that becomes your booking" · vibe: "concrete, vinyl black, mural yellow and denim blue, sticker type" · posture: committed · axes: dark-concrete/block-display/yellow-blue · nav: record mark and the address as the name, three links, book · footer: concrete band with hours and the street · hero: the mural photo full bleed with a huge address set in block type · signature: 3D turntable where the tonearm plays the chosen service */
+/* Hallmark · waive 24b · spacing hand-set to the tracklist rows · the grid follows the record */
+/* critique: barbershops all show a chair and a price list; this one has a 7-year regular base and a mural, so the site leans on rhythm, the barbers by name and the cuts themselves */
+:root{
+  --bg:#18181a; --bg-2:#222226; --bg-3:#2c2c31; --sand:#ece4d3; --ink:#f3efe6; --mute:#a7a29a; --line:#3a3a40;
+  --yel:#ffcf3a; --yel-deep:#e0ad12; --blue:#6f9cff; --red:#ff6b5a; --vinyl:#0c0c0e;
+  --veil:rgba(12,12,14,.66);
+  --font-display:'Bungee',sans-serif; --font-body:'Barlow',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;line-height:.95;text-wrap:balance}
+:focus-visible{outline:2px solid var(--yel);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--yel);color:var(--bg);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;border:2px solid var(--yel);background:var(--yel);color:var(--bg);font:700 17px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease),transform .2s var(--ease)}
+.btn:hover{background:var(--yel-deep);border-color:var(--yel-deep)}
+.btn:active,.chip:active,.trk:active{transform:translateY(1px)}
+button:disabled{background:var(--bg-3);color:var(--mute);border-color:var(--line);cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+
+.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background-color .3s var(--ease)}
+.nav.solid{background:var(--bg)}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:74px}
+.wm{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 18px/1 var(--font-display)}
+.wm i{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle,var(--yel) 0 22%,var(--vinyl) 24% 100%);box-shadow:0 0 0 2px var(--ink)}
+.links{display:flex;gap:24px;margin-left:auto}
+.links a{text-decoration:none;font-weight:500;padding:8px 0}
+.links a:hover{color:var(--yel)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:700 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0,var(--veil) 45%,transparent 75%),linear-gradient(0deg,var(--bg) 0,transparent 40%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-bottom:clamp(40px,9vh,100px)}
+.hero h1{font-size:clamp(64px,12vw,190px);color:var(--yel)}
+.hero h1 span{display:block;color:var(--ink);font-size:.42em;margin-top:.3em}
+.hero p{max-width:30em;margin:22px 0 28px;font-size:20px}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px}
+.stk{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.stk>span{background:var(--ink);color:var(--bg);font-weight:700;font-size:15px;padding:8px 14px;border-radius:6px;transform:rotate(var(--r,-2deg))}
+.stk>span:nth-child(2){--r:1.5deg;background:var(--yel)}
+.stk>span:nth-child(3){--r:-1deg;background:var(--blue)}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.h2{font-size:clamp(40px,6.4vw,96px)}
+.h2 .ac{color:var(--yel)}
+.book .h2,.ct .h2{font-size:clamp(36px,4.6vw,68px);overflow-wrap:anywhere}
+.lede{color:var(--mute);max-width:32em;margin:18px 0 0}
+
+/* turntable */
+.deck{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:center;margin-top:48px}
+.tt{position:relative;aspect-ratio:1/1;border-radius:24px;background:var(--bg-2);overflow:hidden}
+#tt{position:absolute;inset:0;width:100%;height:100%}
+.tt .fb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.no-gl .tt .fb{display:block}
+.now{position:absolute;left:16px;right:16px;bottom:16px;display:flex;justify-content:space-between;gap:12px;align-items:center;background:var(--vinyl);border-radius:14px;padding:12px 16px}
+.now b{font:400 18px/1.1 var(--font-display);color:var(--yel)}
+.now span{color:var(--mute);font-size:15px;white-space:nowrap}
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.trk{width:100%;display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:14px;align-items:center;min-height:68px;padding:10px 16px;border-radius:14px;border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;text-align:left;cursor:pointer;transition:background-color .2s var(--ease),border-color .2s var(--ease)}
+.trk:hover{border-color:var(--yel)}
+.trk[aria-pressed="true"]{background:var(--yel);border-color:var(--yel);color:var(--bg)}
+.trk .no{font:400 18px/1 var(--font-display)}
+.trk b{display:block;font-size:19px}
+.trk small{display:block;color:var(--mute);font-size:14px}
+.trk[aria-pressed="true"] small{color:var(--bg-3)}
+.trk .p{font-weight:700;font-size:19px;white-space:nowrap}
+.pnote{margin:14px 0 0;font-size:14px;color:var(--mute)}
+@media (max-width:900px){.deck{grid-template-columns:minmax(0,1fr)}}
+
+/* barbers */
+.crew{background:var(--sand);color:var(--bg)}
+.crew .h2 .ac{color:var(--bg);background:var(--yel);padding:0 .12em}
+.crew .lede{color:var(--bg-3)}
+.cg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:44px}
+.cb{background:var(--ink);border-radius:20px;padding:26px;display:grid;gap:14px;align-content:start;border:2px solid var(--bg)}
+.cb h3{font-size:40px}
+.cb .tag{justify-self:start;background:var(--bg);color:var(--yel);font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px}
+.cb q{font-size:18px;quotes:"„" "”"}
+.cb small{color:var(--bg-3)}
+.team{margin-top:20px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:18px}
+.team img{width:100%;height:100%;object-fit:cover;border-radius:20px;aspect-ratio:4/3}
+@media (max-width:900px){.cg,.team{grid-template-columns:minmax(0,1fr)}}
+
+/* cuts wall */
+.wall{columns:4 220px;column-gap:14px;margin-top:44px}
+.wall figure{margin:0 0 14px;break-inside:avoid;position:relative;border-radius:16px;overflow:hidden}
+.wall img{width:100%}
+.wall figcaption{position:absolute;left:10px;bottom:10px;background:var(--vinyl);color:var(--yel);font-weight:700;font-size:14px;padding:6px 10px;border-radius:999px}
+
+.revs{background:var(--bg-2)}
+.rr{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 0 16px;margin-top:40px}
+.rq{flex:none;width:min(360px,82vw);scroll-snap-align:start;margin:0;background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.rq p{margin:0;font-size:19px}
+.rq span{margin-top:auto;color:var(--mute);font-size:14px}
+.rq .st{color:var(--yel);font-family:var(--font-display);font-size:18px}
+
+/* booking */
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--bg-2);border-radius:24px;padding:clamp(22px,3.4vw,38px);display:grid;gap:22px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:700;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute)}
+.chip[aria-pressed="true"]{background:var(--yel);border-color:var(--yel);color:var(--bg)}
+.chip[aria-pressed="true"] small{color:var(--bg-3)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:700}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px}
+input[aria-invalid="true"]{border-color:var(--red)}
+.err{color:var(--red);font-weight:700;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+.side img{margin-top:26px;border-radius:20px;aspect-ratio:3/4;object-fit:cover;width:100%}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}.side img{display:none}}
+
+.contact{background:var(--yel);color:var(--bg)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{font-weight:700;font-size:14px}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:2px solid var(--bg);border-radius:999px;text-decoration:none;font-weight:700}
+.soc a:hover{background:var(--bg);color:var(--yel)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;border:2px solid var(--bg)}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--bg);color:var(--mute);padding:28px 0 110px;font-size:14px}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--vinyl);border-radius:999px;border:1px solid var(--line)}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;font-weight:700}
+.mbar a.p{background:var(--yel);color:var(--bg)}
+@media (max-width:900px){.mbar{display:flex}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav"><div class="wrap">
+  <a class="wm" href="#top" aria-label="Barbershop Testemițanu 21/1"><i aria-hidden="true"></i>Barbershop</a>
+  <nav class="links" aria-label="Meniu"><a href="#servicii" data-ru="Услуги">Servicii</a><a href="#barberi" data-ru="Барберы">Barberi</a><a href="#tunsori" data-ru="Стрижки">Tunsori</a><a href="#contact" data-ru="Контакты">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#programare" data-ru="Записаться">Programează-te</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+  <img src="img/mural.webp" alt="Interiorul frizeriei cu muralul cu legende hip-hop" width="1600" height="900">
+  <div class="wrap">
+    <h1>21/1 <span data-ru="Тестемицану">Testemițanu</span></h1>
+    <p data-ru="Фейды, классика и борода под бит. Каждый день.">Fade-uri, tunsori clasice și barbă, pe ritm. Zilnic.</p>
+    <div class="acts"><a class="btn" href="#programare" data-ru="Выбрать время">Alege ora</a><a class="btn ghost" href="#servicii" data-ru="Включить прайс">Pornește lista de prețuri</a></div>
+    <div class="stk"><span>4,9 · 65 <span data-ru="отзывов">recenzii</span></span><span data-ru="Каждый день 09 до 20">Zilnic 09 la 20</span><span data-ru="Клиенты по 7 лет">Clienți de 7 ani</span></div>
+  </div>
+</section>
+
+<section id="servicii">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Прайс как">Lista de prețuri,</span> <span class="ac" data-ru="пластинка">pe vinil</span></h2>
+    <p class="lede rv" data-ru="Выберите трек: игла опустится на вашу услугу, и она сразу попадёт в запись.">Alege o piesă: acul coboară pe serviciul tău și îl trece direct în programare.</p>
+    <div class="deck">
+      <div class="tt rv">
+        <img class="fb" src="img/floor-s.webp" alt="Frizeria">
+        <canvas id="tt" role="img" aria-label="Pick-up 3D cu un disc de vinil"></canvas>
+        <div class="now" aria-live="polite"><b id="nowT"></b><span id="nowP"></span></div>
+      </div>
+      <div class="rv">
+        <ul class="tl" id="tl"></ul>
+        <p class="pnote" data-ru="Цены ориентировочные, для демо. Мастера подтвердят свой прайс.">Prețuri orientative, pentru prezentare. Barberii își confirmă prețurile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="crew" id="barberi">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Барберы,">Barberii,</span> <span class="ac" data-ru="по именам">pe nume</span></h2>
+    <p class="lede rv" data-ru="Клиенты пишут их имена в отзывах. Выберите своего при записи.">Clienții le scriu numele în recenzii. Îl alegi pe al tău la programare.</p>
+    <div class="cg">
+      <article class="cb rv"><h3>Eugen</h3><span class="tag">Taper Fade</span><q>Mi-a făcut un Taper Fade foarte bine executat, cu atenție la fiecare detaliu.</q><small>Iop Herlean, Google</small></article>
+      <article class="cb rv"><h3>Vitalie</h3><span class="tag" data-ru="7 лет с клиентами">7 ani cu clienții</span><q>Merg de peste 7 ani la această frizerie, la Vitalie, și plec de fiecare dată mulțumit.</q><small>Pavel Gheorghița, Google</small></article>
+      <article class="cb rv"><h3>Alvina</h3><span class="tag" data-ru="Салон">Salon</span><q>…le mulțumesc Domnului Vitalie și Doamnei Alvina</q><small>Gheorghe Ghemu, Google</small></article>
+    </div>
+    <div class="team rv"><img src="img/floor-s.webp" alt="Sala cu fotolii și pardoseală în carouri" loading="lazy"><img src="img/team-s.webp" alt="Barberii frizeriei" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="tunsori">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Стрижки,">Tunsori,</span> <span class="ac" data-ru="как есть">așa cum ies</span></h2>
+    <div class="wall">
+      <figure class="rv"><img src="img/c8-s.webp" alt="Tunsoare cu fade jos" loading="lazy"><figcaption>Low fade</figcaption></figure>
+      <figure class="rv"><img src="img/c3-s.webp" alt="Tunsoare texturată" loading="lazy"><figcaption data-ru="Текстура">Textură</figcaption></figure>
+      <figure class="rv"><img src="img/c7-s.webp" alt="Skin fade cu crestă" loading="lazy"><figcaption>Skin fade</figcaption></figure>
+      <figure class="rv"><img src="img/c2-s.webp" alt="Taper fade cu breton" loading="lazy"><figcaption>Taper fade</figcaption></figure>
+      <figure class="rv"><img src="img/c6-s.webp" alt="Fade cu barbă" loading="lazy"><figcaption data-ru="Фейд и борода">Fade și barbă</figcaption></figure>
+      <figure class="rv"><img src="img/c11-s.webp" alt="Tunsoare scurtă" loading="lazy"><figcaption data-ru="Коротко">Scurt</figcaption></figure>
+      <figure class="rv"><img src="img/c1-s.webp" alt="Tunsoare cu volum" loading="lazy"><figcaption data-ru="Объём">Volum</figcaption></figure>
+      <figure class="rv"><img src="img/c9-s.webp" alt="Crop texturat" loading="lazy"><figcaption>Crop</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="revs">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Говорят">Ce zic</span> <span class="ac" data-ru="клиенты">clienții</span></h2>
+    <div class="rr" tabindex="0" aria-label="Recenzii">
+      <figure class="rq"><span class="st" aria-label="5 din 5">5/5</span><p>„Frezura a ieșit perfectă, personalul e amabil, lucrează cu multa atenție. Recomand barberul Eugen!!!”</p><span>Gicu Chiriac</span></figure>
+      <figure class="rq"><span class="st" aria-label="5 din 5">5/5</span><p>„Лучше барбера в этом городе нет! … Виталик, ты лучший!”</p><span>Юра Гарматюк</span></figure>
+      <figure class="rq"><span class="st" aria-label="5 din 5">5/5</span><p>„Стригусь в данном месте уже больше 5 лет ребята лучшее работают профессионально и качественно…”</p><span>Danil</span></figure>
+      <figure class="rq"><span class="st" aria-label="5 din 5">5/5</span><p>„Atmosferă plăcută, localul este foarte curat, iar tunsoarea a ieșit exact cum mi-am dorit.”</p><span>Great Heart</span></figure>
+      <figure class="rq"><span class="st" aria-label="5 din 5">5/5</span><p>„Tunsoare curată, exact cum am vrut. Mersi!”</p><span>Steven Timotin</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="programare">
+  <div class="wrap book">
+    <div class="side rv">
+      <h2 class="h2"><span data-ru="Запись,">Programare,</span> <span class="ac" data-ru="в два касания">din două atingeri</span></h2>
+      <p class="lede" data-ru="Выберите барбера, день и время. Ответ в WhatsApp.">Alegi barberul, ziua și ora. Primești răspuns pe WhatsApp.</p>
+      <img src="img/client-s.webp" alt="Client mulțumit în fotoliu" loading="lazy">
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Услуга">Serviciul</legend><div class="chips" data-g="svc" id="svcChips"></div></fieldset>
+      <fieldset><legend data-ru="Барбер">Barberul</legend><div class="chips" data-g="who"><button type="button" class="chip" aria-pressed="true" data-ru="Любой свободный">Oricare liber</button><button type="button" class="chip" aria-pressed="false">Eugen</button><button type="button" class="chip" aria-pressed="false">Vitalie</button><button type="button" class="chip" aria-pressed="false">Alvina</button></div></fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <fieldset><legend data-ru="Время">Ora</legend><div class="chips" data-g="time" id="times"></div></fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Имя">Numele</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2" data-ru="Тестемицану 21/1">Testemițanu 21/1</h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>Str. Nicolae Testemițanu 21/1, Chișinău</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37360714471">+373 60 714 471</a></dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="Каждый день, 09:00 до 20:00">Zilnic, 09:00 la 20:00</dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37360714471" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37360714471"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Barbershop+Str.+Nicolae+Testemitanu+21%2F1+Chisinau" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=barbershop%20testemitanu" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+      </div>
+    </div>
+    <img class="rv" src="img/front2-s.webp" alt="Intrarea frizeriei de pe strada Testemițanu" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 Barbershop Testemițanu 21/1</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37360714471" data-ru="Позвонить">Sună</a><a class="p" href="#programare" data-ru="Записаться">Programează-te</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $, $$, T } = BF;
+  const S = [
+    { ro: 'Tunsoare clasică', ru: 'Классическая стрижка', m: 40, p: 200, c: '#ffcf3a' },
+    { ro: 'Taper fade', ru: 'Тейпер-фейд', m: 50, p: 250, c: '#6f9cff' },
+    { ro: 'Skin fade', ru: 'Скин-фейд', m: 50, p: 270, c: '#ff6b5a' },
+    { ro: 'Barbă și contur', ru: 'Борода и контур', m: 30, p: 150, c: '#7fd8a6' },
+    { ro: 'Tunsoare și barbă', ru: 'Стрижка и борода', m: 70, p: 330, c: '#ffa94d' },
+    { ro: 'Tuns cu mașina', ru: 'Под машинку', m: 20, p: 120, c: '#ece4d3' },
+  ];
+  let cur = 1, setArm = () => {};
+  $('#tl').innerHTML = S.map((s, i) => `<li><button type="button" class="trk" data-i="${i}" aria-pressed="false"><span class="no">${String.fromCharCode(65 + (i > 2 ? 1 : 0))}${i % 3 + 1}</span><span><b>${s.ro}</b><small>${s.m} min</small></span><span class="p">${s.p} lei</span></button></li>`).join('');
+  $('#svcChips').innerHTML = S.map((s, i) => `<button type="button" class="chip" aria-pressed="false" data-ro="${s.ro}">${s.ro}</button>`).join('');
+  const pick = (i) => { cur = i; const s = S[i]; $$('.trk').forEach((b, k) => b.setAttribute('aria-pressed', String(k === i))); $$('#svcChips .chip').forEach((b, k) => b.setAttribute('aria-pressed', String(k === i))); $('#nowT').textContent = T(s.ro, s.ru); $('#nowP').textContent = `${s.p} lei · ${s.m} min`; setArm(i); };
+  $('#tl').addEventListener('click', (e) => { const b = e.target.closest('.trk'); if (b) pick(+b.dataset.i); });
+  $('#svcChips').addEventListener('click', (e) => { const b = e.target.closest('.chip'); if (b) pick([...b.parentNode.children].indexOf(b)); });
+  BF.onLang(() => { $$('.trk b').forEach((b, i) => (b.textContent = T(S[i].ro, S[i].ru))); $$('#svcChips .chip').forEach((b, i) => (b.textContent = T(S[i].ro, S[i].ru))); const s = S[cur]; $('#nowT').textContent = T(s.ro, s.ru); });
+  BF.days($('#days'), { n: 8 }); BF.times($('#times'), { from: 9, to: 19, step: 30, def: '12:00' });
+  BF.form('#bk', { phone: '37360714471', msg: () => `Salut! Vreau o programare la Barbershop (Testemițanu 21/1).\nServiciu: ${S[cur].ro} (${S[cur].p} lei)\nBarber: ${BF.ro(BF.val('who'))}\nZiua: ${BF.dayText(BF.val('day'))}\nOra: ${BF.ro(BF.val('time'))}` });
+  BF.init();
+  pick(1);
+
+  /* ===== 3D turntable ===== */
+  const cv = $('#tt'), r = BF.gl(cv); if (!r) return;
+  r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
+  const sc = new THREE.Scene(), cam = new THREE.PerspectiveCamera(32, 1, .1, 60);
+  const M = (c, o = {}) => { const m = new THREE.MeshStandardMaterial(Object.assign({ color: c, roughness: .6 }, o)); m.color.convertSRGBToLinear(); return m; };
+  sc.add(new THREE.HemisphereLight(0xfff3dc, 0x202024, .7));
+  const key = new THREE.SpotLight(0xffffff, 1.4, 30, .6, .5); key.position.set(3, 8, 4); key.castShadow = true; key.shadow.mapSize.set(1024, 1024); sc.add(key);
+  const rim = new THREE.PointLight(0x6f9cff, 1.2, 12); rim.position.set(-4, 2, -3); sc.add(rim);
+  const warm = new THREE.PointLight(0xffcf3a, .8, 10); warm.position.set(4, 1.5, -2); sc.add(warm);
+  /* plinth */
+  const base = new THREE.Mesh(new THREE.BoxGeometry(6.2, .5, 4.8), M('#2c2c31', { roughness: .45, metalness: .2 })); base.position.y = -.25; base.receiveShadow = true; base.castShadow = true; sc.add(base);
+  const top = new THREE.Mesh(new THREE.BoxGeometry(6.1, .04, 4.7), M('#1d1d21', { roughness: .3, metalness: .4 })); top.position.y = .01; top.receiveShadow = true; sc.add(top);
+  const plat = new THREE.Mesh(new THREE.CylinderGeometry(1.95, 1.95, .16, 64), M('#9a9aa2', { metalness: .9, roughness: .25 })); plat.position.set(-.6, .1, 0); plat.castShadow = true; sc.add(plat);
+  /* vinyl with groove texture and label */
+  const tc = document.createElement('canvas'); tc.width = tc.height = 1024; const g = tc.getContext('2d');
+  const drawDisc = (col) => {
+    g.fillStyle = '#0c0c0e'; g.fillRect(0, 0, 1024, 1024);
+    for (let rr = 500; rr > 190; rr -= 2.2) { g.strokeStyle = `rgba(255,255,255,${.02 + ((rr * 13) % 7) / 220})`; g.lineWidth = 1; g.beginPath(); g.arc(512, 512, rr, 0, Math.PI * 2); g.stroke(); }
+    [430, 360, 290].forEach((rr) => { g.strokeStyle = '#000'; g.lineWidth = 6; g.beginPath(); g.arc(512, 512, rr, 0, Math.PI * 2); g.stroke(); });
+    g.fillStyle = col; g.beginPath(); g.arc(512, 512, 180, 0, Math.PI * 2); g.fill();
+    g.fillStyle = '#18181a'; g.textAlign = 'center'; g.font = '64px Bungee, sans-serif'; g.fillText('21/1', 512, 470); g.font = '600 36px Barlow, sans-serif'; g.fillText('TESTEMIȚANU', 512, 590); g.font = '500 26px Barlow, sans-serif'; g.fillText('Chișinău · 09 la 20', 512, 640);
+    g.fillStyle = '#ddd'; g.beginPath(); g.arc(512, 512, 12, 0, Math.PI * 2); g.fill();
+  };
+  drawDisc(S[cur].c); const tex = new THREE.CanvasTexture(tc); tex.encoding = THREE.sRGBEncoding; tex.anisotropy = 4; tex.center.set(.5, .5); tex.rotation = Math.PI;
+  const disc = new THREE.Mesh(new THREE.CylinderGeometry(1.85, 1.85, .04, 96), [M('#0c0c0e', { roughness: .3 }), new THREE.MeshStandardMaterial({ map: tex, roughness: .35, metalness: .1 }), M('#0c0c0e')]);
+  disc.position.set(-.6, .2, 0); disc.castShadow = true; sc.add(disc);
+  const spindle = new THREE.Mesh(new THREE.CylinderGeometry(.04, .04, .2, 12), M('#ddd', { metalness: 1, roughness: .2 })); spindle.position.set(-.6, .28, 0); sc.add(spindle);
+  /* tonearm */
+  const armPivot = new THREE.Group(); armPivot.position.set(2.1, .1, -1.6); sc.add(armPivot);
+  const post = new THREE.Mesh(new THREE.CylinderGeometry(.22, .26, .5, 24), M('#c8c8d0', { metalness: .9, roughness: .25 })); post.position.y = .2; post.castShadow = true; armPivot.add(post);
+  const lift = new THREE.Group(); lift.position.y = .48; armPivot.add(lift);
+  const tube = new THREE.Mesh(new THREE.CylinderGeometry(.045, .045, 3.1, 12), M('#e6e6ea', { metalness: .9, roughness: .2 })); tube.rotation.x = Math.PI / 2; tube.position.z = 1.45; tube.castShadow = true; lift.add(tube);
+  const cw = new THREE.Mesh(new THREE.CylinderGeometry(.18, .18, .36, 20), M('#2c2c31', { metalness: .6 })); cw.rotation.x = Math.PI / 2; cw.position.z = -.3; lift.add(cw);
+  const head = new THREE.Mesh(new THREE.BoxGeometry(.26, .1, .44), M('#ffcf3a', { roughness: .4 })); head.position.set(0, -.05, 3.05); head.castShadow = true; lift.add(head);
+  const knob = new THREE.Mesh(new THREE.SphereGeometry(.07, 12, 8), M('#ff6b5a')); knob.position.set(.38, .12, 1); sc.add(knob);
+  const speed = new THREE.Mesh(new THREE.CylinderGeometry(.22, .22, .1, 24), M('#c8c8d0', { metalness: .9, roughness: .3 })); speed.position.set(2.4, .06, 1.7); sc.add(speed);
+  const led = new THREE.Mesh(new THREE.SphereGeometry(.05, 12, 8), new THREE.MeshBasicMaterial({ color: 0xff6b5a })); led.position.set(-2.7, .08, 2.1); sc.add(led);
+  /* arm angle per track: outer groove → inner groove */
+  const angFor = (i) => { const radius = 1.65 - i * .22; const dx = -.6 - 2.1, dz = 0 + 1.6; const d = Math.hypot(dx, dz); /* arm length 3.05 → solve angle so head sits at radius from spindle */ const L = 3.05; const cosA = (L * L + d * d - radius * radius) / (2 * L * d); const base = Math.atan2(dx, dz); return base + Math.acos(Math.max(-1, Math.min(1, cosA))); };
+  let armGo = angFor(cur), armNow = armGo + .7, drop = 0, dropGo = 1, lastI = cur;
+  setArm = (i) => { if (i !== lastI) { dropGo = 0; setTimeout(() => { armGo = angFor(i); drawDisc(S[i].c); tex.needsUpdate = true; setTimeout(() => (dropGo = 1), 450); }, 260); lastI = i; } };
+  let mx = 0, my = 0; cv.addEventListener('pointermove', (e) => { const b = cv.getBoundingClientRect(); mx = (e.clientX - b.left) / b.width - .5; my = (e.clientY - b.top) / b.height - .5; });
+  BF.fit(r, cam, cv, (w, h) => { cam.fov = w / h < .9 ? 38 : 32; });
+  let spin = 0;
+  BF.loop(cv, (t) => {
+    armNow += (armGo - armNow) * .08; armPivot.rotation.y = armNow;
+    drop += (dropGo - drop) * .12; lift.rotation.x = (1 - drop) * -.12; lift.position.y = .48 + (1 - drop) * .08;
+    spin += BF.reduce ? 0 : .02 + drop * .03; disc.rotation.y = -spin;
+    led.material.color.setHex(drop > .9 ? 0x7fd8a6 : 0xff6b5a);
+    cam.position.set(Math.sin(.45 + mx * .5) * 11.2, 7.4 - my * 2, Math.cos(.45 + mx * .5) * 11.2); cam.lookAt(.1, -.6, 0);
+    r.render(sc, cam);
+  });
+})();
+</script>
+</body>
+</html>

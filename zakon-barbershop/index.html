@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Zakon Barbershop, Ialoveni</title>
+<meta name="description" content="Zakon Barbershop, Ialoveni, bd. Alexandru cel Bun 68. Tunsori, fade, barbă și ras cu briciul. Deschis zilnic 10:00 la 20:00. Programare online.">
+<meta property="og:title" content="Zakon Barbershop, Ialoveni">
+<meta property="og:description" content="Legea e simplă: pleci arătând bine. Programează-te online.">
+<meta property="og:image" content="img/facade.webp">
+<meta name="theme-color" content="#111213">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23111213'/%3E%3Cpath d='M16 18h32L22 46h26' stroke='%23e2e4e6' stroke-width='7' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "zakon means law: the price list is the code, the house rules are articles, every cut is on file" · vibe: "night concrete, chrome, sharp lines, one red seal" · posture: committed · axes: dark/grotesk-heavy/chromatic-red · nav: lowercase wordmark like the shop sign, articles, booking · footer: the code's last article with address, hours and socials · hero: full-bleed night photo of the shop sign, head bottom-left, articles index right · signature: a 3D ring of real cuts from the shop you spin by dragging */
+/* Hallmark · waive 24b: spacing set by the grid of articles, not a 4px scale */
+/* critique: barbershop sites are all leather, gold and a pole; this one is a legal code in graphite with one red seal, built on the shop's own name */
+:root{
+  --night:#111213; --night-2:#18191b; --night-3:#202226; --line:#2c2f33;
+  --chrome:#e2e4e6; --chrome-soft:#b4b8bd; --chrome-mute:#8a8f95;
+  --seal:#d8343a; --seal-deep:#b2262c; --on-seal:#ffffff; --veil:rgba(17,18,19,.72);
+  --font-display:'Big Shoulders Display',sans-serif; --font-body:'Archivo',sans-serif;
+  --max:1280px; --gut:clamp(18px,4vw,48px); --r:6px;
+  --ease:cubic-bezier(.2,.75,.15,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--chrome);font:400 17px/1.6 var(--font-body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:900;line-height:1;margin:0;text-transform:uppercase;overflow-wrap:break-word;min-width:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+:focus-visible{outline:2px solid var(--seal);outline-offset:3px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:99;background:var(--seal);color:var(--on-seal);padding:10px 14px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:var(--r);border:1px solid transparent;font:700 16px/1 var(--font-body);text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .2s var(--ease);white-space:nowrap}
+.btn svg{width:18px;height:18px}
+.btn-seal{background:var(--seal);color:var(--on-seal)}.btn-seal:hover{background:var(--chrome);color:var(--night)}
+.btn-steel{border-color:var(--chrome-mute);color:var(--chrome);background:transparent}.btn-steel:hover{border-color:var(--chrome);background:var(--night-3)}
+.btn:active{transform:scale(.97)}
+
+.nav{position:fixed;inset:0 0 auto;z-index:60;transition:background-color .3s}
+.nav.solid{background:var(--veil);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:74px}
+.word{font:700 34px/1 var(--font-body);letter-spacing:-.04em;text-decoration:none;margin-right:auto}
+.word small{display:block;font:500 12px/1 var(--font-body);letter-spacing:0;color:var(--chrome-mute);margin-top:2px}
+.nav a.l{text-decoration:none;color:var(--chrome-soft);font-weight:500;font-size:15px}
+.nav a.l:hover{color:var(--chrome)}
+.lang{display:flex;border:1px solid var(--line);border-radius:var(--r);padding:3px}
+.lang button{background:none;border:0;color:var(--chrome-mute);font:700 13px/1 var(--font-body);min-width:40px;min-height:34px;border-radius:4px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--chrome);color:var(--night)}
+.nav .btn{min-height:44px;padding:0 16px;font-size:15px}
+@media (max-width:900px){.nav a.l{display:none}.nav .wrap{gap:12px}}
+@media (max-width:420px){.nav .btn{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;isolation:isolate;overflow:clip}
+.hero img.bg{position:absolute;inset:0;width:100%;height:115%;object-fit:cover;object-position:40% 35%;z-index:-2;will-change:transform}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 30%,var(--veil) 70%,var(--night) 100%),linear-gradient(90deg,var(--veil),transparent 60%)}
+.hero .wrap{width:100%;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.7fr);gap:36px;align-items:end;padding-top:120px;padding-bottom:clamp(36px,7vh,80px)}
+.hero h1{font-size:clamp(70px,12vw,184px)}
+.hero h1 span{display:block;color:var(--chrome-soft)}
+.hero p{font-size:19px;color:var(--chrome-soft);max-width:36ch;margin-top:18px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.index{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.index a{display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--chrome-soft);transition:color .2s}
+.index a:hover{color:var(--chrome)}
+.index b{font:700 22px/1 var(--font-display);color:var(--seal)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.index{display:none}}
+
+.sec{padding:clamp(80px,11vw,150px) 0}
+.sh{display:grid;grid-template-columns:minmax(0,1fr);gap:18px 30px;align-items:end;margin-bottom:clamp(36px,5vw,60px)}
+.sh .num{font:700 clamp(18px,1.6vw,22px)/1 var(--font-body);color:var(--seal);border:1px solid var(--seal);border-radius:999px;padding:8px 14px;align-self:start}
+.sh h2{font-size:clamp(56px,9vw,130px)}
+.sh p{color:var(--chrome-soft);max-width:48ch}
+@media (max-width:640px){.sh{grid-template-columns:minmax(0,1fr)}.sh p{grid-column:1}}
+
+/* the code: prices */
+.code{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.art{display:grid;grid-template-columns:80px minmax(0,1fr) auto;gap:4px 18px;align-items:baseline;padding:22px 0;border-top:1px solid var(--line);transition:background-color .25s}
+.art:hover{background:var(--night-2)}
+.art .n{font:700 15px/1.4 var(--font-body);color:var(--chrome-mute)}
+.art h3{font-size:clamp(30px,3vw,42px);font-weight:700}
+.art .p{font:900 clamp(30px,3vw,42px)/1 var(--font-display);white-space:nowrap}
+.art .p small{font:500 14px/1 var(--font-body);color:var(--chrome-mute);margin-right:6px}
+.art p{grid-column:2/4;color:var(--chrome-mute);font-size:15px}
+.code-note{margin-top:22px;color:var(--chrome-mute);font-size:14px}
+@media (max-width:860px){.code{grid-template-columns:minmax(0,1fr)}.art{grid-template-columns:52px minmax(0,1fr) auto}}
+
+/* 3D ring of cuts */
+.ring{position:relative;height:min(92svh,860px);cursor:grab;touch-action:pan-y}
+.ring:active{cursor:grabbing}
+.ring canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.ring-hint{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);display:flex;gap:10px;align-items:center;color:var(--chrome-soft);font-size:15px;pointer-events:none}
+.ring-hint svg{width:22px;height:22px;color:var(--seal)}
+.ring-fallback{display:none}
+.no-gl .ring{height:auto;cursor:auto}.no-gl .ring canvas,.no-gl .ring-hint{display:none}
+.no-gl .ring-fallback{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:10px}
+.ring-fallback img{aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:var(--r)}
+
+/* team */
+.team{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.barber{position:relative;border-radius:var(--r);overflow:hidden;min-height:560px;display:grid;align-items:end;isolation:isolate}
+.barber img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:grayscale(1) contrast(1.1);transition:filter .5s}
+.barber:hover img{filter:none}
+.barber::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 40%,var(--night))}
+.barber div{padding:28px;display:grid;gap:10px}
+.barber h3{font-size:clamp(56px,7vw,96px)}
+.barber q{font-size:17px;color:var(--chrome-soft);max-width:38ch}
+.barber cite{font-style:normal;font-size:14px;color:var(--chrome-mute)}
+@media (max-width:760px){.team{grid-template-columns:minmax(0,1fr)}.barber{min-height:460px}}
+
+/* house rules */
+.rules{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.rule{background:var(--night-2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.rule .ph{aspect-ratio:4/5;overflow:hidden}
+.rule .ph img{width:100%;height:100%;object-fit:cover}
+.rule div.t{padding:18px;display:grid;gap:6px;align-content:start}
+.rule b{font:700 14px/1 var(--font-body);color:var(--seal)}
+.rule h3{font-size:30px;font-weight:700;line-height:1}
+.rule p{font-size:15px;color:var(--chrome-mute)}
+@media (max-width:1000px){.rules{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.rules{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory}.rule{scroll-snap-align:start}}
+
+/* reviews: the record */
+.record{columns:3 300px;column-gap:18px}
+.entry{break-inside:avoid;margin:0 0 18px;padding:22px;border-left:3px solid var(--seal);background:var(--night-2)}
+.entry p{font-size:18px;color:var(--chrome)}
+.entry span{display:block;margin-top:10px;font-size:14px;color:var(--chrome-mute)}
+
+/* booking */
+.book{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,5vw,64px);align-items:start}
+.book-side{position:sticky;top:96px;display:grid;gap:18px}
+.book-side img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+form.bf{background:var(--night-2);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,3vw,36px);display:grid;gap:22px}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:10px}
+legend{font:700 15px/1 var(--font-body);color:var(--chrome-soft);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:46px;padding:0 16px;border-radius:var(--r);border:1px solid var(--line);background:var(--night);color:var(--chrome);font:600 15px/1.1 var(--font-body);cursor:pointer;transition:border-color .2s,background-color .2s,color .2s}
+.chip:hover{border-color:var(--chrome-mute)}
+.chip[aria-pressed="true"]{background:var(--chrome);color:var(--night);border-color:var(--chrome)}
+.chip small{display:block;font-weight:500;font-size:12px;opacity:.75}
+.r2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+label{display:grid;gap:8px;font-size:15px;font-weight:600;color:var(--chrome-soft)}
+input{width:100%;min-height:52px;background:var(--night);border:1px solid var(--line);border-radius:var(--r);color:var(--chrome);font:400 16px/1.3 var(--font-body);padding:12px 14px;transition:border-color .2s}
+input:hover{border-color:var(--chrome-mute)}
+input:focus-visible{outline:2px solid var(--seal);outline-offset:1px}
+input[aria-invalid="true"]{border-color:var(--seal)}
+.err{color:var(--seal);font-weight:700;font-size:14px}
+.sum{font-size:15px;color:var(--chrome-soft);border-top:1px solid var(--line);padding-top:16px}
+.sum b{color:var(--chrome)}
+@media (max-width:900px){.book{grid-template-columns:minmax(0,1fr)}.book-side{position:static}.book-side img{aspect-ratio:16/10}}
+@media (max-width:480px){.r2{grid-template-columns:minmax(0,1fr)}}
+
+.where{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;margin-top:clamp(60px,8vw,110px)}
+.where iframe{width:100%;height:100%;min-height:400px;border:0;border-radius:var(--r);filter:grayscale(1) invert(.92) contrast(.9)}
+.where .info{display:grid;gap:20px;align-content:start;padding:28px;border:1px solid var(--line);border-radius:var(--r)}
+.where .info span{display:block;font-size:14px;color:var(--chrome-mute)}
+.where .info b{font:700 28px/1.1 var(--font-display);text-transform:uppercase}
+.where .info a{text-decoration:none}.where .info a:hover{color:var(--seal)}
+@media (max-width:860px){.where{grid-template-columns:minmax(0,1fr)}}
+
+footer{border-top:1px solid var(--line);padding:56px 0 36px;margin-top:clamp(60px,8vw,110px)}
+.fg{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,1fr));gap:30px}
+.fg .big{font:700 clamp(60px,10vw,140px)/.85 var(--font-body);letter-spacing:-.05em}
+.fg ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;color:var(--chrome-soft)}
+.fg a{text-decoration:none}.fg a:hover{color:var(--chrome)}
+.so{display:flex;gap:10px;margin-top:18px}
+.so a{width:46px;height:46px;border:1px solid var(--line);border-radius:var(--r);display:grid;place-items:center;transition:border-color .2s,color .2s}
+.so a:hover{border-color:var(--seal);color:var(--seal)}
+.so svg{width:20px;height:20px}
+.fb{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--chrome-mute)}
+@media (max-width:800px){.fg{grid-template-columns:minmax(0,1fr)}}
+
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:none}
+.sticky .btn{width:100%}
+@media (max-width:860px){.sticky{display:block}}
+
+.js .rv{opacity:0;transform:translateY(22px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none}.barber img{transition:none}html{scroll-behavior:auto}.hero img.bg{will-change:auto}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav"><div class="wrap">
+  <a class="word" href="#top" aria-label="Zakon Barbershop, sus">zakon<small>barbershop</small></a>
+  <a class="l" href="#codul" data-ru="Цены">Prețuri</a>
+  <a class="l" href="#dosar" data-ru="Работы">Lucrări</a>
+  <a class="l" href="#echipa" data-ru="Мастера">Echipa</a>
+  <a class="l" href="#contact" data-ru="Контакты">Contact</a>
+  <div class="lang" role="group" aria-label="Limba / Язык"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn btn-seal" href="#programare" data-ru="Записаться">Programare</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top">
+  <img class="bg" id="heroBg" src="img/facade.webp" srcset="img/facade-s.webp 820w, img/facade.webp 1600w" sizes="100vw" alt="Firma luminată Zakon pe clădirea din Ialoveni, la apus" fetchpriority="high">
+  <div class="wrap">
+    <div>
+      <h1><span data-ru="Закон простой:">Legea e simplă:</span> <span data-ru="выглядишь отлично.">arăți bine.</span></h1>
+      <p data-ru="Барбершоп в Яловенах. Каждый день с 10:00 до 20:00.">Barbershop în Ialoveni. Zilnic, de la 10:00 la 20:00.</p>
+      <div class="hero-actions"><a class="btn btn-seal" href="#programare" data-ru="Записаться онлайн">Programează-te online</a><a class="btn btn-steel" href="tel:+37376099991" data-ru="Позвонить">Sună acum</a></div>
+    </div>
+    <ol class="index" aria-label="Cuprins">
+      <li><a href="#codul"><b>I</b><span data-ru="Кодекс цен">Codul prețurilor</span></a></li>
+      <li><a href="#dosar"><b>II</b><span data-ru="Дело о стрижках">Dosarul tunsorilor</span></a></li>
+      <li><a href="#echipa"><b>III</b><span data-ru="Мастера">Echipa</span></a></li>
+      <li><a href="#reguli"><b>IV</b><span data-ru="Правила дома">Regulile casei</span></a></li>
+      <li><a href="#programare"><b>V</b><span data-ru="Запись">Programare</span></a></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="codul">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="I. Кодекс цен">I. Codul prețurilor</h2><p data-ru="Цены ориентировочные, точную стоимость скажет мастер.">Prețurile sunt orientative; barberul îți spune costul exact înainte să înceapă.</p></div>
+    <div class="code">
+      <div class="art rv"><span class="n">Art. 1</span><h3 data-ru="Мужская стрижка">Tunsoare</h3><span class="p"><small data-ru="от">de la</small>200</span><p data-ru="Консультация, мытьё, укладка.">Consultație, spălat și aranjat.</p></div>
+      <div class="art rv"><span class="n">Art. 2</span><h3>Fade</h3><span class="p"><small data-ru="от">de la</small>250</span><p data-ru="Плавный переход до кожи.">Trecere fină, până la piele.</p></div>
+      <div class="art rv"><span class="n">Art. 3</span><h3 data-ru="Борода">Barbă</h3><span class="p"><small data-ru="от">de la</small>150</span><p data-ru="Форма, контур, уход.">Formă, contur și îngrijire.</p></div>
+      <div class="art rv"><span class="n">Art. 4</span><h3 data-ru="Стрижка и борода">Tuns și barbă</h3><span class="p"><small data-ru="от">de la</small>330</span><p data-ru="Полный образ за один визит.">Totul, într-o singură vizită.</p></div>
+      <div class="art rv"><span class="n">Art. 5</span><h3 data-ru="Бритьё опасной бритвой">Ras cu briciul</h3><span class="p"><small data-ru="от">de la</small>200</span><p data-ru="Горячее полотенце, чёткая линия.">Prosop cald, linie curată.</p></div>
+      <div class="art rv"><span class="n">Art. 6</span><h3 data-ru="Детская стрижка">Copii</h3><span class="p"><small data-ru="от">de la</small>150</span><p data-ru="С терпением, до 12 лет.">Cu răbdare, până la 12 ani.</p></div>
+      <div class="art rv"><span class="n">Art. 7</span><h3 data-ru="Рисунок">Design</h3><span class="p"><small data-ru="от">de la</small>100</span><p data-ru="Линии и рисунки машинкой.">Linii și desene făcute cu mașina.</p></div>
+      <div class="art rv"><span class="n">Art. 8</span><h3 data-ru="Камуфляж седины">Camuflaj</h3><span class="p"><small data-ru="от">de la</small>200</span><p data-ru="Естественный цвет без эффекта краски.">Firele albe acoperite natural.</p></div>
+    </div>
+    <p class="code-note" data-ru="Цены в MDL.">Prețuri în MDL.</p>
+  </div>
+</section>
+
+<section class="sec" id="dosar" style="padding-top:0">
+  <div class="wrap"><div class="sh rv"><h2 data-ru="II. Дело о стрижках">II. Dosarul tunsorilor</h2><p data-ru="Настоящие работы мастеров Zakon. Крутите кольцо.">Lucrări reale, făcute în scaunele de la Zakon. Rotește inelul.</p></div></div>
+  <div class="ring" id="ring">
+    <canvas id="ringCanvas" aria-hidden="true"></canvas>
+    <div class="ring-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg><span data-ru="Тяните, чтобы вращать">Trage ca să rotești</span></div>
+    <div class="wrap ring-fallback" id="ringFallback"></div>
+  </div>
+</section>
+
+<section class="sec" id="echipa" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="III. Мастера">III. Echipa</h2><p data-ru="Молодая команда, которая не отпускает, пока стрижка не идеальна.">O echipă tânără care nu te lasă să pleci până tunsoarea nu e perfectă.</p></div>
+    <div class="team">
+      <article class="barber rv"><img src="img/barber.webp" alt="Barber de la Zakon în salon" loading="lazy"><div><h3>Ionuț</h3><q>Lucrează foarte atent, este priceput și pune accent pe fiecare detaliu.</q><cite>vlad ghimp, pe Google</cite></div></article>
+      <article class="barber rv"><img src="img/beard2.webp" alt="Barber conturând barba unui client" loading="lazy"><div><h3>Iura</h3><q>Este atent la detalii, ascultă exact ce îți dorești.</q><cite>Bivol Constantin, pe Google</cite></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="reguli" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="IV. Правила дома">IV. Regulile casei</h2></div>
+    <div class="rules">
+      <article class="rule rv"><div class="ph"><img src="img/interior-s.webp" alt="Interiorul salonului Zakon, cu oglinzi și scaune" loading="lazy"></div><div class="t"><b>Art. 9</b><h3 data-ru="Запись соблюдается">Programarea se respectă</h3><p data-ru="Пришли ко времени: садишься в кресло.">Vii la ora ta, te așezi în scaun.</p></div></article>
+      <article class="rule rv"><div class="ph"><img src="img/kid-s.webp" alt="Barber arătându-i unui copil tunsoarea pe telefon" loading="lazy"></div><div class="t"><b>Art. 10</b><h3 data-ru="Детям здесь рады">Copiii sunt bineveniți</h3><p data-ru="Мастер подождёт, пока малыш успокоится.">Răbdare, glume, rezultat frumos.</p></div></article>
+      <article class="rule rv"><div class="ph"><img src="img/lion-s.webp" alt="Desen cu un cap de leu tuns în păr" loading="lazy"></div><div class="t"><b>Art. 11</b><h3 data-ru="Рисунок по желанию">Desen la cerere</h3><p data-ru="Покажи фото, нарисуем машинкой.">Arată-ne poza, o facem cu mașina.</p></div></article>
+      <article class="rule rv"><div class="ph"><img src="img/razor-s.webp" alt="Ras cu briciul pe contur de barbă" loading="lazy"></div><div class="t"><b>Art. 12</b><h3 data-ru="Кофе и вода">Cafea și apă</h3><p data-ru="Из уважения к клиенту.">Din partea casei, cât aștepți.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="recenzii" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="Протокол отзывов">Procesul-verbal</h2><p data-ru="85 отзывов в Google. Несколько из них.">85 de recenzii pe Google, cu nota 4,9. Câteva dintre ele.</p></div>
+    <div class="record">
+      <figure class="entry rv"><p>„Tunsoarea a ieșit exact cum mi-am dorit, foarte atent la detalii și lucrează super profesionist.”</p><span>Croitoru Vlad</span></figure>
+      <figure class="entry rv"><p>„Mi-am adus băiatul la Barber Ionuț… A fost atent, răbdător și i-a făcut o tunsoare foarte frumoasă.”</p><span>Natalia Mesina</span></figure>
+      <figure class="entry rv"><p>„Atmosfera este relaxată, locația este curată, iar programările sunt respectate.”</p><span>Bivol Constantin</span></figure>
+      <figure class="entry rv"><p>„Super profi totul, nu m-au lăsat să plec până nu a fost tunsoarea perfectă, m-au servit cu cafea și apă.”</p><span>Alex Andu</span></figure>
+      <figure class="entry rv"><p>„Un salon foarte bine organizat, cu un colectiv tânăr și amuzant.”</p><span>Cîrlan Viorel</span></figure>
+      <figure class="entry rv"><p>„De acum înainte, acesta va fi frizerul meu!”</p><span>victor midoni</span></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="programare" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="V. Запись">V. Programare</h2><p data-ru="Выбери мастера, услугу и время, мы подтвердим в WhatsApp.">Alegi barberul, serviciul și ora; confirmăm pe WhatsApp.</p></div>
+    <div class="book">
+      <div class="book-side rv"><img src="img/cut4-s.webp" alt="Client cu tunsoare texturată și barbă" loading="lazy"><a class="btn btn-steel" href="tel:+37376099991">+373 76 099 991</a></div>
+      <form class="bf rv" id="bf" novalidate>
+        <fieldset><legend data-ru="Мастер">Barberul</legend><div class="chips" data-g="barber"><button type="button" class="chip" aria-pressed="true">Ionuț</button><button type="button" class="chip" aria-pressed="false">Iura</button><button type="button" class="chip" aria-pressed="false" data-ru="Любой свободный">Oricare liber</button></div></fieldset>
+        <fieldset><legend data-ru="Услуга">Serviciul</legend><div class="chips" data-g="svc">
+          <button type="button" class="chip" aria-pressed="true" data-ru="Стрижка">Tunsoare</button><button type="button" class="chip" aria-pressed="false">Fade</button><button type="button" class="chip" aria-pressed="false" data-ru="Борода">Barbă</button><button type="button" class="chip" aria-pressed="false" data-ru="Стрижка и борода">Tuns și barbă</button><button type="button" class="chip" aria-pressed="false" data-ru="Детская">Copii</button>
+        </div></fieldset>
+        <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+        <fieldset><legend data-ru="Время">Ora</legend><div class="chips" data-g="time" id="times"></div></fieldset>
+        <div class="r2"><label><span data-ru="Имя">Numele</span><input name="name" autocomplete="name" required></label><label><span data-ru="Телефон">Telefon</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+373" required></label></div>
+        <p class="sum" id="sum"></p>
+        <p class="err" id="bfErr" role="alert"></p>
+        <button class="btn btn-seal" type="submit" data-ru="Подтвердить в WhatsApp">Confirmă pe WhatsApp</button>
+        <p style="font-size:14px;color:var(--chrome-mute)"><a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a></p>
+      </form>
+    </div>
+
+    <div class="where" id="contact">
+      <iframe class="rv" title="Harta: Zakon Barbershop, Ialoveni" loading="lazy" src="https://maps.google.com/maps?q=46.9501583,28.7719193&z=16&output=embed"></iframe>
+      <div class="info rv">
+        <div><span data-ru="Адрес">Adresa</span><b>Bd. Alexandru cel Bun 68, Ialoveni</b></div>
+        <div><span data-ru="Часы работы">Program</span><b data-ru="Пн–Вс, 10:00 до 20:00">Luni până duminică, 10:00 la 20:00</b></div>
+        <div><span data-ru="Телефон">Telefon</span><b><a href="tel:+37376099991">+373 76 099 991</a></b></div>
+        <a class="btn btn-steel" href="https://www.google.com/maps/dir/?api=1&destination=46.9501583,28.7719193" target="_blank" rel="noopener" data-ru="Маршрут">Traseu</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><span class="big">zakon</span>
+      <div class="so">
+        <a href="https://www.instagram.com/zakon.barbershop/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.tiktok.com/@zakon.barbershop" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 1.8 3.6 4 3.8v3.1c-1.5 0-2.9-.4-4-1.2v6.6a6.1 6.1 0 1 1-6.1-6.1h.6v3.2a2.9 2.9 0 1 0 2.3 2.9V3z"/></svg></a>
+        <a href="https://wa.me/37376099991" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+      </div>
+    </div>
+    <ul><li><a href="#codul" data-ru="Цены">Prețuri</a></li><li><a href="#dosar" data-ru="Работы">Lucrări</a></li><li><a href="#echipa" data-ru="Мастера">Echipa</a></li><li><a href="#programare" data-ru="Запись">Programare</a></li></ul>
+    <ul><li><a href="termeni.html" data-ru="Условия">Termeni și condiții</a></li><li><a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a></li><li><a href="tel:+37376099991">+373 76 099 991</a></li></ul>
+  </div>
+  <div class="fb"><span>© 2026 Zakon Barbershop, Ialoveni</span><span data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span></div>
+</div></footer>
+<div class="sticky"><a class="btn btn-seal" href="#programare" data-ru="Записаться">Programează-te</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+  let lang = 'ro';
+  const T = (ro, ru) => (lang === 'ru' ? ru : ro);
+
+  /* booking chips: days and times built for the next 7 days, 10:00 to 19:30 */
+  const daysRo = ['Dum', 'Lun', 'Mar', 'Mie', 'Joi', 'Vin', 'Sâm'], daysRu = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+  const days = $('#days'), times = $('#times');
+  for (let i = 0; i < 7; i++) { const d = new Date(); d.setDate(d.getDate() + i); const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.setAttribute('aria-pressed', String(i === 0)); b.dataset.date = d.toISOString().slice(0, 10); b.dataset.dro = (i === 0 ? 'Azi' : i === 1 ? 'Mâine' : daysRo[d.getDay()]); b.dataset.dru = (i === 0 ? 'Сегодня' : i === 1 ? 'Завтра' : daysRu[d.getDay()]); b.innerHTML = `<span>${b.dataset.dro}</span><small>${d.getDate()}.${String(d.getMonth() + 1).padStart(2, '0')}</small>`; days.appendChild(b); }
+  for (let h = 10; h < 20; h++) for (const m of ['00', '30']) { const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = `${h}:${m}`; b.setAttribute('aria-pressed', String(h === 12 && m === '00')); times.appendChild(b); }
+
+  $$('[data-ru]').forEach((el) => { el.dataset.ro = el.textContent; });
+  const setLang = (l) => { lang = l; document.documentElement.lang = l; $$('[data-ru]').forEach((el) => { el.textContent = l === 'ru' ? el.dataset.ru : el.dataset.ro; }); $$('#days .chip span').forEach((s) => { s.textContent = l === 'ru' ? s.parentNode.dataset.dru : s.parentNode.dataset.dro; }); $$('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l))); store.set('zk-lang', l); summary(); };
+  $$('.lang button').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang)));
+
+  $$('.chips').forEach((g) => g.addEventListener('click', (e) => { const c = e.target.closest('.chip'); if (!c) return; $$('.chip', g).forEach((x) => x.setAttribute('aria-pressed', String(x === c))); summary(); }));
+  const val = (g) => $(`[data-g="${g}"] .chip[aria-pressed="true"]`);
+  function summary() { const d = val('day'); $('#sum').innerHTML = `${T('Rezumat', 'Итого')}: <b>${val('svc').textContent}</b>, ${T('cu', 'мастер')} <b>${val('barber').textContent}</b>, <b>${d.querySelector('span').textContent} ${d.querySelector('small').textContent}</b> ${T('la', 'в')} <b>${val('time').textContent}</b>`; }
+  summary();
+  if (store.get('zk-lang') === 'ru') setLang('ru');
+
+  const f = $('#bf'), err = $('#bfErr');
+  f.addEventListener('submit', (e) => {
+    e.preventDefault(); err.textContent = '';
+    const bad = ['name', 'phone'].filter((n) => !f[n].value.trim() || (n === 'phone' && f.phone.value.replace(/\D/g, '').length < 8));
+    $$('input', f).forEach((i) => i.removeAttribute('aria-invalid')); bad.forEach((n) => f[n].setAttribute('aria-invalid', 'true'));
+    if (bad.length) { err.textContent = T('Scrie numele și telefonul.', 'Укажите имя и телефон.'); f[bad[0]].focus(); return; }
+    const msg = `Salut! Vreau o programare la Zakon.\nBarber: ${val('barber').textContent}\nServiciu: ${val('svc').textContent}\nZiua: ${val('day').dataset.date}\nOra: ${val('time').textContent}\nNume: ${f.name.value}\nTelefon: ${f.phone.value}`;
+    window.open('https://wa.me/37376099991?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+
+  const nav = $('#nav'), bg = $('#heroBg');
+  const ons = () => { nav.classList.toggle('solid', scrollY > 30); if (!reduce && scrollY < innerHeight) bg.style.transform = `translateY(${scrollY * -.12}px)`; };
+  addEventListener('scroll', ons, { passive: true }); ons();
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  $$('.rv').forEach((el) => io.observe(el));
+
+  /* the ring: real cuts from the shop on a slowly turning cylinder */
+  const cuts = ['cut1', 'cut2', 'lion', 'cut3', 'beard1', 'cut4', 'cut5', 'line', 'cut6', 'beard3', 'cut7', 'kid2', 'cut8', 'razor', 'client', 'mono'];
+  $('#ringFallback').innerHTML = cuts.map((c) => `<img src="img/${c}-s.webp" alt="Tunsoare realizată la Zakon" loading="lazy">`).join('');
+  const canvas = $('#ringCanvas'); let ok = false; try { ok = !!(canvas.getContext('webgl2') || canvas.getContext('webgl')); } catch {}
+  if (!window.THREE || !ok) { document.documentElement.classList.add('no-gl'); return; }
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75)); renderer.outputEncoding = THREE.sRGBEncoding;
+  const scene = new THREE.Scene(); scene.fog = new THREE.Fog(0x111213, 9, 19);
+  const cam = new THREE.PerspectiveCamera(42, 1, .1, 50); cam.position.set(0, .9, 9.2); cam.lookAt(0, 0, 0);
+  const ring = new THREE.Group(); scene.add(ring);
+  const R = 4.6, N = cuts.length, loader = new THREE.TextureLoader();
+  cuts.forEach((c, i) => {
+    const a = (i / N) * Math.PI * 2;
+    // curved card: a slice of a cylinder so the ring reads as one object
+    const geo = new THREE.CylinderGeometry(R, R, 2.3, 16, 1, true, a - (Math.PI / N) * .86, (Math.PI * 2 / N) * .86);
+    const mat = new THREE.MeshBasicMaterial({ color: 0x222222, side: THREE.DoubleSide });
+    const mesh = new THREE.Mesh(geo, mat); ring.add(mesh);
+    loader.load(`img/${c}-s.webp`, (tex) => {
+      tex.encoding = THREE.sRGBEncoding; tex.wrapS = THREE.RepeatWrapping; tex.repeat.x = -1; tex.offset.x = 1;
+      // crop the portrait photo to the card's shape
+      const cardAspect = (2 * Math.PI * R / N * .86) / 2.3, imgAspect = tex.image.width / tex.image.height;
+      if (imgAspect < cardAspect) { tex.repeat.y = imgAspect / cardAspect; tex.offset.y = (1 - tex.repeat.y) / 2; }
+      mat.map = tex; mat.color.set(0xffffff); mat.needsUpdate = true;
+    });
+  });
+  // red seal line: a thin ring of light under the cards
+  const halo = new THREE.Mesh(new THREE.TorusGeometry(R + .02, .012, 8, 160), new THREE.MeshBasicMaterial({ color: 0xd8343a }));
+  halo.rotation.x = Math.PI / 2; halo.position.y = -1.32; ring.add(halo);
+  const halo2 = halo.clone(); halo2.position.y = 1.32; halo2.material = new THREE.MeshBasicMaterial({ color: 0x444a50 }); ring.add(halo2);
+
+  const size = () => { const w = canvas.clientWidth, h = canvas.clientHeight; renderer.setSize(w, h, false); cam.aspect = w / h; cam.position.z = w < 700 ? 15.5 : 11.2; cam.updateProjectionMatrix(); };
+  size(); addEventListener('resize', size);
+  let rot = 0, vel = reduce ? 0 : .0025, drag = false, lastX = 0, tilt = 0;
+  const el = $('#ring');
+  el.addEventListener('pointerdown', (e) => { drag = true; lastX = e.clientX; el.setPointerCapture(e.pointerId); });
+  el.addEventListener('pointermove', (e) => { if (drag) { const dx = e.clientX - lastX; lastX = e.clientX; vel = dx * .0028; rot += vel; } tilt = (e.clientY / innerHeight - .5) * .2; });
+  const up = () => { drag = false; }; el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up);
+  addEventListener('scroll', () => { if (!drag && !reduce) vel += .00035; }, { passive: true });
+  let vis = false, raf = 0; new IntersectionObserver(([e]) => { vis = e.isIntersecting; if (vis && !raf) loop(); }).observe(canvas);
+  function loop() {
+    if (!vis) { raf = 0; return; }
+    raf = requestAnimationFrame(loop);
+    if (!drag) { rot += vel; vel += ((reduce ? 0 : .0025) - vel) * .03; }
+    ring.rotation.y = rot; ring.rotation.x += (tilt * .5 + .08 - ring.rotation.x) * .05;
+    renderer.render(scene, cam);
+  }
+})();
+</script>
+</body>
+</html>

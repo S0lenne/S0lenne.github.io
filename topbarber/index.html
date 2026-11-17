@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ro" data-key="topb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>TopBarberShop, Ialoveni</title>
+<meta name="description" content="TopBarberShop în Ialoveni, Strada Petre Ştefănucă 3. Fade, tunsori și barbă. 5,0 din 39 de note. Luni la sâmbătă, 10 la 19. Programare pe WhatsApp.">
+<meta property="og:title" content="TopBarberShop, Ialoveni">
+<meta property="og:description" content="5,0 din 39 de note pe Google. Programare pe WhatsApp.">
+<meta property="og:image" content="img/inside.webp">
+<meta name="theme-color" content="#f7f3ee">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23162447'/%3E%3Crect x='24' y='8' width='16' height='48' rx='8' fill='%23fff'/%3E%3Cpath d='M24 20l16-8v8l-16 8zM24 38l16-8v8l-16 8z' fill='%23d7263d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "the shop's sign is a barber pole, so the site spins one in 3D and lets the scroll drive it; then a fade guide shows exactly where each fade line sits before you book it" · vibe: "classic pole red, white and navy, a fat retro script for the name, clean grotesk for the rest" · posture: committed · axes: light/script-display/red-navy · nav: pole mark, three links, book · footer: navy band with the hours · hero: split, huge script name and the 3D pole · signature: 3D barber pole driven by scroll and an interactive fade guide on a head profile */
+/* Hallmark · waive 24b · spacing hand-set around the pole and the fade guide · rhythm follows the fade guide and the prețuri */
+/* critique: the shop has strong cut photos and a clear sign but no reviews in text; the site lets the fades speak and explains them, so a first-time client knows what to ask for */
+:root{
+  --paper:#f7f3ee; --paper-2:#efe7dc; --card:#fffdfa; --ink:#162447; --ink-2:#34405f; --mute:#666d80; --line:#e0d6c8;
+  --red:#d7263d; --red-deep:#a81b2e; --navy:#162447; --navy-2:#1f3160; --sky:#cfe0ff;
+  --font-display:'Shrikhand',cursive; --font-body:'DM Sans',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;line-height:1;text-wrap:balance}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:999px;border:2px solid var(--red);background:var(--red);color:var(--card);font:700 17px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease)}
+.btn:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn:active,.chip:active,.fz:active{transform:translateY(1px)}
+button:disabled{background:var(--paper-2);color:var(--mute);border-color:var(--line);cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background-color .3s var(--ease),box-shadow .3s var(--ease)}
+.nav.solid{background:var(--paper);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:72px}
+.wm{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 26px/1 var(--font-display);color:var(--ink)}
+.wm i{width:14px;height:34px;border-radius:7px;background:repeating-linear-gradient(-35deg,var(--red) 0 6px,var(--card) 6px 12px,var(--navy) 12px 18px,var(--card) 18px 24px);box-shadow:0 0 0 2px var(--ink)}
+.links{display:flex;gap:24px;margin-left:auto}
+.links a{text-decoration:none;font-weight:500;padding:8px 0}
+.links a:hover{color:var(--red)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:700 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{position:relative;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:center;gap:20px;padding:110px var(--gut) 60px;max-width:var(--max);margin:0 auto}
+.hero h1{font-size:clamp(76px,13vw,210px);color:var(--red);line-height:.9}
+.hero h1 span{display:block;color:var(--ink);font-size:.46em;margin-top:.1em}
+.hero p{max-width:26em;font-size:21px;margin:24px 0 28px;color:var(--ink-2)}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px}
+.hero .meta{display:flex;gap:26px;margin-top:30px;color:var(--mute);font-size:15px}
+.hero .meta b{display:block;font:400 34px/1 var(--font-display);color:var(--ink)}
+.polebox{position:relative;height:min(78svh,720px)}
+#pole{position:absolute;inset:0;width:100%;height:100%}
+.polebox .fb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:24px;display:none}
+.no-gl .polebox .fb{display:block}
+@media (max-width:900px){.hero{grid-template-columns:minmax(0,1fr);padding-top:96px}.polebox{height:52svh;order:-1}}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.h2{font-size:clamp(48px,7vw,104px)}
+.h2 .ac{color:var(--red)}
+.lede{color:var(--ink-2);max-width:32em;margin:16px 0 0}
+
+/* fade guide */
+.guide{background:var(--navy);color:var(--paper)}
+.guide .h2 .ac{color:var(--sky)}
+.guide .lede{color:var(--sky)}
+.fg{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);margin-top:44px;align-items:center}
+.head{background:var(--navy-2);border-radius:24px;padding:20px;aspect-ratio:1/1;display:grid;place-items:center}
+.head svg{width:100%;height:100%}
+.head .skin{fill:var(--paper-2)}
+.head .hair{fill:var(--ink)}
+.head .faded{fill:url(#fadeGrad)}
+.head .si{stop-color:var(--ink)}.head .ss{stop-color:var(--paper-2)}.head .ear{stroke:var(--ink);stroke-width:3;fill:none}
+.head .lineL{stroke:var(--red);stroke-width:3;stroke-dasharray:8 6;transition:transform .6s var(--ease)}
+.fzs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.fz{min-height:52px;border-radius:999px;border:1px solid var(--navy-2);background:transparent;color:var(--paper);font:700 16px/1 var(--font-body);cursor:pointer}
+.fz:hover{border-color:var(--sky)}
+.fz[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.fdesc{margin-top:22px;background:var(--navy-2);border-radius:20px;padding:22px}
+.fdesc h3{font-size:40px;color:var(--sky)}
+.fdesc p{margin:10px 0 0}
+.fdesc .ask{margin-top:14px;font-size:15px;color:var(--sky)}
+.fdesc img{margin-top:16px;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 25%;border-radius:14px}
+@media (max-width:900px){.fg{grid-template-columns:minmax(0,1fr)}}
+
+/* prices */
+.pl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.pc{background:var(--card);border-radius:22px;padding:26px;display:grid;gap:10px;align-content:start;border:1px solid var(--line)}
+.pc h3{font-size:34px}
+.pc p{margin:0;color:var(--ink-2);font-size:16px}
+.pc b{font:700 30px/1 var(--font-body);color:var(--red)}
+.pc b small{font-size:14px;color:var(--mute);font-weight:500}
+.pc.hot{background:var(--red);color:var(--card);border-color:var(--red)}
+.pc.hot p,.pc.hot b,.pc.hot b small{color:var(--card)}
+.pnote{margin:18px 0 0;font-size:14px;color:var(--mute)}
+@media (max-width:900px){.pl{grid-template-columns:minmax(0,1fr)}}
+
+/* cuts */
+.cuts{background:var(--paper-2)}
+.cg{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:clamp(120px,15vw,210px);gap:12px;margin-top:44px}
+.cg figure{margin:0;border-radius:18px;overflow:hidden;position:relative}
+.cg img{width:100%;height:100%;object-fit:cover}
+.cg figcaption{position:absolute;left:10px;bottom:10px;background:var(--card);color:var(--ink);font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px}
+.cg figure{grid-column:span 2;grid-row:span 2}
+@media (max-width:760px){.cg{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px}.cg figure{grid-column:span 1!important;grid-row:span 2!important}}
+
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,3.4vw,38px);display:grid;gap:22px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:700;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip[aria-pressed="true"] small{color:var(--sky)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:700}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:1px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px}
+input[aria-invalid="true"]{border-color:var(--red)}
+.err{color:var(--red-deep);font-weight:700;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+.side img{margin-top:26px;border-radius:22px;aspect-ratio:3/4;object-fit:cover;width:100%}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}.side img{display:none}}
+
+.contact{background:var(--red);color:var(--card)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{font-weight:700;font-size:14px}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:2px solid var(--card);border-radius:999px;text-decoration:none;font-weight:700}
+.soc a:hover{background:var(--card);color:var(--red)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:22px;max-height:560px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--navy);color:var(--sky);padding:28px 0 110px;font-size:14px}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--navy);border-radius:999px}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;color:var(--paper);text-decoration:none;font-weight:700}
+.mbar a.p{background:var(--red)}
+@media (max-width:900px){.mbar{display:flex}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav"><div class="wrap">
+  <a class="wm" href="#top" aria-label="TopBarberShop"><i aria-hidden="true"></i>TopBarber</a>
+  <nav class="links" aria-label="Meniu"><a href="#ghid" data-ru="Гид по фейдам">Ghid fade</a><a href="#preturi" data-ru="Цены">Prețuri</a><a href="#tunsori" data-ru="Стрижки">Tunsori</a><a href="#contact" data-ru="Контакты">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#programare" data-ru="Записаться">Programează-te</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div>
+    <h1>Top <span data-ru="Барбершоп, Яловень">Barber, Ialoveni</span></h1>
+    <p data-ru="Фейды с чистой линией. Пн до Сб, 10 до 19.">Fade-uri cu linie curată. Luni la sâmbătă, 10 la 19.</p>
+    <div class="acts"><a class="btn" href="#programare" data-ru="Записаться">Programează-te</a><a class="btn ghost" href="#ghid" data-ru="Какой фейд мне?">Ce fade mi se potrivește?</a></div>
+    <div class="meta"><span><b>5,0</b><span data-ru="39 оценок Google">39 de note Google</span></span><span><b>6</b><span data-ru="дней в неделю">zile pe săptămână</span></span></div>
+  </div>
+  <div class="polebox"><img class="fb" src="img/banner-s.webp" alt="Panoul TopBarberShop cu stâlpul de frizerie"><canvas id="pole" role="img" aria-label="Stâlp de frizerie 3D care se rotește odată cu pagina"></canvas></div>
+</section>
+
+<section class="guide" id="ghid">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Какой фейд,">Ce fade,</span> <span class="ac" data-ru="на какой высоте">la ce înălțime</span></h2>
+    <p class="lede rv" data-ru="Выберите фейд и посмотрите, где начинается переход. Так проще объяснить мастеру.">Alege un fade și vezi unde începe trecerea. Așa îi explici ușor barberului.</p>
+    <div class="fg">
+      <div class="head rv" aria-hidden="true">
+        <svg viewBox="0 0 400 400">
+          <defs><linearGradient id="fadeGrad" x1="0" y1="0" x2="0" y2="1"><stop class="si" offset="0"/><stop class="si" id="fs1" offset=".5"/><stop class="ss" id="fs2" offset="1"/></linearGradient>
+            <clipPath id="hc"><ellipse cx="200" cy="195" rx="94" ry="118"/></clipPath></defs>
+          <rect class="skin" x="160" y="280" width="80" height="90" rx="10"/><circle class="skin" cx="108" cy="232" r="22"/><circle class="skin" cx="292" cy="232" r="22"/><ellipse class="skin" cx="200" cy="195" rx="94" ry="118"/>
+          <g clip-path="url(#hc)"><rect class="faded" id="fadeRect" x="100" y="70" width="200" height="210"/></g>
+          
+          <line class="lineL" id="fl" x1="90" y1="0" x2="310" y2="0"/>
+          
+          
+        </svg>
+      </div>
+      <div class="rv">
+        <div class="fzs" id="fzs"></div>
+        <div class="fdesc" aria-live="polite"><h3 id="fT"></h3><p id="fD"></p><p class="ask" id="fA"></p><img id="fI" src="img/c3-s.webp" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="preturi">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Цены,">Prețuri,</span> <span class="ac" data-ru="коротко">pe scurt</span></h2>
+    <div class="pl">
+      <article class="pc rv"><h3 data-ru="Стрижка">Tunsoare</h3><p data-ru="Ножницы и машинка, мытьё и укладка.">Foarfecă și mașină, spălat și styling.</p><b><small data-ru="от">de la</small> 150 lei</b></article>
+      <article class="pc hot rv"><h3>Fade</h3><p data-ru="Low, mid, high, skin или taper. С бритвой по контуру.">Low, mid, high, skin sau taper. Contur cu briciul.</p><b><small data-ru="от">de la</small> 200 lei</b></article>
+      <article class="pc rv"><h3 data-ru="Фейд и борода">Fade și barbă</h3><p data-ru="Полный образ, горячее полотенце.">Look complet, prosop cald.</p><b><small data-ru="от">de la</small> 280 lei</b></article>
+    </div>
+    <p class="pnote" data-ru="Цены ориентировочные, для демо. Барберы подтвердят свой прайс.">Prețuri orientative, pentru prezentare. Barberii își confirmă prețurile.</p>
+  </div>
+</section>
+
+<section class="cuts" id="tunsori">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Из кресла,">Din fotoliu,</span> <span class="ac" data-ru="без фильтров">fără filtre</span></h2>
+    <div class="cg">
+      <figure class="a rv"><img src="img/c3-s.webp" alt="Low fade văzut din spate și din profil" loading="lazy"><figcaption>Low fade</figcaption></figure>
+      <figure class="b rv"><img src="img/c5-s.webp" alt="Tunsoare cu barbă conturată" loading="lazy"><figcaption data-ru="Фейд и борода">Fade și barbă</figcaption></figure>
+      <figure class="c rv"><img src="img/c9-s.webp" alt="Mid fade cu textură sus" loading="lazy"><figcaption>Mid fade</figcaption></figure>
+      <figure class="d rv"><img src="img/inside-s.webp" alt="Interiorul salonului cu fotolii negre" loading="lazy"><figcaption data-ru="Салон">Salonul</figcaption></figure>
+      <figure class="e rv"><img src="img/c1-s.webp" alt="Taper fade cu barbă scurtă" loading="lazy"><figcaption>Taper</figcaption></figure>
+      <figure class="f rv"><img src="img/c10-s.webp" alt="Tunsoare cu ceafa conturată" loading="lazy"><figcaption data-ru="Затылок">Ceafa</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="programare">
+  <div class="wrap book">
+    <div class="side rv">
+      <h2 class="h2"><span data-ru="Ваш">Locul tău</span> <span class="ac" data-ru="час">la ora ta</span></h2>
+      <p class="lede" data-ru="Выберите услугу, день и время. Ответ в WhatsApp.">Alegi serviciul, ziua și ora. Primești răspuns pe WhatsApp.</p>
+      <img src="img/banner-s.webp" alt="Panoul TopBarberShop cu stâlpul de frizerie" loading="lazy">
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Услуга">Serviciul</legend><div class="chips" data-g="svc"><button type="button" class="chip" aria-pressed="false" data-ru="Стрижка">Tunsoare</button><button type="button" class="chip" aria-pressed="true" id="fadeChip">Fade</button><button type="button" class="chip" aria-pressed="false" data-ru="Фейд и борода">Fade și barbă</button><button type="button" class="chip" aria-pressed="false" data-ru="Борода">Barbă</button></div></fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <fieldset><legend data-ru="Время">Ora</legend><div class="chips" data-g="time" id="times"></div></fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Имя">Numele</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2" data-ru="Яловень, Штефэнукэ 3">Ialoveni, Ştefănucă 3</h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>Strada Petre Ştefănucă 3, Ialoveni</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37360620690">+373 60 620 690</a></dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="Пн до Сб 10:00 до 19:00, Вс выходной">Luni la sâmbătă 10:00 la 19:00, duminică închis</dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37360620690" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37360620690"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=TopBarberShop+Ialoveni" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=topbarbershop%20ialoveni" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+      </div>
+    </div>
+    <img class="rv" src="img/front-s.webp" alt="Intrarea TopBarberShop din Ialoveni" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 TopBarberShop</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37360620690" data-ru="Позвонить">Sună</a><a class="p" href="#programare" data-ru="Записаться">Programează-te</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $, $$, T } = BF;
+  /* fade guide: y is where the fade line sits on the head (svg units), g is how soft the blend is */
+  const F = [
+    { k: 'Low fade', y: 250, g: .25, img: 'c3', dro: 'Trecerea începe jos, chiar deasupra urechii. Discret, bun pentru birou.', dru: 'Переход начинается низко, над ухом. Сдержанно, подходит для офиса.', aro: 'Cere: low fade, sus lași lungimea.', aru: 'Скажите: low fade, сверху оставить длину.' },
+    { k: 'Mid fade', y: 210, g: .35, img: 'c9', dro: 'Linia la mijlocul capului, la tâmplă. Cel mai cerut.', dru: 'Линия посередине, на уровне виска. Самый популярный.', aro: 'Cere: mid fade, trecere la nivelul tâmplei.', aru: 'Скажите: mid fade, переход на уровне виска.' },
+    { k: 'High fade', y: 165, g: .4, img: 'c10', dro: 'Trecerea urcă sus, contrast puternic cu partea de sus.', dru: 'Переход высоко, сильный контраст с верхом.', aro: 'Cere: high fade, aproape de creștet.', aru: 'Скажите: high fade, почти до макушки.' },
+    { k: 'Skin fade', y: 225, g: .12, img: 'c5', dro: 'Jos se duce până la piele, cu trecere scurtă și curată.', dru: 'Снизу до кожи, короткий чистый переход.', aro: 'Cere: skin fade, de la zero.', aru: 'Скажите: skin fade, от нуля.' },
+    { k: 'Taper', y: 268, g: .2, img: 'c1', dro: 'Doar la ceafă și la perciuni. Arată îngrijit, fără să schimbe forma.', dru: 'Только на затылке и висках. Аккуратно, форма не меняется.', aro: 'Cere: taper la ceafă și perciuni.', aru: 'Скажите: taper на затылке и висках.' },
+  ];
+  let cf = 1;
+  $('#fzs').innerHTML = F.map((f, i) => `<button type="button" class="fz" aria-pressed="false" data-i="${i}">${f.k}</button>`).join('');
+  const showF = (i) => { cf = i; const f = F[i]; $$('.fz').forEach((b, k) => b.setAttribute('aria-pressed', String(k === i)));
+    $('#fl').setAttribute('y1', f.y); $('#fl').setAttribute('y2', f.y);
+    const top = 70, h = 210, at = (f.y - top) / h; $('#fs1').setAttribute('offset', Math.max(0, at - f.g).toFixed(2)); $('#fs2').setAttribute('offset', Math.min(1, at + .02).toFixed(2));
+    $('#fT').textContent = f.k; $('#fD').textContent = T(f.dro, f.dru); $('#fA').textContent = T(f.aro, f.aru); const im = $('#fI'); im.src = `img/${f.img}-s.webp`; im.alt = f.k; };
+  $('#fzs').addEventListener('click', (e) => { const b = e.target.closest('.fz'); if (b) showF(+b.dataset.i); });
+  BF.onLang(() => showF(cf));
+  BF.days($('#days'), { n: 8, closed: [0] }); BF.times($('#times'), { from: 10, to: 18, step: 30, def: '12:00' });
+  BF.form('#bk', { phone: '37360620690', msg: () => `Salut! Vreau o programare la TopBarberShop (Ialoveni).\nServiciu: ${BF.ro(BF.val('svc'))}${/Fade/.test(BF.ro(BF.val('svc'))) ? ' (' + F[cf].k + ')' : ''}\nZiua: ${BF.dayText(BF.val('day'))}\nOra: ${BF.ro(BF.val('time'))}` });
+  BF.init();
+  showF(1);
+
+  /* ===== 3D barber pole driven by scroll ===== */
+  const cv = $('#pole'), r = BF.gl(cv); if (!r) return;
+    const sc = new THREE.Scene(), cam = new THREE.PerspectiveCamera(30, 1, .1, 60);
+  const envScene = new THREE.Scene(); envScene.add(new THREE.Mesh(new THREE.SphereGeometry(20, 24, 12), new THREE.MeshBasicMaterial({ color: 0xf7f3ee, side: THREE.BackSide })));
+  [[6, 6, 6], [-7, 2, 5], [0, -6, 6]].forEach(([x, y, z], i) => { const p = new THREE.Mesh(new THREE.PlaneGeometry(i === 2 ? 10 : 3, i === 2 ? 2 : 10), new THREE.MeshBasicMaterial({ color: i === 1 ? 0x162447 : 0xffffff })); p.position.set(x, y, z); p.lookAt(0, 0, 0); envScene.add(p); });
+  sc.environment = new THREE.PMREMGenerator(r).fromScene(envScene, .02).texture;
+  sc.add(new THREE.HemisphereLight(0xffffff, 0xefe7dc, .6));
+  const key = new THREE.DirectionalLight(0xffffff, .8); key.position.set(4, 6, 6); sc.add(key);
+  const pc = document.createElement('canvas'); pc.width = 256; pc.height = 512; const g = pc.getContext('2d');
+  g.fillStyle = '#ffffff'; g.fillRect(0, 0, 256, 512);
+  const band = (col, off) => { g.fillStyle = col; for (let k = -2; k < 6; k++) { const y = k * 128 + off; g.beginPath(); g.moveTo(0, y); g.lineTo(256, y - 128); g.lineTo(256, y - 128 + 40); g.lineTo(0, y + 40); g.closePath(); g.fill(); } };
+  band('#d7263d', 0); band('#162447', 64);
+  const tex = new THREE.CanvasTexture(pc); tex.encoding = THREE.sRGBEncoding; tex.wrapS = tex.wrapT = THREE.RepeatWrapping; tex.repeat.set(2, 1.6);
+  const pole = new THREE.Group(); sc.add(pole);
+  const core = new THREE.Mesh(new THREE.CylinderGeometry(.62, .62, 5.2, 48, 1, true), new THREE.MeshStandardMaterial({ map: tex, roughness: .35 })); pole.add(core);
+  const glass = new THREE.Mesh(new THREE.CylinderGeometry(.74, .74, 5.3, 48, 1, true), new THREE.MeshPhysicalMaterial({ color: 0xffffff, metalness: 0, roughness: .05, transmission: .9, transparent: true, opacity: .25, clearcoat: 1 })); pole.add(glass);
+  const chrome = new THREE.MeshStandardMaterial({ color: 0xe9ecf1, metalness: 1, roughness: .12 });
+  [[2.85, 1], [-2.85, -1]].forEach(([y, s]) => { const cap = new THREE.Mesh(new THREE.CylinderGeometry(.86, .86, .4, 48), chrome); cap.position.y = y; pole.add(cap); const ring = new THREE.Mesh(new THREE.TorusGeometry(.86, .06, 12, 48), chrome); ring.rotation.x = Math.PI / 2; ring.position.y = y - s * .2; pole.add(ring); });
+  const ball = new THREE.Mesh(new THREE.SphereGeometry(.6, 32, 24), new THREE.MeshStandardMaterial({ color: new THREE.Color('#d7263d').convertSRGBToLinear(), metalness: .3, roughness: .2 })); ball.position.y = 3.55; pole.add(ball);
+  const tip = new THREE.Mesh(new THREE.ConeGeometry(.35, .5, 32), chrome); tip.position.y = -3.3; tip.rotation.x = Math.PI; pole.add(tip);
+  const arm = new THREE.Mesh(new THREE.BoxGeometry(1.4, .14, .14), chrome); arm.position.set(1.4, 1.6, -.2); pole.add(arm);
+  const plate = new THREE.Mesh(new THREE.BoxGeometry(.12, 1.6, 1.2), chrome); plate.position.set(2.1, 1.6, -.2); pole.add(plate);
+  pole.rotation.z = -.08;
+  BF.fit(r, cam, cv, (w, h) => { cam.position.set(0, 0, w / h < .7 ? 15 : 13.5); cam.lookAt(0, .2, 0); });
+  let lastY = scrollY, vel = 0, off = 0, mx = 0;
+  addEventListener('pointermove', (e) => { mx = e.clientX / innerWidth - .5; });
+  BF.loop(cv, () => {
+    const dy = scrollY - lastY; lastY = scrollY; vel += (dy * .004 - vel) * .15;
+    off += (BF.reduce ? 0 : .004) + vel; tex.offset.y = off;
+    pole.rotation.y += ((mx * .6 + Math.sin(off * 2) * .1) - pole.rotation.y) * .05;
+    r.render(sc, cam);
+  });
+})();
+</script>
+</body>
+</html>

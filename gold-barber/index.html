@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ro" data-key="gold">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Gold Barber, Băcioi</title>
+<meta name="description" content="Gold Barber în Băcioi, str. Independenței 40/1. Tunsori, fade, barbă, lounge. 5,0 din 54 de recenzii. Luni la sâmbătă, 10 la 20. Programare pe WhatsApp.">
+<meta property="og:title" content="Gold Barber, Băcioi">
+<meta property="og:description" content="5,0 din 54 de recenzii. Programare pe WhatsApp.">
+<meta property="og:image" content="img/hall.webp">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0b0c'/%3E%3Cpath d='M20 14l24 36M44 14L20 50' stroke='%23d4a94a' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Urbanist:wght@400;500;700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "a black and gold shop with LED line ceilings: the visitor cuts the ribbon with gold scissors to open it, and the LED lines keep drawing the page as you scroll" · vibe: "black stone, brushed gold, white light lines, quiet luxury in a village" · posture: committed · axes: dark/roman-caps-display/gold-on-black · nav: gold mark, four links, book · footer: black with one gold rule · hero: gate first (3D scissors cut a ribbon), then the hall photo with a light line traced over it · signature: 3D ribbon cutting gate and LED lines drawn by scroll */
+/* Hallmark · waive 24b · spacing hand-set to the light lines · rhythm follows the ceiling grid */
+/* critique: a village barber with a city-level interior; the site sells the interior and the opening feeling first, then Ion and the prices */
+:root{
+  --bg:#0b0b0c; --bg-2:#141416; --bg-3:#1d1d20; --ink:#f4f1ea; --mute:#a19d94; --line:#2c2b2e;
+  --gold:#d4a94a; --gold-hi:#f0d38a; --gold-deep:#a37c25; --led:#f7f6f2; --err:#ff7a6b;
+  --veil:rgba(11,11,12,.7);
+  --font-display:'Cinzel',serif; --font-body:'Urbanist',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+.gated body{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:500;margin:0;line-height:1.02;text-wrap:balance}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--bg);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:2px;border:1px solid var(--gold);background:var(--gold);color:var(--bg);font:700 16px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease)}
+.btn:hover{background:var(--gold-hi);border-color:var(--gold-hi)}
+.btn:active,.chip:active{transform:translateY(1px)}
+button:disabled{background:var(--bg-3);color:var(--mute);border-color:var(--line);cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--gold-hi)}
+.btn.ghost:hover{background:var(--gold);color:var(--bg)}
+
+#gate{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:end center;transition:opacity .7s var(--ease)}
+#gate canvas{position:absolute;inset:0;width:100%;height:100%}
+#gate .gtext{position:relative;z-index:2;text-align:center;padding:0 20px clamp(30px,8vh,80px);display:grid;gap:14px;justify-items:center}
+#gate .gtext b{font:500 clamp(40px,7vw,84px)/1 var(--font-display);color:var(--gold-hi)}
+#gate .gtext p{margin:0;color:var(--mute)}
+#gate .skipg{background:none;border:0;color:var(--mute);font:400 15px/1 var(--font-body);text-decoration:underline;cursor:pointer;min-height:40px}
+#gate.going .gtext{opacity:0;transition:opacity .35s var(--ease)}
+#gate.out{opacity:0;pointer-events:none}
+
+.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background-color .3s var(--ease),border-color .3s var(--ease);border-bottom:1px solid transparent}
+.nav.solid{background:var(--bg);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:74px}
+.wm{display:flex;align-items:center;gap:12px;text-decoration:none;font:700 21px/1 var(--font-display);color:var(--gold-hi)}
+.wm svg{width:26px;height:26px}
+.links{display:flex;gap:26px;margin-left:auto}
+.links a{text-decoration:none;font-weight:500;padding:8px 0}
+.links a:hover{color:var(--gold-hi)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:2px;border:1px solid var(--line);background:transparent;color:var(--ink);font:700 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--bg)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{position:relative;height:100svh;min-height:640px;overflow:hidden;display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg) 0,var(--veil) 35%,transparent 70%)}
+.hero svg.trace{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.trace path{fill:none;stroke:var(--led);stroke-width:2;filter:drop-shadow(0 0 6px var(--led))}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:clamp(40px,9vh,100px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:end}
+.hero h1{font-size:clamp(52px,8.4vw,132px);color:var(--ink)}
+.hero h1 b{display:block;font-weight:500;color:var(--gold-hi)}
+.hero p{margin:18px 0 26px;font-size:20px;color:var(--ink);max-width:28em}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px}
+.score{border:1px solid var(--gold);padding:20px 24px;text-align:center;background:var(--veil)}
+.score b{display:block;font:500 56px/1 var(--font-display);color:var(--gold-hi)}
+.score span{font-size:14px;color:var(--mute)}
+@media (max-width:760px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.score{display:none}}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.h2{font-size:clamp(40px,5.6vw,84px)}
+.h2 .ac{color:var(--gold-hi)}
+.lede{color:var(--mute);max-width:32em;margin:18px 0 0}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0}
+
+/* menu card */
+.menu{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);margin-top:48px;align-items:start}
+.card{border:1px solid var(--gold);padding:clamp(22px,3vw,40px);position:relative;background:var(--bg-2);color:var(--ink)}
+.card::before{content:"";position:absolute;inset:8px;border:1px solid var(--line);pointer-events:none}
+.card h3{font-size:30px;color:var(--gold-hi);margin-bottom:12px}
+.row{display:grid;grid-template-columns:minmax(0,auto) minmax(20px,1fr) auto;gap:12px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row b{font-weight:500;font-size:19px}
+.row i{border-bottom:1px dotted var(--mute);height:1px;align-self:center;font-style:normal}
+.row span{font:500 21px/1 var(--font-display);color:var(--gold-hi);white-space:nowrap}
+.row small{grid-column:1/-1;color:var(--mute);font-size:14px;margin-top:-6px}
+.pnote{margin:18px 0 0;font-size:14px;color:var(--mute)}
+.menu figure{margin:0;position:relative}
+.menu figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.menu figcaption{margin-top:12px;color:var(--mute);font-size:15px}
+@media (max-width:900px){.menu{grid-template-columns:minmax(0,1fr)}}
+
+/* Ion */
+.ion{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.ion img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.ion blockquote{margin:28px 0 0;padding:0 0 0 22px;border-left:2px solid var(--gold);font-size:21px}
+.ion cite{display:block;margin-top:10px;color:var(--mute);font-style:normal;font-size:15px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:32px}
+.facts div{border-top:1px solid var(--gold);padding-top:12px}
+.facts b{display:block;font:500 34px/1 var(--font-display);color:var(--gold-hi)}
+.facts span{font-size:14px;color:var(--mute)}
+@media (max-width:900px){.ion{grid-template-columns:minmax(0,1fr)}}
+
+/* interior strip */
+.space{background:var(--bg-2)}
+.strip{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr) minmax(0,.8fr) minmax(0,1.2fr);gap:12px;margin-top:44px}
+.strip figure{margin:0;overflow:hidden;position:relative}
+.strip img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.strip figure{box-shadow:0 0 0 1px transparent;transition:box-shadow .3s var(--ease)}.strip figure:hover{box-shadow:0 0 0 1px var(--gold)}
+.strip figcaption{position:absolute;left:12px;bottom:12px;background:var(--bg);color:var(--gold-hi);font-size:14px;padding:6px 12px}
+@media (max-width:900px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.rg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);margin-top:44px;border:1px solid var(--line)}
+.rq{margin:0;background:var(--bg);padding:28px;display:flex;flex-direction:column;gap:14px}
+.rq p{margin:0;font-size:19px}
+.rq span{margin-top:auto;color:var(--mute);font-size:14px}
+@media (max-width:900px){.rg{grid-template-columns:minmax(0,1fr)}}
+
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--bg-2);border:1px solid var(--line);padding:clamp(22px,3.4vw,38px);display:grid;gap:22px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:700;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:2px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute)}
+.chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--bg)}
+.chip[aria-pressed="true"] small{color:var(--bg-3)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:700}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:1px solid var(--line);border-radius:2px;background:var(--bg);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px}
+input[aria-invalid="true"]{border-color:var(--err)}
+.err{color:var(--err);font-weight:700;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+.side img{margin-top:26px;aspect-ratio:3/4;object-fit:cover;width:100%}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}.side img{display:none}}
+
+.contact{background:var(--bg-2)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{color:var(--gold-hi);font-weight:700;font-size:14px}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:1px solid var(--line);text-decoration:none}
+.soc a:hover{border-color:var(--gold);color:var(--gold-hi)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:4/5;object-fit:cover}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--bg);color:var(--mute);padding:28px 0 110px;font-size:14px;border-top:1px solid var(--gold-deep)}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--bg);border:1px solid var(--gold-deep)}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700}
+.mbar a.p{background:var(--gold);color:var(--bg)}
+@media (max-width:900px){.mbar{display:flex}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<div id="gate" role="dialog" aria-label="Deschiderea Gold Barber">
+  <canvas id="cut" aria-hidden="true"></canvas>
+  <div class="gtext">
+    <b>Gold Barber</b>
+    <p data-ru="Бачой · Индепенденцей 40/1">Băcioi · Independenței 40/1</p>
+    <button class="btn" type="button" data-enter data-ru="Перерезать ленту">Taie panglica</button>
+    <button class="skipg" type="button" data-skip data-ru="Пропустить">Sari peste</button>
+  </div>
+</div>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav" data-solid="300"><div class="wrap">
+  <a class="wm" href="#top" aria-label="Gold Barber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8 17L19 3M16 17L5 3"/></svg>Gold Barber</a>
+  <nav class="links" aria-label="Meniu"><a href="#preturi" data-ru="Цены">Prețuri</a><a href="#ion" data-ru="Мастер">Barberul</a><a href="#salon" data-ru="Салон">Salonul</a><a href="#contact" data-ru="Контакты">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#programare" data-ru="Записаться">Programează-te</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+  <img src="img/hall.webp" alt="Salonul Gold Barber cu linii de lumină pe tavan" width="1200" height="1600">
+  <svg class="trace" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path id="tr" d="M-20 90 L300 90 L360 40 L640 40 L700 90 L1020 90 M300 90 L360 150 L640 150 L700 90"/></svg>
+  <div class="wrap">
+    <div>
+      <h1><span data-ru="Линия,">Linia,</span> <b data-ru="в золоте">în aur</b></h1>
+      <p data-ru="Стрижки и борода в Бачое, как в столице.">Tunsori și barbă în Băcioi, ca în capitală.</p>
+      <div class="acts"><a class="btn" href="#programare" data-ru="Записаться">Programează-te</a><a class="btn ghost" href="#preturi" data-ru="Цены">Vezi prețurile</a></div>
+    </div>
+    <div class="score"><b>5,0</b><span data-ru="54 отзыва в Google">54 de recenzii Google</span></div>
+  </div>
+</section>
+
+<section id="preturi">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Цены,">Prețuri,</span> <span class="ac" data-ru="без сюрпризов">fără surprize</span></h2>
+    <div class="menu">
+      <div class="card rv">
+        <h3 data-ru="Стрижки">Tunsori</h3>
+        <div class="row"><b data-ru="Мужская стрижка">Tunsoare bărbătească</b><i></i><span>180 lei</span><small data-ru="Мытьё и укладка включены">Spălat și styling incluse</small></div>
+        <div class="row"><b>Fade</b><i></i><span>220 lei</span><small data-ru="Low, mid, high или skin">Low, mid, high sau skin</small></div>
+        <div class="row"><b data-ru="Стрижка и борода">Tunsoare și barbă</b><i></i><span>300 lei</span><small data-ru="Полный образ, горячее полотенце">Look complet, prosop cald</small></div>
+        <h3 style="margin-top:28px" data-ru="Борода">Barbă</h3>
+        <div class="row"><b data-ru="Оформление бороды">Aranjare barbă</b><i></i><span>130 lei</span><small data-ru="Контур бритвой">Contur cu briciul</small></div>
+        <div class="row"><b data-ru="Королевское бритьё">Bărbierit regal</b><i></i><span>160 lei</span><small data-ru="Горячее полотенце и масло">Prosop cald și ulei</small></div>
+        <div class="row"><b data-ru="Камуфляж седины">Camuflaj fire albe</b><i></i><span>150 lei</span><small data-ru="Натуральный тон">Ton natural</small></div>
+        <p class="pnote" data-ru="Цены ориентировочные, для демо. Барбер подтвердит свой прайс.">Prețuri orientative, pentru prezentare. Barberul își confirmă prețurile.</p>
+      </div>
+      <figure class="rv"><img src="img/chairs-s.webp" alt="Fotolii negre cu detalii aurii în fața oglinzilor" loading="lazy"><figcaption data-ru="Чёрные кресла, золотая фурнитура.">Fotolii negre, detalii aurii.</figcaption></figure>
+    </div>
+  </div>
+</section>
+<div class="rule"></div>
+
+<section id="ion">
+  <div class="wrap ion">
+    <img class="rv" src="img/team-s.webp" alt="Barberul Gold Barber alături de un client" loading="lazy">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Знакомьтесь,">Fă cunoștință,</span> <span class="ac">Ion</span></h2>
+      <p class="lede" data-ru="Клиенты ходят с открытия и пишут о внимании к деталям и чистой линии.">Clienții vin de la deschidere și scriu despre atenția la detalii și linia curată.</p>
+      <blockquote>„Mulțumiri barberului Ion pentru profesionalism și atenție la detalii. Tunsoarea a ieșit perfect…”<cite>Constantin Breahna, Google</cite></blockquote>
+      <div class="facts"><div><b>5,0</b><span data-ru="рейтинг">rating</span></div><div><b>54</b><span data-ru="отзыва">recenzii</span></div><div><b>6</b><span data-ru="дней в неделю">zile pe săptămână</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="space" id="salon">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Салон,">Salonul,</span> <span class="ac" data-ru="в линиях света">în linii de lumină</span></h2>
+    <p class="lede rv" data-ru="Лаунж с диванами, телевизор и кофе, пока ждёте.">Lounge cu canapele, televizor și cafea cât aștepți.</p>
+    <div class="strip">
+      <figure class="rv"><img src="img/lounge-s.webp" alt="Zona lounge cu canapele de piele" loading="lazy"><figcaption>Lounge</figcaption></figure>
+      <figure class="rv"><img src="img/desk-s.webp" alt="Recepția cu sigla aurie" loading="lazy"><figcaption data-ru="Ресепшн">Recepția</figcaption></figure>
+      <figure class="rv"><img src="img/door-s.webp" alt="Intrarea cu stâlpul de frizerie" loading="lazy"><figcaption data-ru="Вход">Intrarea</figcaption></figure>
+      <figure class="rv"><img src="img/tv-s.webp" alt="Sala cu televizor și fotolii" loading="lazy"><figcaption data-ru="Зал">Sala</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Пять звёзд,">Cinci stele,</span> <span class="ac" data-ru="54 раза">de 54 de ori</span></h2>
+    <div class="rg">
+      <figure class="rq rv"><p>„Nu știu ce vrăji fac băieții ăștia, dar pleci de aici alt om. Tunsoare curată, linie precisă, atmosferă fără figuri.”</p><span>Aron Coguteac</span></figure>
+      <figure class="rq rv"><p>„Mă frezez la ei de când s-au deschis și mereu am rămas mulțumit… Recomand!!!”</p><span>Tudor</span></figure>
+      <figure class="rq rv"><p>„Condițiile sunt foarte bune, se pune accent mult pe detalii și calitatea este la nivelul așteptărilor.”</p><span>Cerescu Vlad</span></figure>
+      <figure class="rq rv"><p>„Un Barber foarte comunicabil si care iti explica absolut totul pe intelesul tau”</p><span>Constantin Vdovicenco</span></figure>
+      <figure class="rq rv"><p>„Personalul este foarte atent la detalii și locația este de nota 10”</p><span>Țuțu Adrian</span></figure>
+      <figure class="rq rv"><p>„Locul unde obtii cea mai buna tunsoare, cel mai bun vibe si unde esti tratat pe masura.”</p><span>Lil P</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="programare" style="padding-top:0">
+  <div class="wrap book">
+    <div class="side rv">
+      <h2 class="h2"><span data-ru="Ваше">Locul tău</span> <span class="ac" data-ru="кресло">în fotoliu</span></h2>
+      <p class="lede" data-ru="Пн до Сб, 10 до 20. Подтверждение в WhatsApp.">Luni la sâmbătă, 10 la 20. Confirmare pe WhatsApp.</p>
+      <img src="img/teal-s.webp" alt="Sala cu perete turcoaz și linii LED" loading="lazy">
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Услуга">Serviciul</legend><div class="chips" data-g="svc"><button type="button" class="chip" aria-pressed="true" data-ru="Стрижка">Tunsoare</button><button type="button" class="chip" aria-pressed="false">Fade</button><button type="button" class="chip" aria-pressed="false" data-ru="Стрижка и борода">Tunsoare și barbă</button><button type="button" class="chip" aria-pressed="false" data-ru="Борода">Barbă</button><button type="button" class="chip" aria-pressed="false" data-ru="Королевское бритьё">Bărbierit regal</button></div></fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <fieldset><legend data-ru="Время">Ora</legend><div class="chips" data-g="time" id="times"></div></fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Имя">Numele</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Бачой,">Băcioi,</span> <span class="ac" data-ru="рядом с Кишинёвом">lângă Chișinău</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>str. Independenței 40/1, Băcioi, MD-6812</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37368544450">+373 68 544 450</a></dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="Пн до Сб 10:00 до 20:00, Вс выходной">Luni la sâmbătă 10:00 la 20:00, duminică închis</dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37368544450" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37368544450"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Gold+Barber+Bacioi+Independentei+40%2F1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=gold%20barber%20bacioi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+      </div>
+    </div>
+    <img class="rv" src="img/front-s.webp" alt="Fațada Gold Barber cu stâlpul de frizerie" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 Gold Barber</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37368544450" data-ru="Позвонить">Sună</a><a class="p" href="#programare" data-ru="Записаться">Programează-te</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $ } = BF;
+  BF.days($('#days'), { n: 8, closed: [0] }); BF.times($('#times'), { from: 10, to: 19, step: 30, def: '12:00' });
+  BF.form('#bk', { phone: '37368544450', msg: () => `Salut! Vreau o programare la Gold Barber (Băcioi).\nServiciu: ${BF.ro(BF.val('svc'))}\nZiua: ${BF.dayText(BF.val('day'))}\nOra: ${BF.ro(BF.val('time'))}` });
+  BF.init();
+  /* LED trace drawn by scroll */
+  const tr = $('#tr'), L = tr.getTotalLength(); tr.style.strokeDasharray = L; tr.style.strokeDashoffset = BF.reduce ? 0 : L;
+  const draw = (k) => { tr.style.strokeDashoffset = (L * (1 - k)).toFixed(1); };
+  if (!BF.reduce) { addEventListener('bf:enter', () => { let s0 = performance.now(); const a = () => { const k = Math.min(1, (performance.now() - s0) / 1600); draw(k * .5); if (k < 1) requestAnimationFrame(a); }; a(); }); addEventListener('scroll', () => { if (scrollY < innerHeight) draw(.5 + Math.min(1, scrollY / (innerHeight * .6)) * .5); }, { passive: true }); }
+
+  /* ===== gate: gold scissors cut a black ribbon ===== */
+  const cv = $('#cut'), r = BF.gl(cv);
+  if (!r) { BF.gate((done) => { $('#gate').classList.add('out'); setTimeout(done, 700); }); draw(1); return; }
+  r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = 1.1;
+  const sc = new THREE.Scene(), cam = new THREE.PerspectiveCamera(38, 1, .1, 80); cam.position.set(0, 0, 9);
+  const envScene = new THREE.Scene(); const sph = new THREE.Mesh(new THREE.SphereGeometry(20, 32, 16), new THREE.MeshBasicMaterial({ side: THREE.BackSide, color: 0x111114 })); envScene.add(sph);
+  [[0, 9, 0, 16, 1], [-8, 2, 6, 1, 10], [8, 4, 5, 1, 10], [0, -6, 8, 10, 1]].forEach(([x, y, z, w, h]) => { const p = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color: 0xffffff })); p.position.set(x, y, z); p.lookAt(0, 0, 0); envScene.add(p); });
+  sc.environment = new THREE.PMREMGenerator(r).fromScene(envScene, .02).texture;
+  const gold = new THREE.MeshStandardMaterial({ color: new THREE.Color('#e3b65a').convertSRGBToLinear(), metalness: 1, roughness: .22 });
+  sc.add(new THREE.AmbientLight(0xffffff, .15));
+  const spot = new THREE.SpotLight(0xffffff, 1.6, 40, .5, .6); spot.position.set(2, 6, 7); sc.add(spot);
+  /* LED ceiling lines in the dark */
+  const ledM = new THREE.MeshBasicMaterial({ color: 0xf7f6f2 });
+  const leds = new THREE.Group(); sc.add(leds);
+  const seg = (x1, y1, x2, y2, z) => { const len = Math.hypot(x2 - x1, y2 - y1); const m = new THREE.Mesh(new THREE.BoxGeometry(len, .04, .04), ledM); m.position.set((x1 + x2) / 2, (y1 + y2) / 2, z); m.rotation.z = Math.atan2(y2 - y1, x2 - x1); leds.add(m); };
+  for (let k = 0; k < 4; k++) { const z = -4 - k * 5, y = 3.2; seg(-14, y, -4, y, z); seg(-4, y, -2.5, y + 1.2, z); seg(-2.5, y + 1.2, 2.5, y + 1.2, z); seg(2.5, y + 1.2, 4, y, z); seg(4, y, 14, y, z); seg(-4, y, -2.5, y - 1.2, z); seg(-2.5, y - 1.2, 2.5, y - 1.2, z); seg(2.5, y - 1.2, 4, y, z); }
+  /* ribbon: two halves meeting at the centre, gently waving */
+  const ribM = new THREE.MeshStandardMaterial({ color: 0x141416, roughness: .35, metalness: .2, side: THREE.DoubleSide });
+  const halves = [-1, 1].map((s) => { const g = new THREE.PlaneGeometry(8, .9, 40, 1); g.translate(s * 4, 0, 0); const m = new THREE.Mesh(g, ribM); m.userData.base = g.attributes.position.array.slice(); sc.add(m); return m; });
+  const edgeM = new THREE.MeshBasicMaterial({ color: 0xd4a94a });
+  halves.forEach((h) => { [-.46, .46].forEach((y) => { const e = new THREE.Mesh(new THREE.BoxGeometry(8, .03, .01), edgeM); e.position.set(h.geometry.boundingBox ? 0 : 0, y, .01); h.geometry.computeBoundingBox(); e.position.x = (h.geometry.boundingBox.min.x + h.geometry.boundingBox.max.x) / 2; h.add(e); }); });
+  /* scissors: two blades with ring handles, pivot at the screw */
+  const blade = (s) => { const g = new THREE.Group();
+    const sh = new THREE.Shape(); sh.moveTo(0, 0); sh.quadraticCurveTo(1.4, .16 * s, 3.1, .02 * s); sh.quadraticCurveTo(1.4, -.1 * s, 0, -.14 * s); sh.lineTo(0, 0);
+    const b = new THREE.Mesh(new THREE.ExtrudeGeometry(sh, { depth: .05, bevelEnabled: true, bevelThickness: .02, bevelSize: .02, bevelSegments: 2 }), gold); b.position.z = s * .04; g.add(b);
+    const arm = new THREE.Mesh(new THREE.CylinderGeometry(.07, .09, 1.5, 12), gold); arm.rotation.z = Math.PI / 2; arm.position.set(-.75, 0, s * .04); g.add(arm);
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(.42, .08, 14, 40), gold); ring.position.set(-1.85, -.1 * s, s * .04); g.add(ring);
+    return g; };
+  const sci = new THREE.Group(); sci.position.set(-1.5, 0, 1.2); sci.rotation.z = 0; sc.add(sci);
+  const bA = blade(1), bB = blade(-1); sci.add(bA, bB);
+  const screw = new THREE.Mesh(new THREE.CylinderGeometry(.11, .11, .2, 20), gold); screw.rotation.x = Math.PI / 2; sci.add(screw);
+  BF.fit(r, cam, cv, (w, h) => { cam.fov = w / h < .8 ? 62 : 38; });
+  let open = .32, cut = 0, fall = 0, mx = 0; addEventListener('pointermove', (e) => { mx = e.clientX / innerWidth - .5; });
+  BF.loop(cv, (t) => {
+    const idle = BF.reduce ? 0 : Math.sin(t * 1.6) * .04;
+    bA.rotation.z = open + idle; bB.rotation.z = -open - idle;
+    sci.position.x = -1.5 + cut * 1.4; sci.rotation.y = mx * .4;
+    halves.forEach((h, k) => { const s = k ? 1 : -1, p = h.geometry.attributes.position, b = h.userData.base;
+      for (let i = 0; i < p.count; i++) { const x = b[i * 3]; const d = Math.abs(x); p.setY(i, b[i * 3 + 1] - fall * fall * (8 - d) * .55); p.setZ(i, Math.sin(x * .9 + t * 1.4) * .18 + fall * (8 - d) * .3); }
+      p.needsUpdate = true; h.rotation.z = s * fall * .5; h.position.x = s * fall * 1.2; });
+    leds.position.z = cut * 6 + fall * 10; cam.position.z = 9 - fall * 4; cam.position.x += (mx * .8 - cam.position.x) * .05; cam.lookAt(0, 0, 0);
+    r.render(sc, cam);
+  });
+  BF.gate((done) => { const s0 = performance.now(); const step = () => { const e = (performance.now() - s0) / 2400; open = e < .25 ? .32 - e / .25 * .32 : 0; cut = Math.min(1, e / .25); fall = Math.max(0, Math.min(1, (e - .28) / .6)); if (e < 1) requestAnimationFrame(step); else { $('#gate').classList.add('out'); setTimeout(done, 700); } }; step(); });
+})();
+</script>
+</body>
+</html>

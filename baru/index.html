@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Baru, salon de colorare în Chișinău</title>
+<meta name="description" content="Baru, Strada Serghei Lazo 34, Chișinău. Airtouch, șuvițe blonde, tratamente Davines, tuns și coafat. Coloristele Tahmina și Natalia. Programare online.">
+<meta property="og:title" content="Baru, salon de colorare">
+<meta property="og:description" content="Culoarea ta, fără grabă. 5,0 din 141 de recenzii pe Google.">
+<meta property="og:image" content="img/r5.webp">
+<meta name="theme-color" content="#f3ece4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23231814'/%3E%3Cpath d='M22 14v36M22 30c4-6 20-6 20 6s-16 12-20 6' stroke='%23e8c9a4' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Albert+Sans:wght@400;500;600&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "airtouch is a gradient: the page is a curtain of live hair you recolour and blend yourself, then book that exact shade" · vibe: "a quiet colour lab, cream paper, cocoa ink, one caramel thread" · posture: committed · axes: light/serif-led/warm-neutral · nav: lowercase italic wordmark, five quiet links, booking pill · footer: shade swatches as the sign-off, address, hours, legal · hero: split, headline left, a WebGL hair curtain right with a shade bar under it · signature: 3D strands you recolour and blend, the chosen shade travels into the booking message */
+/* Hallmark · waive 24b: spacing follows a 4/8 rhythm set by hand, tuned to the serif's optical size */
+/* critique: salon sites show stock blondes and a price PDF; this one lets the client try the colour logic the reviews praise (Tahmina's airtouch, face framing blondes) and carries that choice into WhatsApp */
+:root{
+  --paper:#f3ece4; --paper-2:#ebe1d5; --paper-3:#e2d5c6; --card:#faf6f1;
+  --ink:#231814; --ink-2:#4a3a31; --mute:#7a6a5e; --line:#d8c9b8;
+  --caramel:#8a4b22; --caramel-2:#a85f2f; --on-caramel:#fff8f1; --cream-hi:#e8c9a4;
+  --veil:rgba(35,24,20,.55);
+  --s1:#e9d6b4; --s2:#c58a52; --s3:#6b3f26; --s4:#c0562a; --s5:#e8b4bd;
+  --font-display:'Bodoni Moda',serif; --font-body:'Albert Sans',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --r:14px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--font-body)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.01em}
+:focus-visible{outline:2px solid var(--caramel);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:10px 14px;border-radius:8px;z-index:99}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font:500 16px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .25s var(--ease),color .25s var(--ease),transform .2s var(--ease)}
+.btn:hover{background:var(--caramel);border-color:var(--caramel);color:var(--on-caramel)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.car{background:var(--caramel);border-color:var(--caramel);color:var(--on-caramel)}
+.btn.car:hover{background:var(--ink);border-color:var(--ink)}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background-color .3s var(--ease),border-color .3s var(--ease);border-bottom:1px solid transparent}
+.nav.solid{background:var(--paper);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.word{font:italic 500 34px/1 var(--font-display);text-decoration:none;letter-spacing:-.02em}
+.links{display:flex;gap:22px;margin-left:auto}
+.links a{text-decoration:none;font-size:15px;color:var(--ink-2);padding:8px 0;transition:color .2s var(--ease)}
+.links a:hover{color:var(--caramel)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:600 13px/1 var(--font-body);cursor:pointer;transition:background-color .2s var(--ease),color .2s var(--ease)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+@media (max-width:900px){.links{display:none}.nav .btn{display:none}.lang{margin-left:auto}}
+
+/* hero */
+.hero{min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);padding-top:72px}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;gap:26px;padding:48px var(--gut) 56px max(var(--gut),calc((100vw - var(--max))/2 + var(--gut)))}
+.hero h1{font-size:clamp(52px,7.4vw,112px);line-height:.96}
+.ac{color:var(--caramel)}.reel .ac,.ct .ac{color:var(--cream-hi)}
+.hero p{max-width:30em;color:var(--ink-2);font-size:18px;margin:0}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px}
+.stars{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--mute)}
+.stars b{font:500 30px/1 var(--font-display);color:var(--ink)}
+.stage{position:relative;background:var(--paper-2);overflow:hidden;min-height:560px;border-radius:0 0 0 40px}
+#strands{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y}
+.stage .fall{position:absolute;inset:0;background:linear-gradient(180deg,var(--s3),var(--s2) 55%,var(--s1));opacity:0;transition:opacity .4s var(--ease)}
+.no-gl .stage .fall{opacity:1}
+.portrait{position:absolute;left:28px;bottom:150px;width:min(38%,230px);aspect-ratio:4/5;border-radius:200px 200px 16px 16px;overflow:hidden;box-shadow:0 30px 60px -30px var(--veil);border:6px solid var(--card)}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.shadebar{position:absolute;left:20px;right:20px;bottom:20px;background:var(--card);border-radius:20px;padding:16px 18px;display:grid;gap:12px;box-shadow:0 20px 40px -30px var(--veil)}
+.shadebar .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.shadebar .lbl{font-size:13px;color:var(--mute);margin-right:4px}
+.sw{width:44px;height:44px;border-radius:50%;border:2px solid var(--card);box-shadow:0 0 0 1px var(--line);cursor:pointer;transition:box-shadow .2s var(--ease),transform .2s var(--ease)}
+.sw[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink);transform:scale(1.06)}
+.sw[data-k="0"]{background:linear-gradient(160deg,var(--ink-2),var(--s1) 60%)}
+.sw[data-k="1"]{background:linear-gradient(160deg,var(--ink-2),var(--s2) 60%)}
+.sw[data-k="2"]{background:linear-gradient(160deg,var(--ink),var(--s3) 60%)}
+.sw[data-k="3"]{background:linear-gradient(160deg,var(--ink-2),var(--s4) 60%)}
+.sw[data-k="4"]{background:linear-gradient(160deg,var(--ink-2),var(--s5) 60%)}
+.shadename{font:italic 400 22px/1.1 var(--font-display);margin-left:auto}
+.blend{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--mute)}
+.blend input{flex:1;accent-color:var(--caramel);min-height:32px}
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero-copy{padding:40px var(--gut) 34px}
+  .stage{min-height:600px;border-radius:32px 32px 0 0;margin:0 12px}
+  .portrait{left:16px;bottom:170px;width:120px}
+}
+
+section{padding:clamp(80px,11vw,150px) 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:28px 60px;align-items:end;margin-bottom:56px}
+.head h2{font-size:clamp(40px,5.4vw,78px);line-height:1}
+.head p{margin:0;color:var(--ink-2);max-width:34em}
+@media (max-width:800px){.head{grid-template-columns:minmax(0,1fr)}}
+
+/* results: pinned horizontal reel */
+.reel{overflow:hidden;background:var(--ink);color:var(--paper);padding:0}
+.reel .pin{height:100svh;display:flex;flex-direction:column;justify-content:center;gap:34px;padding:90px 0 40px}
+.reel h2{font-size:clamp(40px,5.4vw,78px);line-height:1;color:var(--paper)}
+.track{display:flex;gap:22px;padding:0 var(--gut);width:max-content}
+.shot{width:clamp(240px,28vw,380px);flex:none}
+.shot .ph{aspect-ratio:4/5;border-radius:220px 220px 18px 18px;overflow:hidden;background:var(--ink-2)}
+.shot:nth-child(even) .ph{border-radius:18px 18px 220px 220px}
+.shot img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.shot p{margin:14px 4px 0;font-size:14px;color:var(--cream-hi)}
+.reel .hint{color:var(--cream-hi);font-size:14px}
+.no-pin .reel .pin{height:auto}
+.no-pin .track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.no-pin .shot{scroll-snap-align:start}
+
+/* services */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{min-height:44px;padding:0 20px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 15px/1 var(--font-body);cursor:pointer;transition:background-color .2s var(--ease),color .2s var(--ease)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:40px;align-items:start}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 22px;padding:22px 0;border-bottom:1px solid var(--line)}
+.list li:first-child{border-top:1px solid var(--line)}
+.list h3{font-size:clamp(24px,2.6vw,32px);line-height:1.1}
+.list .pr{font:500 22px/1.2 var(--font-display);white-space:nowrap}
+.list .pr small{font:400 13px/1 var(--font-body);color:var(--mute);margin-right:6px}
+.list p{grid-column:1/-1;margin:0;color:var(--mute);font-size:15px}
+.svc-ph{position:sticky;top:96px;border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:var(--paper-3)}
+.svc-ph img{width:100%;height:100%;object-fit:cover;transition:opacity .4s var(--ease)}
+.note{margin-top:22px;font-size:14px;color:var(--mute)}
+@media (max-width:800px){.svc{grid-template-columns:minmax(0,1fr)}.svc-ph{position:relative;top:0;aspect-ratio:16/11}}
+
+/* colourists */
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.col{background:var(--card);border-radius:28px;padding:clamp(26px,4vw,48px);display:flex;flex-direction:column;gap:20px;min-height:340px}
+.col .nm{font:italic 400 clamp(54px,7vw,96px)/.95 var(--font-display)}
+.col .role{color:var(--caramel);font-weight:600;font-size:15px}
+.col blockquote{margin:auto 0 0;font:400 20px/1.45 var(--font-display);color:var(--ink-2)}
+.col cite{display:block;margin-top:10px;font:400 14px/1.4 var(--font-body);color:var(--mute);font-style:normal}
+@media (max-width:760px){.duo{grid-template-columns:minmax(0,1fr)}}
+
+/* salon mosaic */
+.mosaic{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr) minmax(0,1fr);grid-template-rows:260px 260px;gap:14px}
+.mosaic figure{margin:0;border-radius:20px;overflow:hidden;position:relative;background:var(--paper-3)}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic .a{grid-row:span 2}
+.mosaic .d{grid-column:span 2}
+.mosaic figcaption{position:absolute;left:12px;bottom:12px;background:var(--card);color:var(--ink);font-size:13px;padding:6px 12px;border-radius:999px}
+.perks{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;color:var(--ink-2)}
+.perks span{display:inline-flex;align-items:center;gap:10px}
+.perks svg{width:22px;height:22px;color:var(--caramel)}
+@media (max-width:800px){.mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:220px 180px 200px}.mosaic .a{grid-row:span 1;grid-column:span 2}.mosaic .d{grid-column:span 2}}
+
+/* reviews */
+.rev{background:var(--paper-2)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.q{margin:0;background:var(--card);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:18px}
+.q p{margin:0;font:400 19px/1.5 var(--font-display)}
+.q span{margin-top:auto;font-size:14px;color:var(--mute)}
+.js .q{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .q.in{opacity:1;transform:none}
+@media (max-width:900px){.quotes{grid-template-columns:minmax(0,1fr)}}
+
+/* booking */
+.book{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:start}
+.book h2{font-size:clamp(40px,5.4vw,78px);line-height:1}
+.chosen{margin-top:26px;display:flex;align-items:center;gap:16px;background:var(--card);border-radius:20px;padding:16px}
+.chosen i{width:56px;height:56px;border-radius:50%;flex:none;background:linear-gradient(160deg,var(--ink-2),var(--s2) 60%)}
+.chosen b{display:block;font:italic 400 22px/1.1 var(--font-display)}
+.chosen span{font-size:14px;color:var(--mute)}
+form{background:var(--card);border-radius:28px;padding:clamp(22px,3.4vw,40px);display:grid;gap:22px}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:10px}
+legend{font-weight:600;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 15px/1 var(--font-body);cursor:pointer;transition:background-color .2s var(--ease),color .2s var(--ease)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip small{display:block;font-size:12px;opacity:.7;margin-top:2px}
+.chip.day{min-height:56px;padding:6px 14px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:600}
+input[type=text],input[type=tel],textarea{width:100%;min-height:50px;border:1px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);font:400 16px/1.4 var(--font-body);padding:12px 14px}
+textarea{min-height:90px;resize:vertical}
+input[aria-invalid="true"]{border-color:var(--caramel)}
+.err{color:var(--caramel);font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:stretch}
+.ct h2{font-size:clamp(40px,5.4vw,78px);line-height:1}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px 24px;margin:34px 0}
+.ct dt{color:var(--cream-hi);font-size:14px}
+.ct dd{margin:0}
+.ct a{text-decoration-color:var(--cream-hi);text-underline-offset:4px}
+.ct .ph{border-radius:24px;overflow:hidden;min-height:360px}
+.ct .ph img{width:100%;height:100%;object-fit:cover}
+.soc{display:flex;gap:10px;flex-wrap:wrap}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:1px solid var(--ink-2);border-radius:999px;text-decoration:none;transition:background-color .2s var(--ease),color .2s var(--ease)}
+.soc a:hover{background:var(--paper);color:var(--ink)}
+.soc svg{width:20px;height:20px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+
+footer{background:var(--ink);color:var(--cream-hi);padding:0 0 110px;font-size:14px}
+.fo{border-top:1px solid var(--ink-2);padding-top:30px;display:flex;flex-wrap:wrap;gap:16px 30px;align-items:center}
+.fo .dots{display:flex;gap:6px}
+.fo .dots i{width:18px;height:18px;border-radius:50%}
+.fo a{color:var(--cream-hi)}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--ink);border-radius:999px;box-shadow:0 20px 40px -20px var(--veil)}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;color:var(--paper);text-decoration:none;font-weight:500}
+.mbar a.p{background:var(--caramel);color:var(--on-caramel)}
+@media (max-width:900px){.mbar{display:flex}}
+
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .q{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav"><div class="wrap">
+  <a class="word" href="#top" aria-label="Baru, începutul paginii">baru</a>
+  <nav class="links" aria-label="Meniu">
+    <a href="#culoare" data-ru="Цвет">Culoare</a>
+    <a href="#rezultate" data-ru="Работы">Rezultate</a>
+    <a href="#servicii" data-ru="Услуги">Servicii</a>
+    <a href="#coloriste" data-ru="Колористы">Coloriste</a>
+    <a href="#contact" data-ru="Контакты">Contact</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#programare" data-ru="Записаться">Programare</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding-bottom:0">
+  <div class="hero-copy">
+    <div class="stars"><b>5,0</b><span data-ru="141 отзыв в Google">141 de recenzii pe Google</span></div>
+    <h1 id="culoare"><span data-ru="Твой цвет,">Culoarea ta,</span> <span class="ac" data-ru="без спешки.">fără grabă.</span></h1>
+    <p data-ru="Airtouch, светлые пряди и уход Davines. Выберите оттенок прямо здесь.">Airtouch, șuvițe blonde și ritualuri Davines. Alege-ți nuanța chiar aici.</p>
+    <div class="acts"><a class="btn car" href="#programare" data-ru="Записаться с этим оттенком">Programează-te cu nuanța asta</a><a class="btn ghost" href="tel:+37378539533" data-ru="Позвонить">Sună</a></div>
+  </div>
+  <div class="stage" id="stage">
+    <div class="fall" aria-hidden="true"></div>
+    <canvas id="strands" aria-label="Șuvițe de păr animate în nuanța aleasă" role="img"></canvas>
+    <div class="portrait"><img src="img/r5-s.webp" alt="Păr lung cu nuanțe calde, realizat la Baru" width="410" height="512"></div>
+    <div class="shadebar">
+      <div class="row" role="group" aria-label="Alege nuanța">
+        <span class="lbl" data-ru="Оттенок">Nuanța</span>
+        <button class="sw" type="button" data-k="0" aria-pressed="false" aria-label="Blond perlat"></button>
+        <button class="sw" type="button" data-k="1" aria-pressed="true" aria-label="Caramel"></button>
+        <button class="sw" type="button" data-k="2" aria-pressed="false" aria-label="Ciocolată"></button>
+        <button class="sw" type="button" data-k="3" aria-pressed="false" aria-label="Cupru"></button>
+        <button class="sw" type="button" data-k="4" aria-pressed="false" aria-label="Roz pastel"></button>
+        <span class="shadename" id="shadeName" aria-live="polite">Caramel</span>
+      </div>
+      <label class="blend"><span data-ru="Где начинается свет">Unde începe lumina</span><input type="range" id="blend" min="15" max="75" value="42" aria-describedby="blendVal"><output id="blendVal">42%</output></label>
+    </div>
+  </div>
+</section>
+
+<section class="reel" id="rezultate" aria-label="Rezultate">
+  <div class="pin" id="reelPin">
+    <div class="wrap"><h2><span data-ru="Работы из салона,">Rezultate din salon,</span> <span class="ac" data-ru="без фильтров.">fără filtre.</span></h2></div>
+    <div class="track" id="track">
+      <figure class="shot"><div class="ph"><img src="img/r1-s.webp" alt="Balayage pe păr mediu, realizat la Baru" loading="lazy"></div><p data-ru="Мягкий переход, средняя длина">Trecere fină, lungime medie</p></figure>
+      <figure class="shot"><div class="ph"><img src="img/r2-s.webp" alt="Bucle ciocolată, coafat la Baru" loading="lazy"></div><p data-ru="Шоколад и локоны">Ciocolată și bucle</p></figure>
+      <figure class="shot"><div class="ph"><img src="img/model-s.webp" alt="Blond deschis cu bucle lejere" loading="lazy"></div><p data-ru="Светлый блонд">Blond luminos</p></figure>
+      <figure class="shot"><div class="ph"><img src="img/r3-s.webp" alt="Blond cu bucle, după vopsire la Baru" loading="lazy"></div><p data-ru="Блонд после окрашивания">Blond după colorare</p></figure>
+      <figure class="shot"><div class="ph"><img src="img/r4-s.webp" alt="Clientă în salon după colorare" loading="lazy"></div><p data-ru="Натуральный тон">Ton natural</p></figure>
+      <figure class="shot"><div class="ph"><img src="img/pink-s.webp" alt="Bucle roz, lucrare creativă" loading="lazy"></div><p data-ru="Творческий цвет">Culoare creativă</p></figure>
+      <figure class="shot"><div class="ph"><img src="img/r5-s.webp" alt="Păr lung cu șuvițe calde" loading="lazy"></div><p data-ru="Длинные волосы, тёплые пряди">Păr lung, șuvițe calde</p></figure>
+    </div>
+    <div class="wrap"><p class="hint" data-ru="Прокручивайте, лента едет сама">Derulează, banda merge singură</p></div>
+  </div>
+</section>
+
+<section id="servicii">
+  <div class="wrap">
+    <div class="head rv">
+      <h2><span data-ru="Услуги и">Servicii și</span> <span class="ac" data-ru="цены">prețuri</span></h2>
+      <p data-ru="Цены ориентировочные. Итог зависит от длины и густоты волос и подтверждается на консультации.">Prețuri orientative. Prețul final depinde de lungimea și densitatea părului și se confirmă la consultație, înainte de orice începere.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Categorii">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p0" id="t0" data-ph="r1" data-ru="Окрашивание">Colorare</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p1" id="t1" tabindex="-1" data-ph="r2" data-ru="Стрижка и укладка">Tuns și coafat</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1" data-ph="davines" data-ru="Уход Davines">Îngrijire Davines</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1" data-ph="nails" data-ru="Ногти и лицо">Unghii și ten</button>
+    </div>
+    <div class="svc">
+      <div>
+        <ul class="list" role="tabpanel" id="p0" aria-labelledby="t0">
+          <li><h3>Airtouch</h3><span class="pr"><small data-ru="от">de la</small>2.500 lei</span><p data-ru="Самый мягкий переход от корней к кончикам, без резкой границы.">Cea mai fină trecere de la rădăcină la vârfuri, fără linie de demarcație.</p></li>
+          <li><h3 data-ru="Светлые пряди у лица">Șuvițe care încadrează fața</h3><span class="pr"><small data-ru="от">de la</small>1.600 lei</span><p data-ru="Свет там, где его видят все: вокруг лица.">Lumină exact acolo unde se vede: în jurul feței.</p></li>
+          <li><h3>Balayage</h3><span class="pr"><small data-ru="от">de la</small>2.200 lei</span><p data-ru="Растяжка цвета вручную, естественный результат.">Culoare pictată manual, rezultat natural care crește frumos.</p></li>
+          <li><h3 data-ru="Окрашивание в один тон">Vopsire într-o nuanță</h3><span class="pr"><small data-ru="от">de la</small>900 lei</span><p data-ru="Включая корни и тонирование по длине.">Inclusiv rădăcini și tonare pe lungime.</p></li>
+          <li><h3 data-ru="Тонирование">Tonare</h3><span class="pr"><small data-ru="от">de la</small>600 lei</span><p data-ru="Освежить блонд или убрать желтизну.">Împrospătează blondul sau elimină tonurile galbene.</p></li>
+        </ul>
+        <ul class="list" role="tabpanel" id="p1" aria-labelledby="t1" hidden>
+          <li><h3 data-ru="Женская стрижка">Tuns damă</h3><span class="pr"><small data-ru="от">de la</small>350 lei</span><p data-ru="С мытьём и сушкой.">Cu spălat și uscat.</p></li>
+          <li><h3 data-ru="Укладка">Coafat</h3><span class="pr"><small data-ru="от">de la</small>300 lei</span><p data-ru="Локоны, волны или гладкая укладка.">Bucle, valuri sau coafură netedă.</p></li>
+          <li><h3 data-ru="Стрижка и укладка">Tuns și coafat</h3><span class="pr"><small data-ru="от">de la</small>550 lei</span><p data-ru="Полный образ за один визит.">Imaginea completă într-o singură vizită.</p></li>
+          <li><h3 data-ru="Вечерняя причёска">Coafură de seară</h3><span class="pr"><small data-ru="от">de la</small>700 lei</span><p data-ru="Для свадьбы, выпускного или фотосессии.">Pentru nuntă, absolvire sau ședință foto.</p></li>
+        </ul>
+        <ul class="list" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+          <li><h3 data-ru="Ритуал Davines">Ritual Davines</h3><span class="pr"><small data-ru="от">de la</small>600 lei</span><p data-ru="Глубокое восстановление после осветления.">Reparare profundă după decolorare, păr vibrant din nou.</p></li>
+          <li><h3 data-ru="Ритуал Davines с укладкой">Ritual Davines cu coafat</h3><span class="pr"><small data-ru="от">de la</small>850 lei</span><p data-ru="Уход, стрижка кончиков и укладка.">Tratament, vârfuri și coafat, într-o singură vizită.</p></li>
+          <li><h3 data-ru="Уход за кожей головы">Îngrijirea scalpului</h3><span class="pr"><small data-ru="от">de la</small>450 lei</span><p data-ru="Очищение и баланс для здоровых корней.">Curățare și echilibru pentru rădăcini sănătoase.</p></li>
+        </ul>
+        <ul class="list" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+          <li><h3 data-ru="Маникюр с покрытием">Manichiură cu ojă semipermanentă</h3><span class="pr"><small data-ru="от">de la</small>300 lei</span><p data-ru="Можно совместить с окрашиванием.">Se poate face în timp ce culoarea prinde.</p></li>
+          <li><h3 data-ru="Уход за лицом">Îngrijirea tenului</h3><span class="pr"><small data-ru="от">de la</small>600 lei</span><p data-ru="Очищение и уход в кабинете салона.">Curățare și îngrijire în cabinetul salonului.</p></li>
+        </ul>
+        <p class="note" data-ru="Образцы цен для демо. Салон подтвердит свой прайс.">Prețuri exemplificative pentru prezentare. Salonul își confirmă lista de prețuri.</p>
+      </div>
+      <div class="svc-ph"><img id="svcPh" src="img/r1-s.webp" alt="Rezultat din salonul Baru" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="coloriste" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <h2><span data-ru="Колористы, ради которых">Coloristele pentru care</span> <span class="ac" data-ru="едут издалека">se vine de departe</span></h2>
+      <p data-ru="Клиентки возвращаются годами, кто-то больше десяти лет. Вот их слова.">Clientele revin de ani de zile, unele de peste zece. Le lăsăm pe ele să vorbească.</p>
+    </div>
+    <div class="duo">
+      <article class="col rv">
+        <div class="role" data-ru="Колорист">Coloristă</div>
+        <div class="nm">Tahmina</div>
+        <blockquote><span>„Am venit din Brașov special pentru Tahmina și, sincer, a meritat fiecare kilometru!”</span><cite>Lucia Mariniuc, Google</cite></blockquote>
+      </article>
+      <article class="col rv">
+        <div class="role" data-ru="Колорист">Coloristă</div>
+        <div class="nm">Natalia</div>
+        <blockquote><span>„Tahmina și Natalia sunt pur și simplu excepționale… acum, la 4 luni distanță, părul e la fel de sănătos și strălucitor.”</span><cite>Ecaterina Ababii, Google</cite></blockquote>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="salon" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <h2><span data-ru="Кофе, чай и">Cafea, ceai și</span> <span class="ac" data-ru="время для себя">timp pentru tine</span></h2>
+      <p data-ru="Светлый салон в центре, с кофе на ресепшене и атмосферой, которую клиентки называют настоящим бьюти-днём.">Un salon luminos în centru, cu cafea la recepție și o atmosferă pe care clientele o numesc o adevărată zi de frumusețe.</p>
+    </div>
+    <div class="mosaic rv">
+      <figure class="a"><img src="img/mirror.webp" alt="Interiorul salonului Baru, oglindă cu becuri" loading="lazy"><figcaption data-ru="Зал">Salonul</figcaption></figure>
+      <figure><img src="img/davines-s.webp" alt="Produse Davines folosite în salon" loading="lazy"><figcaption>Davines</figcaption></figure>
+      <figure><img src="img/suit-s.webp" alt="Clientă în salon" loading="lazy"></figure>
+      <figure class="d"><img src="img/salon.webp" alt="Stilist lucrând în salonul Baru" loading="lazy"><figcaption data-ru="Мастера за работой">Echipa la lucru</figcaption></figure>
+    </div>
+    <div class="perks">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></svg><span data-ru="Кофе и чай для гостей">Cafea și ceai pentru fiecare clientă</span></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg><span data-ru="Профессиональный уход Davines">Produse profesionale Davines</span></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><span data-ru="С понедельника по субботу, 10:00 до 19:00">Luni până sâmbătă, 10:00 la 19:00</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="recenzii">
+  <div class="wrap">
+    <div class="head rv">
+      <h2><span data-ru="5,0 из">5,0 din</span> <span class="ac" data-ru="141 отзыва">141 de recenzii</span></h2>
+      <p data-ru="Отрывки из отзывов в Google, на языке оригинала.">Fragmente din recenziile de pe Google, în limba în care au fost scrise.</p>
+    </div>
+    <div class="quotes">
+      <figure class="q"><p>„De 6 ani revin cu drag la acest salon și, de fiecare dată, plec la fel de mulțumită și încântată!”</p><span>Constanta Tverdohleb Tayanc</span></figure>
+      <figure class="q"><p>„Тахмина супер педантично в хорошем смысле к каждому волосику подходит с особой заботой.”</p><span>Алла Горячева</span></figure>
+      <figure class="q"><p>„Mi-am făcut vopsirea părului în tehnica airtouch și sunt foarte mulțumită de rezultat… culoarea este naturală și exact cum mi-am dorit.”</p><span>Olga Virlezanu</span></figure>
+      <figure class="q"><p>„Больше 10 лет доверяю свои волосы этим мастерам… и ни разу не пожалела!”</p><span>Tatiana Gherstega</span></figure>
+      <figure class="q"><p>„Părul meu este într-o stare uimitoare după tratament; este vibrant și plin de putere din nou.”</p><span>Anastasiya Voznyak</span></figure>
+      <figure class="q"><p>„Atmosfera liniștită și relaxantă, deservire orientata spre client, specialiști de top și produse de calitate!… P.S cafeaua bună bună:)”</p><span>Sabina</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="programare">
+  <div class="wrap book">
+    <div class="rv">
+      <h2><span data-ru="Запишитесь с">Rezervă cu</span> <span class="ac" data-ru="вашим оттенком">nuanța ta</span></h2>
+      <p style="color:var(--ink-2);max-width:30em" data-ru="Оттенок, выбранный наверху, уже в заявке. Сообщение уходит в WhatsApp салона, администратор подтвердит время.">Nuanța aleasă sus e deja în cerere. Mesajul pleacă pe WhatsApp-ul salonului, iar recepția îți confirmă ora.</p>
+      <div class="chosen"><i id="chosenDot" aria-hidden="true"></i><div><b id="chosenName">Caramel</b><span id="chosenBlend" data-ru="свет с 42% длины">lumina de la 42% din lungime</span></div></div>
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Услуга">Serviciul</legend>
+        <div class="chips" data-g="svc">
+          <button type="button" class="chip" aria-pressed="true">Airtouch</button>
+          <button type="button" class="chip" aria-pressed="false" data-ru="Пряди у лица">Șuvițe la față</button>
+          <button type="button" class="chip" aria-pressed="false" data-ru="Окрашивание">Vopsire</button>
+          <button type="button" class="chip" aria-pressed="false" data-ru="Уход Davines">Ritual Davines</button>
+          <button type="button" class="chip" aria-pressed="false" data-ru="Стрижка и укладка">Tuns și coafat</button>
+          <button type="button" class="chip" aria-pressed="false" data-ru="Консультация">Consultație</button>
+        </div>
+      </fieldset>
+      <fieldset><legend data-ru="Мастер">Coloristă</legend>
+        <div class="chips" data-g="who">
+          <button type="button" class="chip" aria-pressed="true">Tahmina</button>
+          <button type="button" class="chip" aria-pressed="false">Natalia</button>
+          <button type="button" class="chip" aria-pressed="false" data-ru="Любой свободный">Oricare liberă</button>
+        </div>
+      </fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <fieldset><legend data-ru="Время">Ora</legend><div class="chips" data-g="time" id="times"></div></fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Имя">Numele</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <label class="f"><span data-ru="Пожелания (необязательно)">Detalii (opțional)</span><textarea name="note" placeholder=""></textarea></label>
+      <p class="err" id="bkErr" role="alert"></p>
+      <button class="btn car" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="confidentialitate.html" data-ru="политикой конфиденциальности">politica de confidențialitate</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div>
+      <h2><span data-ru="Сергея Лазо 34,">Serghei Lazo 34,</span> <span class="ac" data-ru="центр Кишинёва">centrul Chișinăului</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>Strada Serghei Lazo 34, Chișinău</dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="С понедельника по субботу, 10:00 до 19:00. Воскресенье выходной.">Luni până sâmbătă, 10:00 la 19:00. Duminică închis.</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37378539533">+373 78 539 533</a></dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37378539533" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37378539533"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.google.com/maps/search/Baru+salon+Strada+Serghei+Lazo+34+Chi%C8%99in%C4%83u" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-ru="Карта и отзывы">Hartă și recenzii</span></a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=baru%20chisinau" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+      </div>
+    </div>
+    <div class="ph"><img src="img/facade.webp" alt="Clădirea de pe Serghei Lazo 34 unde se află salonul Baru" loading="lazy"></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap fo">
+  <span class="dots" aria-hidden="true"><i style="background:var(--s1)"></i><i style="background:var(--s2)"></i><i style="background:var(--s3)"></i><i style="background:var(--s4)"></i><i style="background:var(--s5)"></i></span>
+  <span>© 2026 Baru, Chișinău</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37378539533" data-ru="Позвонить">Sună</a><a class="p" href="#programare" data-ru="Записаться">Programare</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+  let lang = 'ro';
+  const T = (ro, ru) => (lang === 'ru' ? ru : ro);
+
+  /* shades: root and tip colours, mirrored in the CSS swatches */
+  const SH = [
+    { ro: 'Blond perlat', ru: 'Жемчужный блонд', root: '#4a3426', tip: '#e9d6b4', css: 's1' },
+    { ro: 'Caramel', ru: 'Карамель', root: '#3b2418', tip: '#c58a52', css: 's2' },
+    { ro: 'Ciocolată', ru: 'Шоколад', root: '#1f120c', tip: '#6b3f26', css: 's3' },
+    { ro: 'Cupru', ru: 'Медь', root: '#3a1a10', tip: '#c0562a', css: 's4' },
+    { ro: 'Roz pastel', ru: 'Пастельный розовый', root: '#4a3a3a', tip: '#e8b4bd', css: 's5' },
+  ];
+  let shade = 1, blend = 42;
+  const paintChosen = () => {
+    $('#shadeName').textContent = T(SH[shade].ro, SH[shade].ru);
+    $('#chosenName').textContent = T(SH[shade].ro, SH[shade].ru);
+    $('#chosenDot').style.background = `linear-gradient(160deg, var(--ink-2), var(--${SH[shade].css}) 60%)`;
+    $('#chosenBlend').textContent = T(`lumina de la ${blend}% din lungime`, `свет с ${blend}% длины`);
+    $('#blendVal').textContent = blend + '%';
+  };
+
+  /* booking chips: next 8 open days (Mon to Sat), 10:00 to 18:00 */
+  const dRo = ['Dum', 'Lun', 'Mar', 'Mie', 'Joi', 'Vin', 'Sâm'], dRu = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+  let added = 0;
+  for (let i = 0; added < 8 && i < 14; i++) {
+    const d = new Date(); d.setDate(d.getDate() + i); if (d.getDay() === 0) continue;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'chip day'; b.setAttribute('aria-pressed', String(added === 0));
+    b.dataset.date = `${d.getDate()}.${String(d.getMonth() + 1).padStart(2, '0')}`; b.dataset.dro = i === 0 ? 'Azi' : i === 1 ? 'Mâine' : dRo[d.getDay()]; b.dataset.dru = i === 0 ? 'Сегодня' : i === 1 ? 'Завтра' : dRu[d.getDay()];
+    b.innerHTML = `<span>${b.dataset.dro}</span><small>${b.dataset.date}</small>`; $('#days').appendChild(b); added++;
+  }
+  for (let h = 10; h <= 18; h++) for (const m of ['00', '30']) { if (h === 18 && m === '30') continue; const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = `${h}:${m}`; b.setAttribute('aria-pressed', String(h === 11 && m === '00')); $('#times').appendChild(b); }
+
+  $$('[data-ru]').forEach((el) => { el.dataset.ro = el.textContent; });
+  const setLang = (l) => {
+    lang = l; document.documentElement.lang = l;
+    $$('[data-ru]').forEach((el) => { el.textContent = l === 'ru' ? el.dataset.ru : el.dataset.ro; });
+    $$('#days .chip span').forEach((s) => { s.textContent = l === 'ru' ? s.parentNode.dataset.dru : s.parentNode.dataset.dro; });
+    $$('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l)));
+    store.set('baru-lang', l); paintChosen();
+  };
+  $$('.lang button').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  $$('.chips').forEach((g) => g.addEventListener('click', (e) => { const c = e.target.closest('.chip'); if (!c) return; $$('.chip', g).forEach((x) => x.setAttribute('aria-pressed', String(x === c))); }));
+  const val = (g) => $(`[data-g="${g}"] .chip[aria-pressed="true"]`);
+
+  /* tabs with arrow keys */
+  const tabs = $$('.tab');
+  const pick = (t) => { tabs.forEach((x) => { const on = x === t; x.setAttribute('aria-selected', String(on)); x.tabIndex = on ? 0 : -1; $('#' + x.getAttribute('aria-controls')).hidden = !on; }); const ph = $('#svcPh'); ph.style.opacity = 0; setTimeout(() => { ph.src = `img/${t.dataset.ph}-s.webp`; ph.onload = () => (ph.style.opacity = 1); }, 180); };
+  tabs.forEach((t, i) => { t.addEventListener('click', () => pick(t)); t.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length]; n.focus(); pick(n); } }); });
+
+  /* form → WhatsApp */
+  const f = $('#bk'), err = $('#bkErr');
+  f.addEventListener('submit', (e) => {
+    e.preventDefault(); err.textContent = '';
+    const bad = ['name', 'phone'].filter((n) => !f[n].value.trim() || (n === 'phone' && f.phone.value.replace(/\D/g, '').length < 8));
+    $$('input', f).forEach((i) => i.removeAttribute('aria-invalid')); bad.forEach((n) => f[n].setAttribute('aria-invalid', 'true'));
+    if (bad.length) { err.textContent = T('Scrie numele și un număr de telefon valid.', 'Укажите имя и корректный телефон.'); f[bad[0]].focus(); return; }
+    const d = val('day');
+    const msg = `Bună ziua! Aș dori o programare la Baru.\nServiciul: ${val('svc').dataset.ro || val('svc').textContent}\nColoristă: ${val('who').dataset.ro || val('who').textContent}\nZiua: ${d.dataset.dro} ${d.dataset.date}, ora ${val('time').textContent}\nNuanța dorită: ${SH[shade].ro}, lumina de la ${blend}% din lungime\nNume: ${f.name.value.trim()}\nTelefon: ${f.phone.value.trim()}${f.note.value.trim() ? '\nDetalii: ' + f.note.value.trim() : ''}`;
+    window.open('https://wa.me/37378539533?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+
+  /* nav + reveals */
+  const nav = $('#nav'); const ons = () => nav.classList.toggle('solid', scrollY > 30); addEventListener('scroll', ons, { passive: true }); ons();
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  $$('.rv').forEach((el) => io.observe(el));
+  $$('.q').forEach((el, i) => { el.style.transitionDelay = (i % 3) * 90 + 'ms'; io.observe(el); });
+
+  /* pinned reel */
+  if (window.gsap && window.ScrollTrigger && !reduce && innerWidth > 700) {
+    gsap.registerPlugin(ScrollTrigger);
+    const tr = $('#track');
+    gsap.to(tr, { x: () => -(tr.scrollWidth - innerWidth + 40), ease: 'none', scrollTrigger: { trigger: '#reelPin', start: 'top top', end: () => '+=' + (tr.scrollWidth - innerWidth + 40), pin: true, scrub: .6, invalidateOnRefresh: true } });
+    $$('.shot img').forEach((im) => gsap.fromTo(im, { scale: 1.18 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: '#reelPin', start: 'top top', end: '+=1600', scrub: true } }));
+    gsap.from('.hero-copy > *', { y: 30, opacity: 0, duration: 1, stagger: .1, ease: 'power3.out' });
+  } else document.documentElement.classList.add('no-pin');
+
+  /* shade controls */
+  let target = null;
+  const setShade = (k) => { shade = k; $$('.sw').forEach((s) => s.setAttribute('aria-pressed', String(+s.dataset.k === k))); paintChosen(); if (target) target(k); };
+  $$('.sw').forEach((s) => s.addEventListener('click', () => setShade(+s.dataset.k)));
+  $('#blend').addEventListener('input', (e) => { blend = +e.target.value; paintChosen(); });
+  paintChosen();
+  if (store.get('baru-lang') === 'ru') setLang('ru');
+
+  /* the hair curtain: strands hang from the top, sway, part around the pointer, blend root to tip */
+  const canvas = $('#strands'); let ok = false; try { ok = !!(canvas.getContext('webgl2') || canvas.getContext('webgl')); } catch {}
+  if (!window.THREE || !ok) { document.documentElement.classList.add('no-gl'); return; }
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
+  const scene = new THREE.Scene();
+  const cam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 10); cam.position.z = 5;
+  const mobile = innerWidth < 700, N = mobile ? 520 : 1100, SEG = 28;
+  const pos = [], tt = [], side = [], seed = [], idx = [];
+  let v = 0;
+  for (let s = 0; s < N; s++) {
+    const x = (Math.random() * 2.4 - 1.2), z = Math.random(), r = Math.random(), len = 1.55 + Math.random() * .55;
+    for (let j = 0; j <= SEG; j++) {
+      const t = j / SEG;
+      for (const sd of [-1, 1]) { pos.push(x, len, z); tt.push(t); side.push(sd); seed.push(r); }
+      if (j < SEG) { const a = v, b = v + 1, c = v + 2, d = v + 3; idx.push(a, b, c, b, d, c); }
+      v += 2;
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('t', new THREE.Float32BufferAttribute(tt, 1));
+  g.setAttribute('side', new THREE.Float32BufferAttribute(side, 1));
+  g.setAttribute('seed', new THREE.Float32BufferAttribute(seed, 1));
+  g.setIndex(idx);
+  const col = (h) => new THREE.Color(h);
+  const U = { time: { value: 0 }, root: { value: col(SH[1].root) }, tip: { value: col(SH[1].tip) }, blend: { value: .42 }, mouse: { value: new THREE.Vector2(9, 9) }, aspect: { value: 1 }, wind: { value: 0 } };
+  const mat = new THREE.ShaderMaterial({
+    uniforms: U, side: THREE.DoubleSide,
+    vertexShader: `
+      attribute float t; attribute float side; attribute float seed;
+      uniform float time, aspect, wind; uniform vec2 mouse;
+      varying float vt; varying float vs; varying float vseed; varying float vz;
+      void main(){
+        vec3 p = position; float len = p.y;
+        float y = 1.05 - t * len;
+        float sway = sin(t * 3.2 + time * .9 + seed * 6.28) * .045 * t * t + sin(time * .5 + seed * 3.0) * .02 * t;
+        float x = p.x * aspect * .5 + sway + wind * t * t * .12;
+        float curl = sin(t * 18.0 + seed * 40.0) * .012 * smoothstep(.55, 1.0, t);
+        x += curl;
+        vec2 d = vec2(x, y) - mouse; float r = length(d);
+        x += normalize(d + 1e-4).x * .16 * exp(-r * r * 26.0) * t;
+        float w = (.0042 + seed * .0026) * (1.0 - t * .75);
+        x += side * w;
+        vt = t; vs = side; vseed = seed; vz = p.z;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(x, y, -p.z, 1.0);
+      }`,
+    fragmentShader: `
+      uniform vec3 root, tip; uniform float blend;
+      varying float vt; varying float vs; varying float vseed; varying float vz;
+      void main(){
+        float k = smoothstep(blend - .18, blend + .22, vt + (vseed - .5) * .16);
+        vec3 c = mix(root, tip, k);
+        c *= .78 + vseed * .34;
+        float sheen = pow(max(0.0, sin(vt * 9.0 + vseed * 5.0)), 18.0) * .22 * k;
+        c += sheen;
+        c *= .82 + .18 * (1.0 - abs(vs));
+        c = mix(c, c * .7, vz * .5);
+        gl_FragColor = vec4(c, 1.0);
+      }`,
+  });
+  scene.add(new THREE.Mesh(g, mat));
+  const ro = col(SH[1].root), ti = col(SH[1].tip), goR = ro.clone(), goT = ti.clone();
+  target = (k) => { goR.set(SH[k].root); goT.set(SH[k].tip); };
+  const size = () => { const w = canvas.clientWidth, h = canvas.clientHeight; renderer.setSize(w, h, false); const a = w / h; cam.left = -a; cam.right = a; cam.top = 1; cam.bottom = -1; cam.updateProjectionMatrix(); U.aspect.value = a * 1.06; };
+  size(); addEventListener('resize', size);
+  const stage = $('#stage');
+  const mv = (e) => { const r = canvas.getBoundingClientRect(); const a = r.width / r.height; U.mouse.value.set(((e.clientX - r.left) / r.width * 2 - 1) * a, -((e.clientY - r.top) / r.height * 2 - 1)); };
+  stage.addEventListener('pointermove', mv); stage.addEventListener('pointerleave', () => U.mouse.value.set(9, 9));
+  let lastY = scrollY; addEventListener('scroll', () => { U.wind.value += (scrollY - lastY) * .004; lastY = scrollY; }, { passive: true });
+  let vis = false, raf = 0, t0 = performance.now();
+  new IntersectionObserver(([e]) => { vis = e.isIntersecting; if (vis && !raf) loop(); }).observe(canvas);
+  function loop() {
+    if (!vis) { raf = 0; return; }
+    raf = requestAnimationFrame(loop);
+    U.time.value = reduce ? 2 : (performance.now() - t0) / 1000;
+    U.wind.value *= .94; U.wind.value = Math.max(-1.5, Math.min(1.5, U.wind.value));
+    ro.lerp(goR, .06); ti.lerp(goT, .06); U.root.value.copy(ro); U.tip.value.copy(ti);
+    U.blend.value += (blend / 100 - U.blend.value) * .08;
+    renderer.render(scene, cam);
+  }
+})();
+</script>
+</body>
+</html>

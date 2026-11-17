@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>House of Beauty by dr. Gherciu Antonela, Chișinău</title>
+<meta name="description" content="Cabinet de medicină estetică în Chișinău: curățare facială, peelinguri, biorevitalizare, toxină botulinică, augmentarea buzelor. Programare online.">
+<meta property="og:title" content="House of Beauty by dr. Gherciu Antonela">
+<meta property="og:description" content="Ten luminos, rezultat natural. Programează-te online.">
+<meta property="og:image" content="img/doctor.webp">
+<meta name="theme-color" content="#0c4a3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230c4a3a'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='serif' font-size='30' fill='%23fff'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "the clinic's own checkerboard floor and emerald velvet, with a single drop of serum as the hero" · vibe: "emerald velvet, checkerboard, clinical calm, boutique" · posture: committed · axes: light/display-serif/chromatic-emerald · nav: centred wordmark between two link groups, booking button · footer: emerald slab with wordmark, hours and legal · hero: 3D serum drop over the checkerboard, head left, doctor portrait in an arch right · signature: a glass serum drop floating over the clinic's black and white floor */
+/* Hallmark · waive 24b: spacing is hand-set to the portrait and the checker grid, not a 4px scale */
+/* critique: a skin clinic page is usually pastel pink with stock faces; this one is built from the clinic's real floor, chairs, results and the doctor herself */
+:root{
+  --paper:#fbfbf9; --paper-2:#f0f1ee; --ink:#0d0f0e; --ink-soft:#3b403d; --ink-mute:#6a706c; --line:#dcdfdb;
+  --emerald:#0c4a3a; --emerald-2:#11614c; --emerald-ink:#e9f3ef; --mint:#bfe0d3; --white:#ffffff; --black:#0a0a0a; --shade:rgba(10,10,10,.55);
+  --font-display:'Italiana',serif; --font-body:'Manrope',sans-serif;
+  --max:1280px; --gut:clamp(18px,4vw,52px); --r:28px;
+  --ease:cubic-bezier(.22,.8,.16,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--font-body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1;margin:0;overflow-wrap:break-word;min-width:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+:focus-visible{outline:2px solid var(--emerald);outline-offset:3px;border-radius:8px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:99;background:var(--emerald);color:var(--white);padding:10px 14px;border-radius:10px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;border:1px solid transparent;font:600 16px/1 var(--font-body);text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .2s var(--ease);white-space:nowrap}
+.btn svg{width:18px;height:18px}
+.btn-em{background:var(--emerald);color:var(--white)}.btn-em:hover{background:var(--black)}
+.btn-em:active,.btn-line:active{transform:scale(.97)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn-white{background:var(--white);color:var(--emerald)}.btn-white:hover{background:var(--mint)}
+
+/* nav: centred wordmark */
+.nav{position:fixed;inset:0 0 auto;z-index:60;transition:background-color .3s,box-shadow .3s}
+.nav.solid{background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;height:78px;gap:20px}
+.nav-l,.nav-r{display:flex;gap:26px;align-items:center}
+.nav-r{justify-content:flex-end}
+.nav a.l{text-decoration:none;font-weight:500;font-size:15px;color:var(--ink-soft)}
+.nav a.l:hover{color:var(--emerald)}
+.mark{text-decoration:none;text-align:center;line-height:1}
+.mark b{display:block;font:400 30px/1 var(--font-display);white-space:nowrap}
+.mark span{display:block;font-size:12px;color:var(--ink-mute);margin-top:4px;white-space:nowrap}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{background:none;border:0;color:var(--ink-mute);font:600 13px/1 var(--font-body);min-width:40px;min-height:34px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:15px}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--paper);align-items:center;justify-content:center;cursor:pointer}
+.menu-btn svg{width:20px;height:20px}
+@media (max-width:980px){
+  .nav .wrap{grid-template-columns:auto minmax(0,1fr) auto}
+  .nav-l{display:none}.nav-r a.l{display:none}
+  .mark{text-align:left;order:-1}.mark b{font-size:24px}
+  .nav-r{grid-column:3}
+}
+@media (max-width:520px){.nav .btn{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;overflow:clip;background:var(--paper)}
+#drop{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--paper) 0%,color-mix(in srgb,var(--paper) 88%,transparent) 34%,transparent 62%)}
+@media (max-width:860px){.hero::after{background:linear-gradient(180deg,transparent 0%,transparent 34%,color-mix(in srgb,var(--paper) 92%,transparent) 50%,var(--paper) 62%)}}
+.hero-in{position:relative;z-index:2;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:30px;align-items:end;padding-top:110px;padding-bottom:clamp(40px,7vh,80px)}
+.hero h1{font-size:clamp(60px,8.6vw,128px);letter-spacing:-.02em}
+.hero-copy{display:grid;gap:20px;align-content:end}
+.hero-copy p{font-size:20px;color:var(--ink-soft);max-width:30ch}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.arch{justify-self:end;width:min(100%,430px);aspect-ratio:3/4.2;border-radius:999px 999px 26px 26px;overflow:hidden;box-shadow:0 40px 80px -30px var(--shade);transform:translateY(0)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.score{display:flex;align-items:center;gap:14px}
+.score b{font:400 54px/1 var(--font-display);color:var(--emerald)}
+.score span{font-size:15px;color:var(--ink-soft);line-height:1.4}
+@media (max-width:860px){.hero-in{grid-template-columns:minmax(0,1fr);padding-top:100px}.arch{justify-self:start;width:62%;order:-1;margin-top:10px}.hero h1{font-size:clamp(56px,15vw,90px)}}
+
+/* band */
+.band{background:var(--emerald);color:var(--emerald-ink);overflow:hidden;padding:20px 0}
+.band-track{display:flex;gap:44px;width:max-content;animation:band 40s linear infinite;font:400 34px/1 var(--font-display);white-space:nowrap}
+.band-track i{font-style:normal;color:var(--mint)}
+@keyframes band{to{transform:translateX(-50%)}}
+
+.sec{padding:clamp(80px,11vw,150px) 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:clamp(36px,5vw,64px);flex-wrap:wrap}
+.sh h2{font-size:clamp(46px,7vw,100px)}
+.sh p{max-width:40ch;color:var(--ink-soft)}
+
+/* procedures menu */
+.menu{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px);align-items:start}
+.menu-pic{position:sticky;top:100px;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--paper-2)}
+.menu-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s var(--ease)}
+.menu-pic img.on{opacity:1}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tab{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font:600 15px/1 var(--font-body);color:var(--ink-soft);cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.tab:hover{border-color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.list{list-style:none;margin:0;padding:0}
+.item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 20px;padding:20px 0;border-bottom:1px solid var(--line);cursor:default}
+.item h3{font-size:clamp(28px,3vw,38px);transition:color .2s}
+.item:hover h3{color:var(--emerald)}
+.item p{grid-column:1;color:var(--ink-mute);font-size:15px}
+.item .pr{grid-row:1/3;grid-column:2;align-self:center;text-align:right;font-weight:700;font-size:17px;white-space:nowrap}
+.item .pr small{display:block;font-weight:500;font-size:13px;color:var(--ink-mute)}
+.panel[hidden]{display:none}
+.note{margin-top:20px;font-size:14px;color:var(--ink-mute)}
+@media (max-width:860px){.menu{grid-template-columns:minmax(0,1fr)}.menu-pic{position:relative;top:0;aspect-ratio:16/11}}
+
+/* results */
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.cmp{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;background:var(--paper-2);touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.cmp .after{clip-path:inset(0 0 0 var(--x,50%))}
+.cmp .handle{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;background:var(--white);transform:translateX(-1px)}
+.cmp .knob{position:absolute;top:50%;left:var(--x,50%);width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:var(--white);display:grid;place-items:center;box-shadow:0 8px 24px var(--shade);cursor:ew-resize}
+.cmp .knob svg{width:22px;height:22px;color:var(--emerald)}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.cmp input:focus-visible+.knob{outline:3px solid var(--emerald);outline-offset:3px}
+.cmp .tag{position:absolute;bottom:14px;padding:6px 12px;border-radius:999px;background:var(--shade);color:var(--white);font-size:13px;font-weight:600}
+.cmp .tl{left:14px}.cmp .tr{right:14px}
+.res-cap{margin-top:12px;display:flex;justify-content:space-between;gap:10px}
+.res-cap b{font:400 28px/1.1 var(--font-display)}
+.res-cap span{color:var(--ink-mute);font-size:14px;align-self:end}
+@media (max-width:900px){.results{grid-template-columns:minmax(0,1fr);max-width:520px}}
+
+/* doctor */
+.doc{background:var(--emerald);color:var(--emerald-ink);border-radius:clamp(28px,4vw,48px);overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.doc-img{min-height:520px}
+.doc-img img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.doc-txt{padding:clamp(28px,5vw,72px);display:grid;gap:26px;align-content:center}
+.doc-txt h2{font-size:clamp(46px,6vw,88px);color:var(--white)}
+.doc-txt blockquote{margin:0;font:400 clamp(24px,2.4vw,32px)/1.25 var(--font-display);color:var(--white)}
+.doc-txt cite{display:block;margin-top:12px;font:500 15px/1.4 var(--font-body);font-style:normal;color:var(--mint)}
+.doc-list{display:flex;flex-wrap:wrap;gap:8px}
+.doc-list span{padding:8px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--emerald-ink) 35%,transparent);font-size:14px}
+@media (max-width:860px){.doc{grid-template-columns:minmax(0,1fr)}.doc-img{min-height:380px}}
+
+/* checker gallery: the floor of the clinic, as a grid */
+.checker{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0}
+.checker > *{aspect-ratio:1/1;overflow:hidden;position:relative}
+.checker .b{background:var(--black)}.checker .w{background:var(--white)}.checker .e{background:var(--emerald)}
+.checker img{width:100%;height:100%;object-fit:cover;transition:opacity .4s}
+.checker .w2{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.checker .cap{display:grid;place-items:center;padding:12px;text-align:center;font:400 clamp(18px,2vw,28px)/1.1 var(--font-display);color:var(--white)}
+.checker .w .cap{color:var(--ink)}
+@media (max-width:760px){.checker{grid-template-columns:repeat(3,minmax(0,1fr))}.hide-s{display:none}}
+
+/* reviews */
+.rev{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:end}
+.rev-stage{position:relative;min-height:300px}
+.rev-q{position:absolute;inset:0;transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .rev-q{opacity:0;transform:translateY(16px)}.js .rev-q.on{opacity:1;transform:none}
+.rev-q p{font:400 clamp(30px,4vw,56px)/1.15 var(--font-display);max-width:30ch}
+.rev-q span{display:block;margin-top:18px;color:var(--ink-mute);font-size:15px}
+.rev-nav{display:flex;gap:10px}
+.rev-nav button{width:52px;height:52px;border-radius:50%;border:1px solid var(--ink);background:var(--paper);cursor:pointer;display:grid;place-items:center;transition:background-color .2s,color .2s}
+.rev-nav button:hover{background:var(--ink);color:var(--paper)}
+.rev-nav svg{width:20px;height:20px}
+@media (max-width:700px){.rev{grid-template-columns:minmax(0,1fr)}.rev-stage{min-height:360px}}
+
+/* blog */
+.posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.post{text-decoration:none;display:grid;gap:14px}
+.post .pic{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3}
+.post .pic img{width:100%;height:100%;object-fit:cover}
+.post h3{font-size:30px;line-height:1.08}
+.post:hover h3{color:var(--emerald)}
+.post span{color:var(--ink-mute);font-size:14px}
+@media (max-width:860px){.posts{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:80%;overflow-x:auto;scroll-snap-type:x mandatory}.post{scroll-snap-align:start}}
+
+/* booking */
+.booking{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:start}
+.hours{display:grid;gap:0;margin-top:26px}
+.hours div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}
+.hours div.today{font-weight:700;color:var(--emerald)}
+form.bk{background:var(--paper-2);border-radius:var(--r);padding:clamp(22px,3vw,40px);display:grid;gap:18px}
+.r2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+label{display:grid;gap:8px;font-size:15px;font-weight:600}
+input,select{width:100%;min-height:52px;background:var(--white);border:1px solid var(--line);border-radius:14px;color:var(--ink);font:400 16px/1.3 var(--font-body);padding:12px 14px;transition:border-color .2s}
+input:hover,select:hover{border-color:var(--ink-mute)}
+input:focus-visible,select:focus-visible{outline:2px solid var(--emerald);outline-offset:1px;border-color:var(--emerald)}
+input[aria-invalid="true"]{border-color:var(--emerald-2)}
+.slots{display:flex;flex-wrap:wrap;gap:8px}
+.slot{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--white);font:600 15px/1 var(--font-body);cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.slot:hover{border-color:var(--ink)}
+.slot[aria-pressed="true"]{background:var(--emerald);color:var(--white);border-color:var(--emerald)}
+.err{color:var(--emerald-2);font-weight:600;font-size:14px}
+.small{font-size:14px;color:var(--ink-mute)}
+@media (max-width:860px){.booking{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.r2{grid-template-columns:minmax(0,1fr)}}
+
+/* footer */
+footer{background:var(--emerald);color:var(--emerald-ink);padding:clamp(56px,8vw,100px) 0 36px}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:30px}
+.fgrid h3{font-size:clamp(46px,6vw,80px);color:var(--white)}
+.fgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fgrid a{text-decoration:none}.fgrid a:hover{color:var(--white)}
+.fgrid small{display:block;color:var(--mint);margin-bottom:10px;font-size:14px}
+.soc{display:flex;gap:10px;margin-top:20px}
+.soc a{width:46px;height:46px;border-radius:50%;border:1px solid color-mix(in srgb,var(--emerald-ink) 35%,transparent);display:grid;place-items:center;transition:background-color .2s,color .2s}
+.soc a:hover{background:var(--white);color:var(--emerald)}
+.soc svg{width:20px;height:20px}
+.fbot{margin-top:50px;padding-top:22px;border-top:1px solid color-mix(in srgb,var(--emerald-ink) 25%,transparent);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--mint)}
+.map{border-radius:var(--r);overflow:hidden;height:360px;margin-top:clamp(40px,6vw,80px)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(1)}
+@media (max-width:860px){.fgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.fgrid > div:first-child{grid-column:1/-1}}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:50;display:none}
+@media (max-width:860px){.fab{display:inline-flex}}
+
+.js .rv{opacity:0;transform:translateY(24px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .9s var(--ease),transform .9s var(--ease)}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none}.band-track{animation:none}.rev-q,.menu-pic img{transition:none}html{scroll-behavior:auto}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <nav class="nav-l" aria-label="Meniu">
+      <a class="l" href="#proceduri" data-ru="Процедуры">Proceduri</a>
+      <a class="l" href="#rezultate" data-ru="Результаты">Rezultate</a>
+      <a class="l" href="#doctor" data-ru="Доктор">Doctorul</a>
+    </nav>
+    <a class="mark" href="#top" aria-label="House of Beauty, sus"><b>House of Beauty</b><span data-ru="by dr. Гэрчу Антонела">by dr. Gherciu Antonela</span></a>
+    <div class="nav-r">
+      <a class="l" href="#blog" data-ru="Блог">Blog</a>
+      <div class="lang" role="group" aria-label="Limba / Язык"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+      <a class="btn btn-em" href="#programare" data-ru="Записаться">Programare</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <canvas id="drop" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <h1 data-ru="Сияющая кожа, естественно.">Ten luminos, natural.</h1>
+      <p data-ru="Эстетическая медицина в Кишинёве, каждый шаг объясняется заранее.">Medicină estetică în Chișinău, cu fiecare pas explicat dinainte.</p>
+      <div class="hero-actions">
+        <a class="btn btn-em" href="#programare" data-ru="Записаться онлайн">Programează-te online</a>
+        <a class="btn btn-line" href="#proceduri" data-ru="Процедуры и цены">Proceduri și prețuri</a>
+      </div>
+      <div class="score"><b>5,0</b><span data-ru="221 отзыв в Google, все на 5 звёзд">221 de recenzii pe Google,<br>nota maximă</span></div>
+    </div>
+    <div class="arch"><img src="img/doctor.webp" srcset="img/doctor-s.webp 820w, img/doctor.webp 1600w" sizes="(max-width:860px) 62vw, 430px" alt="Dr. Antonela Gherciu în cabinet, în uniformă verde" fetchpriority="high"></div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="band-track" id="band">
+  <span>Curățare facială</span><i>✦</i><span>Peeling</span><i>✦</i><span>Biorevitalizare</span><i>✦</i><span>Toxină botulinică</span><i>✦</i><span>Augmentarea buzelor</span><i>✦</i><span>Dermapen</span><i>✦</i><span>Mezoterapie</span><i>✦</i><span>Keratină</span><i>✦</i>
+</div></div>
+
+<section class="sec" id="proceduri">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="Процедуры">Proceduri</h2><p data-ru="Цены «от», окончательную стоимость врач назовёт на консультации.">Prețuri de pornire. Costul exact îl afli la consultație, înainte de orice procedură.</p></div>
+    <div class="menu">
+      <div class="menu-pic rv" id="menuPic">
+        <img class="on" data-k="face" src="img/clean-s.webp" alt="Curățare facială cu mască" loading="lazy">
+        <img data-k="inj" src="img/syringe-s.webp" alt="Doctorița pregătind o injecție" loading="lazy">
+        <img data-k="body" src="img/body-s.webp" alt="Procedură de remodelare corporală" loading="lazy">
+        <img data-k="care" src="img/manicure-s.webp" alt="Manichiură în cabinet" loading="lazy">
+      </div>
+      <div class="rv">
+        <div class="tabs" role="tablist" aria-label="Categorii">
+          <button class="tab" role="tab" aria-selected="true" aria-controls="p-face" id="t-face" data-k="face" data-ru="Лицо">Față</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="p-inj" id="t-inj" data-k="inj" tabindex="-1" data-ru="Инъекции">Injectabile</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="p-body" id="t-body" data-k="body" tabindex="-1" data-ru="Тело">Corp</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="p-care" id="t-care" data-k="care" tabindex="-1" data-ru="Волосы и ногти">Păr și unghii</button>
+        </div>
+        <div class="panel" role="tabpanel" id="p-face" aria-labelledby="t-face"><ul class="list">
+          <li class="item"><h3 data-ru="Чистка лица">Curățare facială</h3><p data-ru="Глубокое очищение, затем уход по типу кожи.">Profundă, urmată de îngrijire pentru tipul tău de ten.</p><span class="pr"><small data-ru="от">de la</small>700 MDL</span></li>
+          <li class="item"><h3 data-ru="Химический пилинг">Peeling chimic</h3><p data-ru="Ровный тон, меньше высыпаний и пигмента.">Ten uniform, mai puține imperfecțiuni și pete.</p><span class="pr"><small data-ru="от">de la</small>600 MDL</span></li>
+          <li class="item"><h3>Dermapen</h3><p data-ru="Микроиглы против пигментации и постакне.">Micro-ace pentru pigmentare și urme de acnee.</p><span class="pr"><small data-ru="от">de la</small>900 MDL</span></li>
+          <li class="item"><h3 data-ru="Мезотерапия">Mezoterapie</h3><p data-ru="Коктейли для кожи и кожи головы.">Cocktailuri pentru ten și scalp.</p><span class="pr"><small data-ru="от">de la</small>800 MDL</span></li>
+        </ul></div>
+        <div class="panel" role="tabpanel" id="p-inj" aria-labelledby="t-inj" hidden><ul class="list">
+          <li class="item"><h3 data-ru="Ботулинотерапия">Toxină botulinică</h3><p data-ru="Лоб, межбровье, гусиные лапки.">Frunte, între sprâncene, riduri de expresie.</p><span class="pr"><small data-ru="от, за зону">de la, pe zonă</small>1.500 MDL</span></li>
+          <li class="item"><h3 data-ru="Увеличение губ">Augmentarea buzelor</h3><p data-ru="Гиалуроновая кислота, естественный контур.">Acid hialuronic, contur fin, fără exagerare.</p><span class="pr"><small data-ru="от">de la</small>2.800 MDL</span></li>
+          <li class="item"><h3 data-ru="Биоревитализация">Biorevitalizare</h3><p data-ru="Увлажнение и сияние изнутри.">Hidratare și luminozitate din interior.</p><span class="pr"><small data-ru="от">de la</small>1.800 MDL</span></li>
+          <li class="item"><h3 data-ru="Гипергидроз">Hiperhidroză</h3><p data-ru="Ботулинотерапия подмышечной зоны.">Toxină botulinică în zona axilelor.</p><span class="pr"><small data-ru="от">de la</small>3.500 MDL</span></li>
+        </ul></div>
+        <div class="panel" role="tabpanel" id="p-body" aria-labelledby="t-body" hidden><ul class="list">
+          <li class="item"><h3 data-ru="Ремоделирование тела">Remodelare corporală</h3><p data-ru="Курс процедур для контура тела.">Curs de proceduri pentru conturul corpului.</p><span class="pr"><small data-ru="от">de la</small>500 MDL</span></li>
+          <li class="item"><h3 data-ru="Инъекционный липолиз">Lipoliză injectabilă</h3><p data-ru="Локальные жировые отложения.">Pentru depozitele locale de grăsime.</p><span class="pr"><small data-ru="от">de la</small>900 MDL</span></li>
+        </ul></div>
+        <div class="panel" role="tabpanel" id="p-care" aria-labelledby="t-care" hidden><ul class="list">
+          <li class="item"><h3 data-ru="Кератин">Keratină</h3><p data-ru="Зеркальный блеск и гладкость.">Luciu de oglindă și păr disciplinat.</p><span class="pr"><small data-ru="от">de la</small>1.500 MDL</span></li>
+          <li class="item"><h3 data-ru="Маникюр">Manichiură</h3><p data-ru="Аккуратно, стерильно, качественные материалы.">Curat, precis, produse de calitate.</p><span class="pr"><small data-ru="от">de la</small>350 MDL</span></li>
+          <li class="item"><h3 data-ru="Макияж">Machiaj</h3><p data-ru="Для события или фотосессии.">Pentru evenimente și ședințe foto.</p><span class="pr"><small data-ru="от">de la</small>600 MDL</span></li>
+        </ul></div>
+        <p class="note" data-ru="Цены ориентировочные. Процедуры проводятся после консультации.">Prețurile sunt orientative. Procedurile se fac doar după consultație.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="rezultate" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="До и после">Înainte și după</h2><p data-ru="Реальные пациентки кабинета. Потяните ползунок.">Paciente reale ale cabinetului. Trage de cursor.</p></div>
+    <div class="results">
+      <figure class="rv" style="margin:0"><div class="cmp"><img src="img/cmp-lips2-before.webp" alt="Buze înainte de procedură" loading="lazy"><img class="after" src="img/cmp-lips2-after.webp" alt="Buze după augmentare" loading="lazy"><div class="handle"></div><input type="range" min="0" max="100" value="50" aria-label="Compară înainte și după"><div class="knob"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div><span class="tag tl" data-ru="До">Înainte</span><span class="tag tr" data-ru="После">După</span></div><figcaption class="res-cap"><b data-ru="Губы">Buze</b><span data-ru="Гиалуроновая кислота">acid hialuronic</span></figcaption></figure>
+      <figure class="rv" style="margin:0"><div class="cmp"><img src="img/cmp-botox-before.webp" alt="Riduri pe frunte înainte" loading="lazy"><img class="after" src="img/cmp-botox-after.webp" alt="Frunte netedă după toxină botulinică" loading="lazy"><div class="handle"></div><input type="range" min="0" max="100" value="50" aria-label="Compară înainte și după"><div class="knob"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div><span class="tag tl" data-ru="До">Înainte</span><span class="tag tr" data-ru="После">După</span></div><figcaption class="res-cap"><b data-ru="Межбровье">Între sprâncene</b><span data-ru="Ботулинотерапия">toxină botulinică</span></figcaption></figure>
+      <figure class="rv" style="margin:0"><div class="cmp"><img src="img/cmp-lips-before.webp" alt="Buze subțiri înainte" loading="lazy"><img class="after" src="img/cmp-lips-after.webp" alt="Buze cu volum după procedură" loading="lazy"><div class="handle"></div><input type="range" min="0" max="100" value="50" aria-label="Compară înainte și după"><div class="knob"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div><span class="tag tl" data-ru="До">Înainte</span><span class="tag tr" data-ru="После">După</span></div><figcaption class="res-cap"><b data-ru="Объём губ">Volum buze</b><span data-ru="Один визит">o singură vizită</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="doctor" style="padding-top:0">
+  <div class="wrap">
+    <div class="doc rv">
+      <div class="doc-img"><img src="img/doctor2.webp" alt="Dr. Antonela Gherciu în fața diplomelor din cabinet" loading="lazy"></div>
+      <div class="doc-txt">
+        <h2 data-ru="Доктор Антонела">Dr. Antonela Gherciu</h2>
+        <blockquote><p>„Antonela mi-a explicat pas cu pas cum se va desfășura procedura și sunt extrem de mulțumită de rezultate.”</p><cite>Tatiana Litra, pe Google</cite></blockquote>
+        <div class="doc-list"><span data-ru="Консультация перед процедурой">Consultație înainte</span><span data-ru="Сертифицированные препараты">Preparate certificate</span><span data-ru="Уход после процедуры">Îngrijire după</span></div>
+        <div><a class="btn btn-white" href="#programare" data-ru="Записаться к доктору">Programează-te la doctor</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Cabinetul">
+  <div class="checker">
+    <div class="w2 rv"><img src="img/logo.webp" alt="Logo House of Beauty pe peretele de la intrare, podea în carouri" loading="lazy"></div>
+    <div class="b cap"><span data-ru="Чёрное">Negru</span></div>
+    <div><img src="img/chairs-s.webp" alt="Fotolii verzi din catifea în sala de așteptare" loading="lazy"></div>
+    <div class="w cap"><span data-ru="Белое">Alb</span></div>
+    <div><img src="img/cabinet-s.webp" alt="Cabinetul de proceduri" loading="lazy"></div>
+    <div><img src="img/products-s.webp" alt="Produse dermatocosmetice folosite în cabinet" loading="lazy"></div>
+    <div class="e cap"><span data-ru="Изумруд">Smarald</span></div>
+    <div><img src="img/reception-s.webp" alt="Recepția cu podea în carouri" loading="lazy"></div>
+    <div class="b hide-s"></div>
+    <div class="hide-s"><img src="img/prx-s.webp" alt="Preparat PRX-T33 pentru peeling" loading="lazy"></div>
+    <div class="w hide-s"></div>
+    <div><img src="img/house-s.webp" alt="Clădirea cabinetului pe strada Ion Doncev" loading="lazy"></div>
+    <div class="b cap"><span>Ion Doncev 20</span></div>
+  </div>
+</section>
+
+<section class="sec" id="recenzii">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="221 отзыв, все 5">221 de recenzii, toate de 5</h2></div>
+    <div class="rev rv">
+      <div class="rev-stage" id="revStage" aria-live="polite">
+        <figure class="rev-q on"><p>„Rezultatul final mi-a depășit așteptările. Buzele au un contur fin și un aspect proaspăt, fără nicio exagerare.”</p><span>Elena Cojocaru</span></figure>
+        <figure class="rev-q"><p>„Recomand cu toată încrederea, pentru că rezultatul este văzut din primele zile.”</p><span>Ana Heghea</span></figure>
+        <figure class="rev-q"><p>„Кожа сияет, высыпаний стало значительно меньше, а тон лица выглядит более ровным и свежим.”</p><span>Анастасия Еринез</span></figure>
+        <figure class="rev-q"><p>„Mi-a acordat tot timpul necesar și a dat dovadă de foarte mult profesionalism.”</p><span>Korina Diaconu</span></figure>
+        <figure class="rev-q"><p>„Приятный человек, замечательный специалист, честный и порядочный доктор.”</p><span>Kristina Makeenko</span></figure>
+      </div>
+      <div class="rev-nav"><button type="button" id="revPrev" aria-label="Recenzia anterioară"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button><button type="button" id="revNext" aria-label="Recenzia următoare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="blog" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="Советы доктора">Sfaturi de la doctor</h2><a class="btn btn-line" href="blog.html" data-ru="Все статьи">Toate articolele</a></div>
+    <div class="posts">
+      <a class="post rv" href="blog.html#dupa-peeling"><div class="pic"><img src="img/peel-s.webp" alt="Aplicarea unui peeling chimic" loading="lazy"></div><h3 data-ru="Уход за кожей после пилинга">Cum îngrijești tenul după un peeling</h3><span data-ru="4 минуты">4 minute de citit</span></a>
+      <a class="post rv" href="blog.html#biorevitalizare"><div class="pic"><img src="img/face-s.webp" alt="Pacientă după biorevitalizare" loading="lazy"></div><h3 data-ru="Биоревитализация: что это и сколько держится">Biorevitalizarea: ce este și cât ține</h3><span data-ru="3 минуты">3 minute de citit</span></a>
+      <a class="post rv" href="blog.html#toxina"><div class="pic"><img src="img/treat-s.webp" alt="Procedură injectabilă în cabinet" loading="lazy"></div><h3 data-ru="Ботулинотерапия: 6 частых вопросов">Toxina botulinică: 6 întrebări frecvente</h3><span data-ru="5 минут">5 minute de citit</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="programare" style="padding-top:0;padding-bottom:clamp(40px,6vw,80px)">
+  <div class="wrap booking">
+    <div class="rv">
+      <div class="sh" style="margin-bottom:10px"><h2 data-ru="Запись">Programare</h2></div>
+      <p style="color:var(--ink-soft);max-width:40ch" data-ru="Выберите процедуру и время, сообщение уйдёт в WhatsApp кабинета. Подтвердим в рабочее время.">Alege procedura și ora: mesajul pleacă pe WhatsApp-ul cabinetului și îți confirmăm în orele de lucru.</p>
+      <div class="hours" id="hours">
+        <div data-d="1"><span data-ru="Понедельник">Luni</span><span>08:30 până la 20:00</span></div>
+        <div data-d="2"><span data-ru="Вторник">Marți</span><span>08:30 până la 20:00</span></div>
+        <div data-d="3"><span data-ru="Среда">Miercuri</span><span>08:30 până la 20:00</span></div>
+        <div data-d="4"><span data-ru="Четверг">Joi</span><span>08:30 până la 20:00</span></div>
+        <div data-d="5"><span data-ru="Пятница">Vineri</span><span>08:30 până la 20:00</span></div>
+        <div data-d="6"><span data-ru="Суббота">Sâmbătă</span><span>10:00 până la 18:00</span></div>
+        <div data-d="0"><span data-ru="Воскресенье">Duminică</span><span data-ru="Выходной">Închis</span></div>
+      </div>
+    </div>
+    <form class="bk rv" id="bk" novalidate>
+      <label><span data-ru="Процедура">Procedura</span><select name="proc">
+        <option data-ru="Консультация">Consultație</option><option data-ru="Чистка лица">Curățare facială</option><option data-ru="Пилинг">Peeling</option><option>Dermapen</option><option data-ru="Биоревитализация">Biorevitalizare</option><option data-ru="Ботулинотерапия">Toxină botulinică</option><option data-ru="Увеличение губ">Augmentarea buzelor</option><option data-ru="Кератин">Keratină</option><option data-ru="Маникюр">Manichiură</option>
+      </select></label>
+      <label><span data-ru="Дата">Data</span><input type="date" name="date" required></label>
+      <div><span style="display:block;font-weight:600;font-size:15px;margin-bottom:8px" data-ru="Удобное время">Ora preferată</span><div class="slots" id="slots"><button type="button" class="slot" aria-pressed="false">09:00</button><button type="button" class="slot" aria-pressed="true">11:00</button><button type="button" class="slot" aria-pressed="false">13:00</button><button type="button" class="slot" aria-pressed="false">15:00</button><button type="button" class="slot" aria-pressed="false">17:00</button><button type="button" class="slot" aria-pressed="false">18:30</button></div></div>
+      <div class="r2"><label><span data-ru="Имя">Numele</span><input name="name" autocomplete="name" required></label><label><span data-ru="Телефон">Telefon</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+373" required></label></div>
+      <p class="err" id="bkErr" role="alert"></p>
+      <button class="btn btn-em" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="small"><span data-ru="Или позвоните:">Sau sună:</span> <a href="tel:+37368339853">+373 68 339 853</a>. <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a></p>
+    </form>
+  </div>
+  <div class="wrap"><div class="map rv"><iframe title="Harta: Strada Ion Doncev 20, Chișinău" loading="lazy" src="https://maps.google.com/maps?q=47.0335682,28.8326451&z=16&output=embed"></iframe></div></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h3>House of Beauty</h3><p data-ru="Кабинет эстетической медицины доктора Антонелы Гэрчу.">Cabinetul de medicină estetică al dr. Antonela Gherciu.</p>
+        <div class="soc">
+          <a href="https://wa.me/37368339853" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+          <a href="viber://chat?number=%2B37368339853" aria-label="Viber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg></a>
+          <a href="https://www.fresha.com/search?query=House%20of%20Beauty%20Gherciu" target="_blank" rel="noopener" aria-label="Fresha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></a>
+          <a href="https://www.google.com/maps/place/House+Of+Beauty+by+Gherciu+Antonela/@47.0335682,28.8326451,17z/data=!4m6!3m5!1s0x40c97d8a27bdd0e5:0xee2909c74016fd89" target="_blank" rel="noopener" aria-label="Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></a>
+        </div>
+      </div>
+      <div><small data-ru="Адрес">Adresa</small><p>Str. Ion Doncev 20,<br>Chișinău</p></div>
+      <div><small data-ru="Контакты">Contact</small><ul><li><a href="tel:+37368339853">+373 68 339 853</a></li><li><a href="https://wa.me/37368339853">WhatsApp</a></li></ul></div>
+      <div><small data-ru="Информация">Info</small><ul><li><a href="blog.html">Blog</a></li><li><a href="termeni.html" data-ru="Условия">Termeni și condiții</a></li><li><a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a></li></ul></div>
+    </div>
+    <div class="fbot"><span>© 2026 House of Beauty by dr. Gherciu Antonela</span><span data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span></div>
+  </div>
+</footer>
+<a class="btn btn-em fab" href="#programare" data-ru="Записаться">Programare</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+  $$('[data-ru]').forEach((el) => { el.dataset.ro = el.textContent; });
+  let lang = 'ro';
+  const setLang = (l) => { lang = l; document.documentElement.lang = l; $$('[data-ru]').forEach((el) => { el.textContent = l === 'ru' ? el.dataset.ru : el.dataset.ro; }); $$('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l))); store.set('hob-lang', l); };
+  $$('.lang button').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  if (store.get('hob-lang') === 'ru') setLang('ru');
+
+  const nav = $('#nav'); const ons = () => nav.classList.toggle('solid', scrollY > 30); addEventListener('scroll', ons, { passive: true }); ons();
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  $$('.rv').forEach((el) => io.observe(el));
+  const band = $('#band'); if (!reduce) band.innerHTML += band.innerHTML;
+
+  /* tabs with arrow keys, picture follows */
+  const tabs = $$('.tab');
+  const pick = (t) => { tabs.forEach((x) => { const on = x === t; x.setAttribute('aria-selected', String(on)); x.tabIndex = on ? 0 : -1; $('#' + x.getAttribute('aria-controls')).hidden = !on; }); $$('#menuPic img').forEach((i) => i.classList.toggle('on', i.dataset.k === t.dataset.k)); };
+  tabs.forEach((t, i) => { t.addEventListener('click', () => pick(t)); t.addEventListener('keydown', (e) => { const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (d) { const n = tabs[(i + d + tabs.length) % tabs.length]; pick(n); n.focus(); } }); });
+
+  /* before/after */
+  $$('.cmp').forEach((c) => { const r = $('input', c); const set = () => c.style.setProperty('--x', r.value + '%'); r.addEventListener('input', set); set(); });
+
+  /* reviews */
+  const qs = $$('.rev-q'); let qi = 0; const show = (n) => { qi = (n + qs.length) % qs.length; qs.forEach((q, i) => q.classList.toggle('on', i === qi)); };
+  $('#revPrev').addEventListener('click', () => show(qi - 1)); $('#revNext').addEventListener('click', () => show(qi + 1));
+  let auto = reduce ? 0 : setInterval(() => show(qi + 1), 6500); $('#revStage').addEventListener('pointerenter', () => clearInterval(auto));
+
+  /* today in hours */
+  const d = new Date().getDay(); const row = $(`#hours [data-d="${d}"]`); if (row) row.classList.add('today');
+
+  /* booking */
+  const f = $('#bk'), err = $('#bkErr'); f.date.min = new Date().toISOString().slice(0, 10);
+  $$('.slot').forEach((s) => s.addEventListener('click', () => $$('.slot').forEach((x) => x.setAttribute('aria-pressed', String(x === s)))));
+  f.addEventListener('submit', (e) => {
+    e.preventDefault(); err.textContent = '';
+    const bad = ['date', 'name', 'phone'].filter((n) => !f[n].value.trim() || (n === 'phone' && f.phone.value.replace(/\D/g, '').length < 8));
+    $$('input', f).forEach((i) => i.removeAttribute('aria-invalid')); bad.forEach((n) => f[n].setAttribute('aria-invalid', 'true'));
+    if (bad.length) { err.textContent = lang === 'ru' ? 'Укажите дату, имя и телефон.' : 'Completează data, numele și telefonul.'; f[bad[0]].focus(); return; }
+    const slot = $('.slot[aria-pressed="true"]')?.textContent || '';
+    const msg = `Bună ziua! Aș dori o programare la House of Beauty.\nProcedura: ${f.proc.value}\nData: ${f.date.value}, ora ${slot}\nNume: ${f.name.value}\nTelefon: ${f.phone.value}`;
+    window.open('https://wa.me/37368339853?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+
+  /* 3D: a glass serum drop and pearls floating over the clinic's checkerboard floor */
+  const canvas = $('#drop');
+  let ok = false; try { ok = !!(canvas.getContext('webgl2') || canvas.getContext('webgl')); } catch {}
+  if (!window.THREE || !ok) return;
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75)); renderer.outputEncoding = THREE.sRGBEncoding; renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
+  const scene = new THREE.Scene(); scene.fog = new THREE.Fog(0xfbfbf9, 9, 20);
+  const cam = new THREE.PerspectiveCamera(38, 1, .1, 60); cam.position.set(0, 2.6, 9); cam.lookAt(0, 1, 0);
+
+  // checkerboard floor texture, like the clinic's tiles
+  const cv = document.createElement('canvas'); cv.width = cv.height = 512; const g = cv.getContext('2d');
+  for (let y = 0; y < 8; y++) for (let x = 0; x < 8; x++) { g.fillStyle = (x + y) % 2 ? '#0d0f0e' : '#f4f4f2'; g.fillRect(x * 64, y * 64, 64, 64); }
+  const tex = new THREE.CanvasTexture(cv); tex.wrapS = tex.wrapT = THREE.RepeatWrapping; tex.repeat.set(5, 5); tex.encoding = THREE.sRGBEncoding; tex.anisotropy = 8;
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshStandardMaterial({ map: tex, roughness: .35, metalness: 0 }));
+  floor.rotation.x = -Math.PI / 2; floor.position.y = -1.4; scene.add(floor);
+
+  // environment for reflections: emerald and white panels
+  const envScene = new THREE.Scene();
+  envScene.background = new THREE.Color(0xf2f2ef);
+  const panel = (c, x, y, z, ry) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(6, 10), new THREE.MeshBasicMaterial({ color: c, side: THREE.DoubleSide })); m.position.set(x, y, z); m.rotation.y = ry; envScene.add(m); };
+  panel(0x0c4a3a, -6, 2, 0, Math.PI / 2); panel(0xffffff, 6, 2, 0, -Math.PI / 2); panel(0x11614c, 0, 2, -6, 0); panel(0xffffff, 0, 6, 0, 0);
+  const pm = new THREE.PMREMGenerator(renderer); scene.environment = pm.fromScene(envScene, .04).texture;
+
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x0c4a3a, .7));
+  const key = new THREE.DirectionalLight(0xffffff, 1.4); key.position.set(3, 6, 4); scene.add(key);
+
+  // drop: a lathe profile, round at the bottom and pulled to a point at the top
+  const pts = []; for (let i = 0; i <= 40; i++) { const t = i / 40; const y = -1 + 2.4 * t; const r = Math.sin(Math.PI * Math.min(1, t * 1.05)) * (1 - t * .78) * 1.05; pts.push(new THREE.Vector2(Math.max(r, .001), y)); }
+  const drop = new THREE.Mesh(new THREE.LatheGeometry(pts, 96), new THREE.MeshPhysicalMaterial({ color: 0x7fc4ab, metalness: 0, roughness: .03, transmission: .92, thickness: 2.2, ior: 1.45, clearcoat: 1, clearcoatRoughness: .04, envMapIntensity: 1.8 }));
+  drop.position.set(1.6, .8, 0); scene.add(drop);
+  const shadow = new THREE.Mesh(new THREE.CircleGeometry(1.1, 48), new THREE.MeshBasicMaterial({ color: 0x0c4a3a, transparent: true, opacity: .18 }));
+  shadow.rotation.x = -Math.PI / 2; shadow.position.set(1.6, -1.39, 0); scene.add(shadow);
+
+  const pearls = [];
+  const pearlMat = (c) => new THREE.MeshPhysicalMaterial({ color: c, roughness: .18, metalness: .1, clearcoat: 1, clearcoatRoughness: .1 });
+  [[-.9, .2, 1.4, .26, 0xffffff], [3.4, 1.8, -.8, .2, 0x0c4a3a], [2.9, -.6, 1.6, .16, 0xffffff], [.2, 2.4, -1.4, .12, 0x11614c], [4.4, .4, .6, .1, 0xffffff], [-2.2, 1.6, -2, .18, 0x0c4a3a]].forEach(([x, y, z, r, c], i) => {
+    const m = new THREE.Mesh(new THREE.SphereGeometry(r, 48, 32), pearlMat(c)); m.position.set(x, y, z); m.userData = { y, i }; scene.add(m); pearls.push(m);
+  });
+
+  const size = () => { const w = canvas.clientWidth, h = canvas.clientHeight; renderer.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix(); const narrow = w < 860; drop.position.x = narrow ? 1.7 : .5; drop.scale.setScalar(narrow ? .62 : .9); shadow.position.x = drop.position.x; };
+  size(); addEventListener('resize', size);
+  const m = { x: 0, y: 0 }; addEventListener('pointermove', (e) => { m.x = e.clientX / innerWidth - .5; m.y = e.clientY / innerHeight - .5; }, { passive: true });
+  let vis = true, raf = 0; new IntersectionObserver(([e]) => { vis = e.isIntersecting; if (vis && !raf) loop(); }).observe(canvas);
+  const clock = new THREE.Clock();
+  function loop() {
+    if (!vis) { raf = 0; return; }
+    raf = requestAnimationFrame(loop);
+    const t = reduce ? 0 : clock.getElapsedTime();
+    drop.rotation.y = t * .25 + m.x * .6; drop.rotation.z = Math.sin(t * .5) * .06 + m.x * .08;
+    drop.position.y += ((innerWidth < 860 ? 2.6 : 1.5) + Math.sin(t * .8) * .12 - drop.position.y) * .1;
+    shadow.scale.setScalar(1 - Math.sin(t * .8) * .06);
+    pearls.forEach((p) => { p.position.y = p.userData.y + Math.sin(t * .7 + p.userData.i) * .15; });
+    cam.position.x += (m.x * .8 - cam.position.x) * .04; cam.position.y += (2.6 - m.y * .5 - cam.position.y) * .04; cam.lookAt(0, 1, 0);
+    floor.position.z = (t * .15) % (40 / 5 / 4);
+    renderer.render(scene, cam);
+    if (reduce) { cancelAnimationFrame(raf); raf = 0; }
+  }
+  loop();
+})();
+</script>
+</body>
+</html>

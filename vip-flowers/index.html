@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>VIP Flowers, Pușkin 41, Chișinău</title>
+<meta name="description" content="VIP Flowers, florărie pe Strada Pușkin 41, Chișinău. Buchete minimaliste și elegante, livrare 24/7, ridicare din magazin. Compune-ți buchetul în 3D.">
+<meta property="og:title" content="VIP Flowers, Chișinău">
+<meta property="og:description" content="Puține flori. Alese perfect. Compune buchetul în 3D și comandă pe WhatsApp.">
+<meta property="og:image" content="img/blue.webp">
+<meta name="theme-color" content="#1c1a1b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c1a1b'/%3E%3Cpath d='M16 54V30a16 16 0 0 1 32 0v24' stroke='%23f0c1cc' stroke-width='4' fill='none'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23f0c1cc'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "the shop's lit arch mirror becomes a stage: inside it you compose a bouquet in 3D, stem by stem, and send that exact composition to the florist" · vibe: "graphite counter, white light, powder pink paper, a florist's quiet confidence" · posture: committed · axes: dark/classical-serif/blush · nav: centred wordmark between two short link groups · footer: the arch outline again, address, hours, legal · hero: configurator, headline and stem counters left, the glowing arch with a live 3D bouquet right · signature: a procedural 3D bouquet (roses, hydrangea, eustoma, santini) that rebuilds as you add stems, wrap and palette */
+/* Hallmark · waive 24b: spacing set by the arch proportions, not a 4px scale */
+/* critique: florist sites are product grids with a cart; this shop is loved for listening and composing exactly what the client imagined, so the first thing you do here is compose */
+:root{
+  --graphite:#1c1a1b; --graphite-2:#252223; --graphite-3:#302c2d; --line:#3d3839;
+  --ivory:#f5efec; --ivory-2:#d9d0cd; --mute:#a39a98;
+  --blush:#f0c1cc; --blush-2:#e7a3b6; --rose:#c94f78; --on-blush:#1c1a1b;
+  --glow:rgba(255,246,243,.9); --glow-2:rgba(240,193,204,.35); --veil:rgba(0,0,0,.45);
+  --font-display:'Marcellus',serif; --font-body:'Jost',sans-serif;
+  --max:1280px; --gut:clamp(18px,4vw,44px);
+  --ease:cubic-bezier(.22,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--graphite);color:var(--ivory);font:400 17px/1.6 var(--font-body)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;text-wrap:balance;line-height:1.05}
+:focus-visible{outline:2px solid var(--blush);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--blush);color:var(--on-blush);padding:10px 14px;z-index:99}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;border:1px solid var(--blush);background:var(--blush);color:var(--on-blush);font:500 16px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
+.btn:hover{background:var(--ivory);border-color:var(--ivory)}
+.btn.line{background:transparent;color:var(--ivory);border-color:var(--line)}
+.btn.line:hover{border-color:var(--blush);color:var(--blush)}
+
+.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background-color .3s var(--ease),border-color .3s var(--ease);border-bottom:1px solid transparent}
+.nav.solid{background:var(--graphite);border-color:var(--line)}
+.nav .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;height:76px;gap:20px}
+.nl{display:flex;gap:24px}
+.nl a{text-decoration:none;font-size:15px;color:var(--ivory-2);padding:8px 0;transition:color .2s var(--ease)}
+.nl a:hover{color:var(--blush)}
+.nr{justify-content:flex-end;align-items:center}
+.brand{font:400 26px/1 var(--font-display);text-decoration:none;letter-spacing:.06em;display:flex;align-items:baseline;gap:8px}
+.brand span{color:var(--blush)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ivory);font:600 13px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ivory);color:var(--graphite);border-color:var(--ivory)}
+@media (max-width:900px){.nav .wrap{grid-template-columns:auto minmax(0,1fr)}.nl:not(.nr){display:none}.nr a{display:none}}
+
+/* hero configurator */
+.hero{min-height:100svh;padding:100px 0 60px;display:flex;align-items:center}
+.hgrid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(44px,5.2vw,80px)}
+.hero h1 .ac{color:var(--blush)}
+.hero .sub{margin:14px 0 22px;color:var(--ivory-2);font-size:18px;max-width:28em}
+.panel{display:grid;gap:14px}
+.stems{display:grid;gap:8px}
+.stem{display:grid;grid-template-columns:minmax(0,1fr) auto auto auto;align-items:center;gap:10px;padding:4px 4px 4px 16px;border:1px solid var(--line);border-radius:16px;background:var(--graphite-2)}
+.stem b{font-weight:500}
+.stem small{color:var(--mute);font-size:13px;margin-left:6px}
+.stem button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ivory);font:500 20px/1 var(--font-body);cursor:pointer;transition:border-color .2s var(--ease),color .2s var(--ease)}
+.stem button:hover{border-color:var(--blush);color:var(--blush)}
+.stem output{min-width:26px;text-align:center;font:400 22px/1 var(--font-display)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.opts .lb{font-size:14px;color:var(--mute);min-width:76px}
+.dot{width:44px;height:44px;border-radius:50%;border:3px solid var(--graphite);box-shadow:0 0 0 1px var(--line);cursor:pointer;transition:box-shadow .2s var(--ease)}
+.dot[aria-pressed="true"]{box-shadow:0 0 0 2px var(--blush)}
+.total{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:8px;border-top:1px solid var(--line)}
+.total p{margin:0;color:var(--mute);font-size:14px}
+.total b{display:block;font:400 34px/1.1 var(--font-display);color:var(--ivory)}
+.arch{position:relative;aspect-ratio:3/4;max-height:78svh;margin-left:auto;width:100%;max-width:560px;border-radius:999px 999px 28px 28px;background:radial-gradient(70% 55% at 50% 42%,var(--glow-2),transparent 70%),var(--graphite-2);box-shadow:inset 0 0 0 2px var(--glow),inset 0 0 80px -20px var(--glow-2);overflow:hidden}
+#bq{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y;cursor:grab}
+.arch .fb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.no-gl .arch .fb{display:block}
+.arch .tip{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);font-size:13px;color:var(--mute);white-space:nowrap}
+@media (max-width:900px){.hgrid{grid-template-columns:minmax(0,1fr)}.arch{order:-1;max-width:420px;margin:0 auto;max-height:none}.hero{padding-top:90px}}
+
+section{padding:clamp(80px,11vw,140px) 0}
+.h2{font-size:clamp(40px,5.2vw,74px)}
+.h2 .ac{color:var(--blush)}
+.lede{color:var(--ivory-2);max-width:32em;margin:16px 0 0;font-size:18px}
+
+/* catalogue */
+.cat{background:var(--ivory);color:var(--graphite)}
+.cat .h2 .ac{color:var(--rose)}
+.cat .lede{color:var(--graphite-3)}
+.shelf{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:52px}
+.bqc{display:flex;flex-direction:column;gap:12px}
+.bqc .ph{aspect-ratio:3/4;border-radius:999px 999px 18px 18px;overflow:hidden;background:var(--ivory-2)}
+.bqc img{width:100%;height:100%;object-fit:cover}
+.bqc .ph{transition:transform .5s var(--ease)}
+.bqc:hover .ph{transform:translateY(-6px)}
+.bqc h3{font-size:24px}
+.bqc .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.bqc .pr{font:400 20px/1 var(--font-display);white-space:nowrap}
+.bqc .pr small{font:400 13px/1 var(--font-body);color:var(--graphite-3);margin-right:4px}
+.bqc .acts{display:flex;gap:8px;flex-wrap:wrap}
+.mini{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--graphite);background:var(--graphite);color:var(--ivory);font:500 14px/1 var(--font-body);cursor:pointer;transition:background-color .2s var(--ease),color .2s var(--ease)}
+.mini:hover{background:var(--rose);border-color:var(--rose)}
+.mini.o{background:transparent;color:var(--graphite)}
+.mini.o:hover{color:var(--ivory)}
+.cat .pnote{margin:30px 0 0;font-size:14px;color:var(--graphite-3)}
+@media (max-width:1000px){.shelf{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.shelf{gap:24px 12px}.bqc .row{flex-direction:column;align-items:flex-start}.bqc h3{font-size:21px}.mini{padding:0 12px;font-size:13px}}
+
+/* shop */
+.shop{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:120px;gap:14px;margin-top:52px}
+.shop figure{margin:0;overflow:hidden;border-radius:18px;background:var(--graphite-2)}
+.shop img{width:100%;height:100%;object-fit:cover}
+.s1{grid-column:span 4;grid-row:span 4;border-radius:999px 999px 18px 18px!important}
+.s2{grid-column:span 4;grid-row:span 2}
+.s3{grid-column:span 4;grid-row:span 3}
+.s4{grid-column:span 4;grid-row:span 2}
+.s5{grid-column:span 4;grid-row:span 3}
+.perks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:40px}
+.pk{border:1px solid var(--line);border-radius:18px;padding:22px;display:grid;gap:8px}
+.pk svg{width:28px;height:28px;color:var(--blush)}
+.pk b{font:400 22px/1.15 var(--font-display)}
+.pk span{color:var(--mute);font-size:15px}
+@media (max-width:900px){.shop{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:160px}.s1,.s2,.s3,.s4,.s5{grid-column:span 1;grid-row:span 1}.s1{grid-column:span 2;grid-row:span 2}.perks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* reviews: one at a time, big */
+.rv-wrap{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.slider{position:relative;min-height:220px;display:grid;margin-top:40px}
+.sl{grid-area:1/1;display:grid;gap:22px;align-content:start;opacity:0;visibility:hidden;transition:opacity .6s var(--ease),visibility .6s}
+.sl.on{opacity:1;visibility:visible}
+.sl p{margin:0;font:400 clamp(26px,3.2vw,42px)/1.3 var(--font-display);max-width:28em}
+.sl span{color:var(--mute)}
+.ctrl{display:flex;gap:10px;margin-top:20px;align-items:center}
+.ctrl button{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ivory);cursor:pointer;font-size:18px}
+.ctrl button:hover{border-color:var(--blush);color:var(--blush)}
+.ctrl output{color:var(--mute);font-size:14px;margin-left:8px}
+
+/* order */
+.order{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;align-items:start}
+.sumbox{margin-top:28px;border:1px solid var(--line);border-radius:22px;padding:22px;display:grid;gap:8px}
+.sumbox b{font:400 24px/1.2 var(--font-display)}
+.sumbox span{color:var(--mute);font-size:15px}
+form{background:var(--graphite-2);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,3.4vw,38px);display:grid;gap:20px}
+fieldset{border:0;margin:0;padding:0}
+legend{font-weight:600;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ivory);font:500 15px/1 var(--font-body);cursor:pointer;transition:background-color .2s var(--ease),color .2s var(--ease)}
+.chip[aria-pressed="true"]{background:var(--blush);color:var(--on-blush);border-color:var(--blush)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:600}
+input[type=text],input[type=tel],input[type=date],textarea{width:100%;min-height:50px;border:1px solid var(--line);border-radius:14px;background:var(--graphite);color:var(--ivory);font:400 16px/1.4 var(--font-body);padding:12px 14px;color-scheme:dark}
+textarea{min-height:84px;resize:vertical}
+input[aria-invalid="true"]{border-color:var(--blush)}
+.err{color:var(--blush);font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+[hidden]{display:none!important}
+@media (max-width:900px){.order{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}}
+
+/* contact */
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px 24px;margin:30px 0}
+.ct dt{color:var(--blush);font-size:14px}
+.ct dd{margin:0}
+.ct .ph{border-radius:999px 999px 24px 24px;overflow:hidden;aspect-ratio:3/4;max-width:440px;margin-left:auto;box-shadow:0 0 0 2px var(--glow)}
+.ct .ph img{width:100%;height:100%;object-fit:cover}
+.soc{display:flex;flex-wrap:wrap;gap:10px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:1px solid var(--line);border-radius:999px;text-decoration:none;transition:border-color .2s var(--ease),color .2s var(--ease)}
+.soc a:hover{border-color:var(--blush);color:var(--blush)}
+.soc svg{width:20px;height:20px}
+@media (max-width:900px){.ct{grid-template-columns:minmax(0,1fr)}.ct .ph{margin:0 auto}}
+
+footer{border-top:1px solid var(--line);padding:30px 0 110px;font-size:14px;color:var(--mute)}
+.fo{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center}
+.fo svg{width:26px;height:34px;color:var(--blush)}
+.fo a{color:var(--ivory-2)}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:36px}}
+
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--graphite-2);border:1px solid var(--line);border-radius:999px}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;font-weight:500}
+.mbar a.p{background:var(--blush);color:var(--on-blush)}
+@media (max-width:900px){.mbar{display:flex}}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--ivory);color:var(--graphite);padding:12px 20px;border-radius:999px;font-weight:500;opacity:0;visibility:hidden;transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s;z-index:60}
+.toast.on{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav"><div class="wrap">
+  <nav class="nl" aria-label="Meniu"><a href="#compune" data-ru="Собрать">Compune</a><a href="#buchete" data-ru="Букеты">Buchete</a><a href="#florarie" data-ru="Магазин">Florăria</a></nav>
+  <a class="brand" href="#top" aria-label="VIP Flowers, începutul paginii">VIP <span>Flowers</span></a>
+  <div class="nl nr"><a href="#comanda" data-ru="Заказ">Comandă</a><a href="#contact" data-ru="Контакты">Contact</a><div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div></div>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap hgrid" id="compune">
+    <div>
+      <h1><span data-ru="Немного цветов.">Puține flori.</span> <span class="ac" data-ru="Идеально подобранных.">Alese perfect.</span></h1>
+      <p class="sub" data-ru="Соберите букет здесь, флорист повторит его.">Compune buchetul aici. Florista îl repetă întocmai.</p>
+      <div class="panel">
+        <div class="stems" id="stems"></div>
+        <div class="opts" role="group" aria-label="Paleta"><span class="lb" data-ru="Палитра">Paleta</span><span id="pals" class="opts"></span></div>
+        <div class="opts" role="group" aria-label="Ambalaj"><span class="lb" data-ru="Упаковка">Ambalaj</span><span id="wraps" class="opts"></span></div>
+        <div class="total"><div><p data-ru="Ориентировочно, от">Orientativ, de la</p><b id="price">0 lei</b></div><a class="btn" href="#comanda" id="useBq" data-ru="Заказать этот букет">Comandă buchetul acesta</a></div>
+      </div>
+    </div>
+    <div class="arch">
+      <img class="fb" src="img/blue-s.webp" alt="Buchet cu hortensie albastră și trandafiri, de la VIP Flowers">
+      <canvas id="bq" role="img" aria-label="Buchetul compus de tine, în 3D"></canvas>
+      <span class="tip" aria-hidden="true" data-ru="Потяните, чтобы повернуть">Trage ca să-l rotești</span>
+    </div>
+  </div>
+</section>
+
+<section class="cat" id="buchete">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Букеты из">Buchete din</span> <span class="ac" data-ru="нашей витрины">vitrina noastră</span></h2>
+    <p class="lede rv" data-ru="Каждый можно заказать как есть или пересобрать в 3D под себя.">Fiecare se poate comanda așa cum e sau recompune în 3D, după gustul tău.</p>
+    <div class="shelf" id="shelf"></div>
+    <p class="pnote" data-ru="Цены ориентировочные, для демо. Цветы зависят от сезона.">Prețuri orientative, pentru prezentare. Florile pot varia ușor după sezon, păstrând stilul și valoarea.</p>
+  </div>
+</section>
+
+<section id="florarie">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Пушкина 41,">Pușkin 41,</span> <span class="ac" data-ru="под светящейся аркой">sub arcul de lumină</span></h2>
+    <div class="shop rv">
+      <figure class="s1"><img src="img/shop-s.webp" alt="Fațada florăriei VIP Flowers de pe Pușkin 41" loading="lazy"></figure>
+      <figure class="s2"><img src="img/hydr-s.webp" alt="Hortensii roz în fața oglinzii cu arc luminos" loading="lazy"></figure>
+      <figure class="s3"><img src="img/shelf-s.webp" alt="Raft cu buchete gata de luat" loading="lazy"></figure>
+      <figure class="s5"><img src="img/counter-s.webp" alt="Tejgheaua florăriei" loading="lazy"></figure>
+      <figure class="s4"><img src="img/corner-s.webp" alt="Colț cu ursuleț și orhidee" loading="lazy"></figure>
+    </div>
+    <div class="perks">
+      <div class="pk rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><b data-ru="Доставка 24/7">Livrare 24/7</b><span data-ru="По Кишинёву, днём и ночью">În Chișinău, zi și noapte</span></div>
+      <div class="pk rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 10h16l-1 10H5zM8 10V7a4 4 0 0 1 8 0v3"/></svg><b data-ru="Самовывоз">Ridicare</b><span data-ru="Из магазина, без очереди">Din magazin, gata la ora stabilită</span></div>
+      <div class="pk rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 8l8 5 8-5"/></svg><b data-ru="Открытка">Felicitare</b><span data-ru="С вашим текстом, от руки">Cu mesajul tău, scris de mână</span></div>
+      <div class="pk rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M12 14v7M9 21h6"/></svg><b data-ru="Шары и мишки">Baloane, ursuleți</b><span data-ru="Цифры, открытки, подарки">Cifre, felicitări, mici cadouri</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="rv-wrap" id="recenzii">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="4,8 из 43 отзывов,">4,8 din 43 de recenzii,</span> <span class="ac" data-ru="и одно слово: свежие">și un cuvânt: proaspete</span></h2>
+    <div class="slider" id="slider" aria-live="polite">
+      <figure class="sl on" style="margin:0"><p>„Buchetele sunt create cu foarte mult bun gust, într-un stil minimalist și elegant.”</p><span>Elizaveta, Google</span></figure>
+      <figure class="sl" style="margin:0"><p>„Флористы с большим вкусом собрали именно тот букет, который я представляла.”</p><span>Ольга Олеговна, Google</span></figure>
+      <figure class="sl" style="margin:0"><p>„…buchetul la cumpărat cu o săptămână în urmă și până acum este proaspăt, Recomand 👍”</p><span>Petru Marandici, Google</span></figure>
+      <figure class="sl" style="margin:0"><p>„Цветы стоят долго и радуют любимую жену.”</p><span>Alex F, Google</span></figure>
+      <figure class="sl" style="margin:0"><p>„Cele mai proaspete flori la preț accesibil”</p><span>Sergiu Croitor, Google</span></figure>
+      <figure class="sl" style="margin:0"><p>„Подход и отношение сильно отличаются от большинства цветочных в городе. Теперь буду обращаться только сюда.”</p><span>Валентин И., Google</span></figure>
+    </div>
+    <div class="ctrl"><button type="button" id="prev" aria-label="Recenzia anterioară"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" id="next" aria-label="Recenzia următoare"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button><output id="cnt">1 / 6</output></div>
+  </div>
+</section>
+
+<section id="comanda">
+  <div class="wrap order">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Заказ в">Comanda, în</span> <span class="ac" data-ru="одно сообщение">un singur mesaj</span></h2>
+      <p class="lede" data-ru="Флорист ответит в WhatsApp с итоговой ценой и временем доставки.">Florista îți răspunde pe WhatsApp cu prețul final și ora livrării.</p>
+      <div class="sumbox"><span data-ru="Ваш букет">Buchetul tău</span><b id="sumName">…</b><span id="sumDesc"></span></div>
+    </div>
+    <form id="of" novalidate>
+      <fieldset><legend data-ru="Как получить">Cum îl primești</legend>
+        <div class="chips" data-g="how"><button type="button" class="chip" aria-pressed="true" data-v="del" data-ru="Доставка">Livrare</button><button type="button" class="chip" aria-pressed="false" data-v="pick" data-ru="Самовывоз, Пушкина 41">Ridicare, Pușkin 41</button></div>
+      </fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Дата">Data</span><input type="date" name="date"></label>
+        <fieldset><legend data-ru="Время">Intervalul</legend><div class="chips" data-g="slot"><button type="button" class="chip" aria-pressed="false">9 la 12</button><button type="button" class="chip" aria-pressed="true">12 la 16</button><button type="button" class="chip" aria-pressed="false">16 la 20</button><button type="button" class="chip" aria-pressed="false" data-ru="Ночью">Noaptea</button></div></fieldset>
+      </div>
+      <label class="f" id="addrF"><span data-ru="Адрес доставки">Adresa de livrare</span><input type="text" name="addr" autocomplete="street-address"></label>
+      <label class="f"><span data-ru="Текст открытки (необязательно)">Mesaj pe felicitare (opțional)</span><textarea name="card"></textarea></label>
+      <div class="two">
+        <label class="f"><span data-ru="Ваше имя">Numele tău</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" id="ofErr" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Заходите или">Treci pe la noi sau</span> <span class="ac" data-ru="напишите">scrie-ne</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>Strada Pușkin 41, Chișinău</dd>
+        <dt data-ru="Магазин">Magazin</dt><dd data-ru="Каждый день, 9:00 до 20:00">Zilnic, 9:00 la 20:00</dd>
+        <dt data-ru="Доставка">Livrare</dt><dd data-ru="24/7 по Кишинёву">24/7 în Chișinău</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37360202221">+373 60 202 221</a></dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37360202221" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37360202221"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.google.com/maps/place/VIP+Flowers/@47.0284302,28.8403214,17z/data=!3m1!4b1!4m6!3m5!1s0x40c97de9b8bd7e21:0xf1ae98b2ca08ba19" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-ru="Карта и отзывы">Hartă și recenzii</span></a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=vip%20flowers%20chisinau" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+      </div>
+    </div>
+    <div class="ph rv"><img src="img/door-s.webp" alt="Ușa florăriei cu programul și numărul de livrare" loading="lazy"></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap fo">
+  <svg viewBox="0 0 26 34" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 33V13a11 11 0 0 1 22 0v20"/></svg>
+  <span>© 2026 VIP Flowers, Chișinău</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37360202221" data-ru="Позвонить">Sună</a><a class="p" href="#comanda" data-ru="Заказать">Comandă</a></nav>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+  let lang = 'ro'; const T = (ro, ru) => (lang === 'ru' ? ru : ro);
+
+  /* stems, palettes and wraps: the data behind the 3D bouquet and the price */
+  const STEMS = [
+    { k: 'hydr', ro: 'Hortensie', ru: 'Гортензия', p: 150, max: 3 },
+    { k: 'rose', ro: 'Trandafir', ru: 'Роза', p: 55, max: 15 },
+    { k: 'eus', ro: 'Eustoma', ru: 'Эустома', p: 60, max: 9 },
+    { k: 'spray', ro: 'Trandafir bush', ru: 'Кустовая роза', p: 75, max: 7 },
+    { k: 'sant', ro: 'Santini', ru: 'Сантини', p: 40, max: 9 },
+  ];
+  const PALS = [
+    { k: 'blush', ro: 'Pudră', ru: 'Пудра', c: { hydr: ['#f2c9d3', '#e9b3c2'], rose: ['#f4c7cf', '#ecaab8'], eus: ['#faf2f2', '#f1d9df'], spray: ['#e98aa6'], sant: ['#cfe3a8'] }, sw: '#f0c1cc' },
+    { k: 'white', ro: 'Alb', ru: 'Белый', c: { hydr: ['#f4f4ee', '#e5ecd9'], rose: ['#f7f3ea', '#efe6d6'], eus: ['#ffffff', '#f2efe8'], spray: ['#f1e6d8'], sant: ['#b9d48a'] }, sw: '#f4f1ea' },
+    { k: 'blue', ro: 'Albastru', ru: 'Синий', c: { hydr: ['#5a7fd6', '#7a95e3'], rose: ['#f4dfe6', '#e9c3cf'], eus: ['#d7c8ef', '#efe7fb'], spray: ['#c95f86'], sant: ['#b9d48a'] }, sw: '#5a7fd6' },
+    { k: 'fuchsia', ro: 'Intens', ru: 'Яркий', c: { hydr: ['#d77aa0', '#e397b6'], rose: ['#c9356a', '#de4f80'], eus: ['#f2b5cb', '#fbe1ea'], spray: ['#b8244f'], sant: ['#9fc65e'] }, sw: '#c9356a' },
+    { k: 'lilac', ro: 'Lavandă', ru: 'Лаванда', c: { hydr: ['#a596dc', '#bcb0e6'], rose: ['#d8c4ea', '#c6aee0'], eus: ['#9f83cf', '#e3d9f4'], spray: ['#8f6cc4'], sant: ['#cfe3a8'] }, sw: '#a596dc' },
+  ];
+  const WRAPS = [{ k: 'bej', ro: 'Bej', ru: 'Беж', c: '#d9c3a8' }, { k: 'pudra', ro: 'Roz pudră', ru: 'Пудровый', c: '#efc6cf' }, { k: 'alb', ro: 'Alb', ru: 'Белый', c: '#f3efe9' }, { k: 'grafit', ro: 'Grafit', ru: 'Графит', c: '#4a4546' }];
+  const state = { hydr: 1, rose: 6, eus: 2, spray: 1, sant: 3, pal: 3, wrap: 0, name: null };
+
+  /* catalogue: real bouquets from the shop, each with a 3D recipe */
+  const BQ = [
+    { img: 'blue', ro: 'Cer de mai', ru: 'Майское небо', p: 950, r: { hydr: 1, rose: 3, eus: 4, spray: 1, sant: 0, pal: 2, wrap: 1 } },
+    { img: 'cream', ro: 'Lapte și miere', ru: 'Молоко и мёд', p: 850, r: { hydr: 1, rose: 5, eus: 2, spray: 0, sant: 0, pal: 1, wrap: 0 } },
+    { img: 'roses', ro: 'Zori roz', ru: 'Розовый рассвет', p: 780, r: { hydr: 1, rose: 7, eus: 3, spray: 0, sant: 0, pal: 0, wrap: 2 } },
+    { img: 'white', ro: 'Mireasă', ru: 'Невеста', p: 1100, r: { hydr: 1, rose: 7, eus: 4, spray: 1, sant: 0, pal: 1, wrap: 2 } },
+    { img: 'green', ro: 'Grădină verde', ru: 'Зелёный сад', p: 720, r: { hydr: 1, rose: 0, eus: 0, spray: 3, sant: 6, pal: 3, wrap: 2 } },
+    { img: 'blush', ro: 'Pudră', ru: 'Пудра', p: 690, r: { hydr: 2, rose: 0, eus: 5, spray: 0, sant: 0, pal: 0, wrap: 2 } },
+    { img: 'mix', ro: 'Bomboană', ru: 'Конфетка', p: 890, r: { hydr: 0, rose: 9, eus: 0, spray: 2, sant: 0, pal: 3, wrap: 2 } },
+    { img: 'violet', ro: 'Lavandă', ru: 'Лаванда', p: 760, r: { hydr: 2, rose: 3, eus: 2, spray: 0, sant: 0, pal: 4, wrap: 2 } },
+  ];
+  $('#shelf').innerHTML = BQ.map((b, i) => `<article class="bqc rv"><div class="ph"><img src="img/${b.img}-s.webp" alt="Buchetul ${b.ro} de la VIP Flowers" loading="lazy"></div><div class="row"><h3 data-ru="${b.ru}">${b.ro}</h3><span class="pr"><small data-ru="от">de la</small>${b.p} lei</span></div><div class="acts"><button type="button" class="mini" data-buy="${i}" data-ru="Заказать">Comandă</button><button type="button" class="mini o" data-re="${i}" data-ru="Собрать в 3D">Recompune în 3D</button></div></article>`).join('');
+
+  /* stem rows */
+  $('#stems').innerHTML = STEMS.map((s) => `<div class="stem"><span><b data-ru="${s.ru}">${s.ro}</b><small>${s.p} lei</small></span><button type="button" data-d="-1" data-s="${s.k}" aria-label="Mai puțin ${s.ro}">−</button><output id="o-${s.k}">0</output><button type="button" data-d="1" data-s="${s.k}" aria-label="Mai mult ${s.ro}">+</button></div>`).join('');
+  $('#pals').innerHTML = PALS.map((p, i) => `<button type="button" class="dot" data-pal="${i}" aria-label="${p.ro}" aria-pressed="false" style="background:${p.sw}"></button>`).join('');
+  $('#wraps').innerHTML = WRAPS.map((w, i) => `<button type="button" class="dot" data-wrap="${i}" aria-label="${w.ro}" aria-pressed="false" style="background:${w.c}"></button>`).join('');
+
+  const price = () => STEMS.reduce((a, s) => a + s.p * state[s.k], 0) + (STEMS.some((s) => state[s.k]) ? 90 : 0);
+  const desc = (l) => STEMS.filter((s) => state[s.k]).map((s) => `${state[s.k]} ${l === 'ru' ? s.ru : s.ro}`).join(', ');
+  let rebuild = () => {};
+  const paint = () => {
+    STEMS.forEach((s) => { $('#o-' + s.k).textContent = state[s.k]; });
+    $$('[data-pal]').forEach((b) => b.setAttribute('aria-pressed', String(+b.dataset.pal === state.pal)));
+    $$('[data-wrap]').forEach((b) => b.setAttribute('aria-pressed', String(+b.dataset.wrap === state.wrap)));
+    $('#price').textContent = price().toLocaleString('ro-RO') + ' lei';
+    $('#sumName').textContent = state.name ? T(state.name.ro, state.name.ru) : T('Compus de tine', 'Собран вами');
+    const pal = PALS[state.pal], wr = WRAPS[state.wrap];
+    $('#sumDesc').textContent = state.name && state.name.fixed ? T(`de la ${state.name.p} lei, ca în fotografie`, `от ${state.name.p} лей, как на фото`) : `${desc(lang) || T('fără flori încă', 'пока без цветов')}. ${T('Paleta', 'Палитра')}: ${T(pal.ro, pal.ru)}, ${T('ambalaj', 'упаковка')}: ${T(wr.ro, wr.ru)}. ${T('De la', 'От')} ${price()} lei.`;
+  };
+  const toast = (m) => { const t = $('#toast'); t.textContent = m; t.classList.add('on'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('on'), 1800); };
+  $('#stems').addEventListener('click', (e) => { const b = e.target.closest('button[data-s]'); if (!b) return; const s = STEMS.find((x) => x.k === b.dataset.s); state[s.k] = Math.max(0, Math.min(s.max, state[s.k] + +b.dataset.d)); state.name = null; paint(); rebuild(); });
+  $('#pals').addEventListener('click', (e) => { const b = e.target.closest('[data-pal]'); if (!b) return; state.pal = +b.dataset.pal; state.name = null; paint(); rebuild(); });
+  $('#wraps').addEventListener('click', (e) => { const b = e.target.closest('[data-wrap]'); if (!b) return; state.wrap = +b.dataset.wrap; state.name = null; paint(); rebuild(); });
+  $('#useBq').addEventListener('click', () => { if (!state.name) state.name = null; paint(); });
+  $('#shelf').addEventListener('click', (e) => {
+    const re = e.target.closest('[data-re]'), buy = e.target.closest('[data-buy]');
+    if (re) { const b = BQ[+re.dataset.re]; Object.assign(state, b.r); state.name = { ro: b.ro, ru: b.ru, p: b.p }; paint(); rebuild(); $('#compune').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); }
+    if (buy) { const b = BQ[+buy.dataset.buy]; Object.assign(state, b.r); state.name = { ro: b.ro, ru: b.ru, p: b.p, fixed: true }; paint(); rebuild(); $('#comanda').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); toast(T(`${b.ro} a fost adăugat în comandă`, `${b.ru} добавлен в заказ`)); }
+  });
+
+  /* reviews slider */
+  const sl = $$('.sl'); let si = 0; const go = (d) => { sl[si].classList.remove('on'); si = (si + d + sl.length) % sl.length; sl[si].classList.add('on'); $('#cnt').textContent = `${si + 1} / ${sl.length}`; };
+  $('#prev').addEventListener('click', () => go(-1)); $('#next').addEventListener('click', () => go(1));
+  if (!reduce) setInterval(() => { if (!document.hidden) go(1); }, 6500);
+
+  /* language */
+  $$('[data-ru]').forEach((el) => { el.dataset.ro = el.textContent; });
+  const setLang = (l) => { lang = l; document.documentElement.lang = l; $$('[data-ru]').forEach((el) => { el.textContent = l === 'ru' ? el.dataset.ru : el.dataset.ro; }); $$('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l))); store.set('vip-lang', l); paint(); };
+  $$('.lang button').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  $$('.chips').forEach((g) => g.addEventListener('click', (e) => { const c = e.target.closest('.chip'); if (!c) return; $$('.chip', g).forEach((x) => x.setAttribute('aria-pressed', String(x === c))); if (g.dataset.g === 'how') $('#addrF').hidden = c.dataset.v !== 'del'; }));
+  const val = (g) => $(`[data-g="${g}"] .chip[aria-pressed="true"]`);
+  const ro = (el) => el.dataset.ro || el.textContent;
+  const tm = new Date(); tm.setDate(tm.getDate() + 1); $('#of [name=date]').value = tm.toISOString().slice(0, 10); $('#of [name=date]').min = new Date().toISOString().slice(0, 10);
+  paint(); if (store.get('vip-lang') === 'ru') setLang('ru');
+
+  /* order → WhatsApp */
+  const f = $('#of'), err = $('#ofErr');
+  f.addEventListener('submit', (e) => {
+    e.preventDefault(); err.textContent = '';
+    const del = val('how').dataset.v === 'del';
+    const need = ['name', 'phone'].concat(del ? ['addr'] : []);
+    const bad = need.filter((k) => !f[k].value.trim() || (k === 'phone' && f.phone.value.replace(/\D/g, '').length < 8));
+    $$('input', f).forEach((i) => i.removeAttribute('aria-invalid')); bad.forEach((k) => f[k].setAttribute('aria-invalid', 'true'));
+    if (!STEMS.some((s) => state[s.k])) { err.textContent = T('Adaugă cel puțin o floare în buchet.', 'Добавьте хотя бы один цветок.'); return; }
+    if (bad.length) { err.textContent = T('Completează numele, telefonul și adresa.', 'Заполните имя, телефон и адрес.'); f[bad[0]].focus(); return; }
+    const pal = PALS[state.pal], wr = WRAPS[state.wrap];
+    const bq = state.name && state.name.fixed ? `${state.name.ro} (de la ${state.name.p} lei, ca pe site)` : `${state.name ? state.name.ro + ', recompus: ' : 'Compus pe site: '}${desc('ro')}; paleta ${pal.ro}; ambalaj ${wr.ro}; orientativ de la ${price()} lei`;
+    const msg = `Bună ziua! Aș dori un buchet de la VIP Flowers.\nBuchet: ${bq}\n${del ? 'Livrare la: ' + f.addr.value.trim() : 'Ridicare din magazin, Pușkin 41'}\nData: ${f.date.value}, intervalul ${ro(val('slot'))}\n${f.card.value.trim() ? 'Felicitare: ' + f.card.value.trim() + '\n' : ''}Nume: ${f.name.value.trim()}\nTelefon: ${f.phone.value.trim()}`;
+    window.open('https://wa.me/37360202221?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+
+  const nav = $('#nav'); const ons = () => nav.classList.toggle('solid', scrollY > 30); addEventListener('scroll', ons, { passive: true }); ons();
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  $$('.rv').forEach((el) => io.observe(el));
+
+  /* the 3D bouquet */
+  const canvas = $('#bq'); let ok = false; try { ok = !!(canvas.getContext('webgl2') || canvas.getContext('webgl')); } catch {}
+  if (!window.THREE || !ok) { document.documentElement.classList.add('no-gl'); return; }
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75)); renderer.outputEncoding = THREE.sRGBEncoding;
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(34, 1, .1, 50); cam.position.set(0, 1.2, 8.4); cam.lookAt(0, .2, 0);
+  scene.add(new THREE.HemisphereLight(0xfff4f2, 0x2a2224, .55));
+  const key = new THREE.DirectionalLight(0xffffff, 1.35); key.position.set(3, 5, 4); scene.add(key);
+  const rim = new THREE.DirectionalLight(0xf0c1cc, .7); rim.position.set(-4, 2, -3); scene.add(rim);
+  const root = new THREE.Group(); root.position.y = .15; scene.add(root);
+  let bouquet = null;
+  const M = {}; const mat = (hex, opt = {}) => { const k = hex + JSON.stringify(opt); if (M[k]) return M[k]; const m = new THREE.MeshStandardMaterial(Object.assign({ color: hex, roughness: .62, metalness: 0, side: THREE.DoubleSide }, opt)); m.color.convertSRGBToLinear(); return (M[k] = m); };
+  /* a cupped petal: base at the origin, growing up +y, hollow facing -z (the flower's heart) */
+  const petal = (curl) => { const g = new THREE.PlaneGeometry(1, 1, 8, 10), p = g.attributes.position; for (let i = 0; i < p.count; i++) { const x = p.getX(i), v = p.getY(i) + .5; const w = Math.pow(Math.sin(Math.PI * Math.min(1, .15 + v * .95)), .6) * (1 - v * .1); const xx = x * w; p.setXYZ(i, xx, v, xx * xx * 1.6 + curl * v * v * v); } g.computeVertexNormals(); return g; };
+  const PIN = petal(-.18), POUT = petal(.42);
+  const floretG = new THREE.CircleGeometry(.12, 4);
+  const santG = new THREE.IcosahedronGeometry(1, 1);
+  const leafShape = new THREE.Shape(); leafShape.moveTo(0, 0); leafShape.quadraticCurveTo(.26, .45, 0, 1); leafShape.quadraticCurveTo(-.26, .45, 0, 0);
+  const leafG = new THREE.ShapeGeometry(leafShape, 8);
+  let seed = 7; const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+
+  function rose(cols, s, rings = 5, open = 1) {
+    const g = new THREE.Group();
+    for (let k = 0; k < rings; k++) {
+      const n = k === 0 ? 3 : 4 + k, h = .22 + k * .085, r = .015 + k * .045 * open, tilt = .05 + k * .2 * open;
+      const c = cols[Math.min(cols.length - 1, k > 2 ? 1 : 0)];
+      for (let j = 0; j < n; j++) {
+        const holder = new THREE.Group(); holder.rotation.y = (j / n) * Math.PI * 2 + k * 1.1; g.add(holder);
+        const m = new THREE.Mesh(k < 2 ? PIN : POUT, mat(c)); m.scale.set(h * (k ? 1.05 : .8), h, h); m.position.z = r; m.position.y = -k * .025; m.rotation.x = tilt; holder.add(m);
+      }
+    }
+    g.scale.setScalar(s); return g;
+  }
+  function hydr(cols, s) {
+    const g = new THREE.Group(), n = 170;
+    const im = new THREE.InstancedMesh(floretG, new THREE.MeshStandardMaterial({ roughness: .7, side: THREE.DoubleSide }), n);
+    const d = new THREE.Object3D(), c1 = new THREE.Color(cols[0]).convertSRGBToLinear(), c2 = new THREE.Color(cols[1] || cols[0]).convertSRGBToLinear(), tc = new THREE.Color();
+    for (let i = 0; i < n; i++) {
+      const y = 1 - (i / (n - 1)) * 1.25, r = Math.sqrt(Math.max(0, 1 - y * y)), th = i * 2.39996;
+      d.position.set(Math.cos(th) * r * .5, y * .4, Math.sin(th) * r * .5);
+      d.lookAt(d.position.clone().multiplyScalar(3)); d.rotateZ(rnd() * 6.28); d.scale.setScalar(.8 + rnd() * .45); d.updateMatrix();
+      im.setMatrixAt(i, d.matrix); im.setColorAt(i, tc.copy(c1).lerp(c2, rnd()));
+    }
+    g.add(im); const core = new THREE.Mesh(new THREE.SphereGeometry(.45, 16, 12), mat(cols[1] || cols[0], { roughness: .95, color: new THREE.Color(cols[0]).multiplyScalar(.7) })); core.scale.y = .85; g.add(core);
+    g.scale.setScalar(s); return g;
+  }
+  function sant(cols, s) { const g = new THREE.Group(); const m = new THREE.Mesh(santG, mat(cols[0], { flatShading: true, roughness: .8 })); m.scale.set(1, .75, 1); g.add(m); const c = new THREE.Mesh(new THREE.SphereGeometry(.38, 10, 8), mat('#6f8f3a')); c.position.y = .62; c.scale.y = .35; g.add(c); g.scale.setScalar(s); return g; }
+  function spray(cols, s) { const g = new THREE.Group(); [[0, 0, 0], [.5, -.12, .15], [-.42, -.1, .3]].forEach(([x, y, z], i) => { const r = rose([cols[0], cols[0]], .62 - i * .08, 4, .9); r.position.set(x, y, z); r.rotation.x = -.25 + i * .2; g.add(r); }); g.scale.setScalar(s); return g; }
+  const MAKE = { hydr: (c) => hydr(c, 1.2), rose: (c) => rose(c, 1.0), eus: (c) => rose(c, .95, 3, 1.7), spray: (c) => spray(c, .85), sant: (c) => sant(c, .26) };
+  const SIZE = { hydr: .6, rose: .36, eus: .34, spray: .42, sant: .26 };
+
+  function sheet(hex, R, top, start, len) {
+    const pts = []; for (let i = 0; i <= 12; i++) { const t = i / 12; pts.push(new THREE.Vector2(.16 + Math.pow(t, 1.35) * R * 1.12, -2.3 + t * (2.3 + top))); }
+    const geo = new THREE.LatheGeometry(pts, 48, start, len), p = geo.attributes.position;
+    for (let i = 0; i < p.count; i++) { const y = p.getY(i), a = Math.atan2(p.getZ(i), p.getX(i)), k = 1 + Math.sin(a * 11) * .05 * ((y + 2.3) / 2.6); p.setX(i, p.getX(i) * k); p.setZ(i, p.getZ(i) * k); }
+    geo.computeVertexNormals(); return new THREE.Mesh(geo, mat(hex, { roughness: .88 }));
+  }
+  function wrapMesh(hex, R) {
+    const g = new THREE.Group();
+    g.add(sheet(hex, R, .55, Math.PI * .15, Math.PI * 1.7));
+    const fr = sheet(hex, R * 1.03, -.5, Math.PI * 1.1, Math.PI * .8); g.add(fr);
+    const rib = new THREE.Mesh(new THREE.TorusGeometry(.24, .045, 8, 32), mat('#f5efec', { roughness: .4 })); rib.rotation.x = Math.PI / 2; rib.position.y = -1.95; g.add(rib);
+    [-.3, .35].forEach((rz, i) => { const t = new THREE.Mesh(new THREE.PlaneGeometry(.1, .8), mat('#f5efec', { roughness: .4 })); t.position.set(i ? .14 : -.1, -2.35, .26); t.rotation.z = rz; g.add(t); });
+    return g;
+  }
+  rebuild = () => {
+    seed = 7 + state.pal * 13 + state.wrap;
+    const pal = PALS[state.pal].c, heads = [];
+    STEMS.forEach((s) => { for (let i = 0; i < state[s.k]; i++) heads.push(s.k); });
+    for (let i = heads.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [heads[i], heads[j]] = [heads[j], heads[i]]; }
+    const area = heads.reduce((a, k) => a + SIZE[k] * SIZE[k], 0), R = Math.max(.55, Math.sqrt(area) * 1.05);
+    const g = new THREE.Group();
+    g.add(wrapMesh(WRAPS[state.wrap].c, R));
+    heads.forEach((k, i) => {
+      const n = heads.length, rr = Math.sqrt((i + .5) / n) * R * .92, th = i * 2.39996;
+      const h = MAKE[k](pal[k]); const x = Math.cos(th) * rr, z = Math.sin(th) * rr, y = .62 + R * .3 - (rr * rr) / (R * 1.5);
+      h.position.set(x, y, z); h.lookAt(x * 2.6, y + 1.5, z * 2.6); h.rotateX(Math.PI / 2); h.rotateY(rnd() * 6.28);
+      g.add(h);
+    });
+    for (let i = 0; i < 7; i++) { const a = (i / 7) * Math.PI * 2 + .3, l = new THREE.Mesh(leafG, mat('#5f7d45')); l.scale.setScalar(.7 + rnd() * .3); l.position.set(Math.cos(a) * R * .95, .25, Math.sin(a) * R * .95); l.lookAt(Math.cos(a) * 9, 3, Math.sin(a) * 9); l.rotateX(-.9); g.add(l); }
+    if (bouquet) root.remove(bouquet);
+    bouquet = g; root.add(g); pop = 0;
+    const fit = Math.max(1, R / 1.05); cam.position.set(0, 1.9 * fit, 7.2 * fit); cam.lookAt(0, -.45, 0);
+  };
+  let pop = 1;
+  const size = () => { const w = canvas.clientWidth, h = canvas.clientHeight; renderer.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix(); };
+  size(); addEventListener('resize', size); rebuild();
+  let rot = .4, vel = reduce ? 0 : .004, drag = false, lx = 0;
+  canvas.addEventListener('pointerdown', (e) => { drag = true; lx = e.clientX; canvas.setPointerCapture(e.pointerId); canvas.style.cursor = 'grabbing'; });
+  canvas.addEventListener('pointermove', (e) => { if (!drag) return; const dx = e.clientX - lx; lx = e.clientX; vel = dx * .006; rot += vel; });
+  const up = () => { drag = false; canvas.style.cursor = ''; }; canvas.addEventListener('pointerup', up); canvas.addEventListener('pointercancel', up);
+  let vis = false, raf = 0;
+  new IntersectionObserver(([e]) => { vis = e.isIntersecting; if (vis && !raf) loop(); }).observe(canvas);
+  function loop() {
+    if (!vis) { raf = 0; return; }
+    raf = requestAnimationFrame(loop);
+    if (!drag) { rot += vel; vel += ((reduce ? 0 : .004) - vel) * .04; }
+    root.rotation.y = rot;
+    pop = Math.min(1, pop + .06); const e = 1 - Math.pow(1 - pop, 3);
+    if (bouquet) bouquet.scale.setScalar(.92 + e * .08);
+    renderer.render(scene, cam);
+  }
+})();
+</script>
+</body>
+</html>

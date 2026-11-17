@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ro" data-key="tartus">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Tartus Barbershop, Drochia</title>
+<meta name="description" content="Tartus Barbershop în Drochia. Andrei Tartus: tunsori, fade, barbă și produse de styling. 4,9 din 46 de recenzii. Luni la sâmbătă, 08 la 17.">
+<meta property="og:title" content="Tartus Barbershop, Drochia">
+<meta property="og:description" content="Maestrul Andrei Tartus. 4,9 din 46 de recenzii.">
+<meta property="og:image" content="img/work.webp">
+<meta name="theme-color" content="#f2ead9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23233a36'/%3E%3Cpath d='M18 18h28v8H36v22h-8V26H18z' fill='%23f2ead9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "a one-master shop in Drochia: the site opens his tool tray in 3D, each tool is a service, and the wax jars on the shelf are the shop's products" · vibe: "warm workbench wood, deep bottle green, wax-jar reds and blues, slab type like a shop sign" · posture: committed · axes: light-paper/slab-display/green-red · nav: T mark, three links, call · footer: green band with the hours · hero: split, the master at work beside a big slab headline · signature: 3D tool tray where picking a tool lifts it and opens its service */
+/* Hallmark · waive 24b · spacing hand-set to the tray and the shelf · rhythm follows the trusa and the raftul */
+/* critique: one master, word of mouth, reviews in two languages that all say his name; the site makes Andrei the brand and shows the tools of the trade instead of stock chairs */
+:root{
+  --paper:#f2ead9; --paper-2:#e7dcc5; --card:#fbf7ee; --ink:#1e2522; --ink-2:#3b4541; --mute:#6c706a; --line:#d6c9ac;
+  --green:#233a36; --green-2:#2f4c47; --red:#b23a2c; --red-deep:#8e2b1f; --blue:#2e6da4; --wood:#a8743f; --moss:#3e8b5a;
+  --font-display:'Zilla Slab',serif; --font-body:'Source Sans 3',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;margin:0;line-height:1;text-wrap:balance}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:10px;border:2px solid var(--red);background:var(--red);color:var(--card);font:700 17px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease)}
+.btn:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn:active,.chip:active,.tool:active{transform:translateY(1px)}
+button:disabled{background:var(--paper-2);color:var(--mute);border-color:var(--line);cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+.nav{position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:2px solid var(--ink)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:70px}
+.wm{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 24px/1 var(--font-display)}
+.wm b{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green);color:var(--paper);font-size:22px}
+.links{display:flex;gap:24px;margin-left:auto}
+.links a{text-decoration:none;font-weight:600;padding:8px 0}
+.links a:hover{color:var(--red)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:8px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:700 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);min-height:calc(100svh - 70px)}
+.hero .txt{padding:clamp(40px,7vw,100px) var(--gut);display:flex;flex-direction:column;justify-content:center;gap:22px;max-width:700px;margin-left:auto;width:100%}
+.hero h1{font-size:clamp(56px,8.6vw,138px)}
+.hero h1 span{display:block}.hero h1 span+span{color:var(--red)}
+.hero p{margin:0;font-size:21px;max-width:26em;color:var(--ink-2)}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:22px;color:var(--mute);font-size:15px}
+.hero .meta b{display:block;font:700 34px/1 var(--font-display);color:var(--ink)}
+.hero .ph{position:relative;overflow:hidden}
+.hero .ph img{width:100%;height:100%;object-fit:cover}
+@media (max-width:900px){.hero{grid-template-columns:minmax(0,1fr)}.hero .ph{height:62svh;order:-1}}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.h2{font-size:clamp(42px,6vw,92px)}
+.h2 .ac{color:var(--red)}
+.lede{color:var(--ink-2);max-width:32em;margin:16px 0 0}
+
+/* tray */
+.trayx{background:var(--green);color:var(--paper)}
+.trayx .h2 .ac{color:var(--paper-2)}
+.trayx .lede{color:var(--paper-2)}
+.tr{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:clamp(20px,3vw,40px);margin-top:44px;align-items:start}
+.stage{position:relative;border-radius:22px;overflow:hidden;background:var(--green-2);aspect-ratio:16/11}
+#tray{position:absolute;inset:0;width:100%;height:100%}
+.stage .fb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.no-gl .stage .fb{display:block}
+.tools{display:grid;gap:8px;align-content:start}
+.tool{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;text-align:left;width:100%;padding:14px 18px;border-radius:14px;border:1px solid var(--green-2);background:transparent;color:var(--paper);font:inherit;cursor:pointer;transition:background-color .2s var(--ease)}
+.tool:hover{border-color:var(--paper-2)}
+.tool[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.tool b{font:700 22px/1.1 var(--font-display)}
+.tool span{font-weight:700;white-space:nowrap}
+.tool small{grid-column:1/-1;font-size:15px;color:var(--paper-2)}
+.tool[aria-pressed="true"] small{color:var(--ink-2)}
+.pnote{margin:16px 0 0;font-size:14px;color:var(--paper-2)}
+@media (max-width:900px){.tr{grid-template-columns:minmax(0,1fr)}.stage{aspect-ratio:1/1}}
+
+/* Andrei */
+.andrei{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(24px,5vw,72px);align-items:center}
+.andrei img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:22px}
+.quotes{display:grid;gap:14px;margin-top:28px}
+.quotes figure{margin:0;padding:18px 20px;background:var(--card);border-radius:16px;border:1px solid var(--line)}
+.quotes p{margin:0;font-size:19px}
+.quotes figcaption{margin-top:6px;font-size:14px;color:var(--mute)}
+@media (max-width:900px){.andrei{grid-template-columns:minmax(0,1fr)}}
+
+/* shelf */
+.shelf{background:var(--paper-2)}
+.sg{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);margin-top:44px;align-items:start}
+.sg img{width:100%;border-radius:22px;aspect-ratio:4/3;object-fit:cover}
+.prods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.prod{background:var(--card);border-radius:16px;padding:18px;display:grid;gap:6px;border-top:6px solid var(--c,var(--red))}
+.prod h3{font-size:24px}
+.prod p{margin:0;font-size:15px;color:var(--ink-2)}
+.prod b{font:700 22px/1 var(--font-display)}
+.prod small{font-size:13px;color:var(--mute);font-weight:400}
+@media (max-width:900px){.sg{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.prods{grid-template-columns:minmax(0,1fr)}}
+
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--card);border:2px solid var(--ink);border-radius:22px;padding:clamp(22px,3.4vw,38px);display:grid;gap:22px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:700;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--ink);font:600 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute);font-weight:400}
+.chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--paper)}
+.chip[aria-pressed="true"] small{color:var(--paper-2)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:700}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px}
+input[aria-invalid="true"]{border-color:var(--red)}
+.err{color:var(--red-deep);font-weight:700;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+.side .card{margin-top:26px;background:var(--green);color:var(--paper);border-radius:18px;padding:22px;display:grid;gap:6px}
+.side .card b{font:700 26px/1 var(--font-display)}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}}
+
+.contact{background:var(--green);color:var(--paper)}
+.contact .h2 .ac{color:var(--paper-2)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.7fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{font-weight:700;font-size:14px;color:var(--paper-2)}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:1px solid var(--paper-2);border-radius:10px;text-decoration:none;font-weight:600}
+.soc a:hover{background:var(--paper);color:var(--ink)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:22px;max-height:560px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--ink);color:var(--paper-2);padding:28px 0 110px;font-size:14px}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--ink);border-radius:14px}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:10px;color:var(--paper);text-decoration:none;font-weight:700}
+.mbar a.p{background:var(--red)}
+@media (max-width:900px){.mbar{display:flex}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav"><div class="wrap">
+  <a class="wm" href="#top" aria-label="Tartus Barbershop"><b aria-hidden="true">T</b>Tartus</a>
+  <nav class="links" aria-label="Meniu"><a href="#unelte" data-ru="Услуги">Servicii</a><a href="#andrei" data-ru="Мастер">Maestrul</a><a href="#produse" data-ru="Продукты">Produse</a><a href="#contact" data-ru="Контакты">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#programare" data-ru="Записаться">Programează-te</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+  <div class="txt">
+    <h1><span data-ru="Андрей Тартус,">Andrei Tartus,</span> <span data-ru="Дрокия">Drochia</span></h1>
+    <p data-ru="Мастер, которого называют по имени. Стрижки, фейды, борода.">Maestrul pe care orașul îl știe pe nume. Tunsori, fade, barbă.</p>
+    <div class="acts"><a class="btn" href="#programare" data-ru="Записаться">Programează-te</a><a class="btn ghost" href="#unelte" data-ru="Открыть инструменты">Deschide trusa</a></div>
+    <div class="meta"><span><b>4,9</b><span data-ru="46 отзывов">46 de recenzii</span></span><span><b>08 la 17</b><span data-ru="Пн до Сб">luni la sâmbătă</span></span></div>
+  </div>
+  <div class="ph"><img src="img/work.webp" alt="Andrei Tartus tunde un client în frizerie" width="1200" height="1600"></div>
+</section>
+
+<section class="trayx" id="unelte">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Набор мастера,">Trusa maestrului,</span> <span class="ac" data-ru="в 3D">în 3D</span></h2>
+    <p class="lede rv" data-ru="Выберите инструмент, он поднимется с подноса и покажет свою услугу.">Alege o unealtă: se ridică din tavă și îți arată serviciul ei.</p>
+    <div class="tr">
+      <div class="stage rv"><img class="fb" src="img/andrei-s.webp" alt="Andrei la lucru"><canvas id="tray" role="img" aria-label="Tavă 3D cu unelte de frizerie"></canvas></div>
+      <div class="tools rv" id="tools"></div>
+    </div>
+    <p class="pnote" data-ru="Цены ориентировочные, для демо. Мастер подтвердит свой прайс.">Prețuri orientative, pentru prezentare. Maestrul își confirmă prețurile.</p>
+  </div>
+</section>
+
+<section id="andrei">
+  <div class="wrap andrei">
+    <img class="rv" src="img/andrei-s.webp" alt="Andrei Tartus la lucru cu mașina de tuns" loading="lazy">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Город знает его">Orașul îl știe</span> <span class="ac" data-ru="по имени">pe nume</span></h2>
+      <p class="lede" data-ru="Отзывы на двух языках, и в каждом одно имя.">Recenzii în două limbi, și în fiecare același nume.</p>
+      <div class="quotes">
+        <figure><p>„Самый лучший мастер города Дрокия!!! АНДРЕЙ ТАРТУС”</p><figcaption>Irina Bogaciova</figcaption></figure>
+        <figure><p>„Супер! Человек, мастер своего дела! И просто хороший Человек!”</p><figcaption>Николай Мазур</figcaption></figure>
+        <figure><p>„Om cu experiența și profesional”</p><figcaption>I M</figcaption></figure>
+        <figure><p>„Очень круто все на высшем уровне цены доступны…”</p><figcaption>nik pol</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shelf" id="produse">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Полка,">Raftul,</span> <span class="ac" data-ru="чтобы держалось дома">ca să țină și acasă</span></h2>
+    <p class="lede rv" data-ru="Воск, помада и пудра, которые мастер использует в кресле. Спросите, что подходит вашим волосам.">Ceară, pomadă și pudră, aceleași din fotoliu. Întreabă ce se potrivește părului tău.</p>
+    <div class="sg">
+      <img class="rv" src="img/wax-s.webp" alt="Borcane colorate de ceară de păr pe raft" loading="lazy">
+      <div class="prods">
+        <article class="prod rv" style="--c:var(--red)"><h3 data-ru="Матовый воск">Ceară mată</h3><p data-ru="Сильная фиксация, без блеска.">Fixare puternică, fără luciu.</p><b><small data-ru="от">de la</small> 150 lei</b></article>
+        <article class="prod rv" style="--c:var(--blue)"><h3 data-ru="Блестящая помада">Pomadă lucioasă</h3><p data-ru="Для зачёсов и классики.">Pentru pieptănături clasice.</p><b><small data-ru="от">de la</small> 150 lei</b></article>
+        <article class="prod rv" style="--c:var(--moss)"><h3 data-ru="Пудра для объёма">Pudră de volum</h3><p data-ru="Текстура на тонких волосах.">Textură pe păr subțire.</p><b><small data-ru="от">de la</small> 130 lei</b></article>
+        <article class="prod rv" style="--c:var(--wood)"><h3 data-ru="Масло для бороды">Ulei de barbă</h3><p data-ru="Мягкость и аромат.">Moliciune și parfum.</p><b><small data-ru="от">de la</small> 140 lei</b></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="programare">
+  <div class="wrap book">
+    <div class="side rv">
+      <h2 class="h2"><span data-ru="Запись к">Programare la</span> <span class="ac" data-ru="Андрею">Andrei</span></h2>
+      <p class="lede" data-ru="Пн до Сб, 08 до 17. Подтверждение в WhatsApp.">Luni la sâmbătă, 08 la 17. Confirmare pe WhatsApp.</p>
+      <div class="card"><b>+373 62 066 000</b><span data-ru="Можно и позвонить.">Poți și să suni direct.</span></div>
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Услуга">Serviciul</legend><div class="chips" data-g="svc" id="svcChips"></div></fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <fieldset><legend data-ru="Время">Ora</legend><div class="chips" data-g="time" id="times"></div></fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Имя">Numele</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Дрокия,">Drochia,</span> <span class="ac" data-ru="в центре">în centru</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>MD-5202, Drochia (2RJ7+6F)</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37362066000">+373 62 066 000</a></dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="Пн до Сб 08:00 до 17:00, Вс выходной">Luni la sâmbătă 08:00 la 17:00, duminică închis</dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37362066000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37362066000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Tartus+Barbershop+Drochia" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+        <a href="https://www.facebook.com/search/top?q=tartus%20barbershop%20drochia" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>Facebook</a>
+      </div>
+    </div>
+    <img class="rv" src="img/front-s.webp" alt="Intrarea frizeriei din Drochia" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 Tartus Barbershop</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37362066000" data-ru="Позвонить">Sună</a><a class="p" href="#programare" data-ru="Записаться">Programează-te</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $, $$, T } = BF;
+  const S = [
+    { k: 'clip', ro: 'Mașina de tuns', ru: 'Машинка', sro: 'Fade și tuns cu mașina', sru: 'Фейд и стрижка машинкой', p: 'de la 120 lei', dro: 'Treceri curate, de la piele la lungime.', dru: 'Чистые переходы, от кожи до длины.' },
+    { k: 'sci', ro: 'Foarfeca', ru: 'Ножницы', sro: 'Tunsoare clasică', sru: 'Классическая стрижка', p: 'de la 150 lei', dro: 'Formă lucrată cu foarfeca, spălat inclus.', dru: 'Форма ножницами, мытьё включено.' },
+    { k: 'raz', ro: 'Briciul', ru: 'Бритва', sro: 'Barbă și contur', sru: 'Борода и контур', p: 'de la 100 lei', dro: 'Contur cu briciul și prosop cald.', dru: 'Контур бритвой и горячее полотенце.' },
+    { k: 'comb', ro: 'Pieptenele', ru: 'Расчёска', sro: 'Tunsoare și barbă', sru: 'Стрижка и борода', p: 'de la 230 lei', dro: 'Pachetul complet, într-o singură vizită.', dru: 'Полный пакет за один визит.' },
+    { k: 'jar', ro: 'Ceara', ru: 'Воск', sro: 'Styling și produse', sru: 'Укладка и продукты', p: 'de la 130 lei', dro: 'Te învață cum să-l aranjezi acasă.', dru: 'Научит укладывать дома.' },
+  ];
+  let cur = 0, lift = () => {};
+  $('#tools').innerHTML = S.map((s, i) => `<button type="button" class="tool" aria-pressed="false" data-i="${i}"><b>${s.ro}</b><span>${s.p}</span><small>${s.sro}. ${s.dro}</small></button>`).join('');
+  $('#svcChips').innerHTML = S.map((s) => `<button type="button" class="chip" aria-pressed="false" data-ro="${s.sro}">${s.sro}</button>`).join('');
+  const pick = (i) => { cur = i; $$('.tool').forEach((b, k) => b.setAttribute('aria-pressed', String(k === i))); $$('#svcChips .chip').forEach((b, k) => b.setAttribute('aria-pressed', String(k === i))); lift(i); };
+  $('#tools').addEventListener('click', (e) => { const b = e.target.closest('.tool'); if (b) pick(+b.dataset.i); });
+  $('#svcChips').addEventListener('click', (e) => { const b = e.target.closest('.chip'); if (b) pick([...b.parentNode.children].indexOf(b)); });
+  BF.onLang(() => { $$('.tool').forEach((b, i) => { const s = S[i]; b.querySelector('b').textContent = T(s.ro, s.ru); b.querySelector('span').textContent = BF.lang === 'ru' ? s.p.replace('de la', 'от').replace('lei', 'лей') : s.p; b.querySelector('small').textContent = T(`${s.sro}. ${s.dro}`, `${s.sru}. ${s.dru}`); }); $$('#svcChips .chip').forEach((b, i) => (b.textContent = T(S[i].sro, S[i].sru))); });
+  BF.days($('#days'), { n: 8, closed: [0] }); BF.times($('#times'), { from: 8, to: 16, step: 30, def: '10:00' });
+  BF.form('#bk', { phone: '37362066000', msg: () => `Bună ziua! Aș dori o programare la Tartus Barbershop.\nServiciu: ${S[cur].sro}\nZiua: ${BF.dayText(BF.val('day'))}\nOra: ${BF.ro(BF.val('time'))}` });
+  BF.init();
+  pick(0);
+
+  /* ===== 3D tool tray ===== */
+  const cv = $('#tray'), r = BF.gl(cv); if (!r) return;
+  r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
+  const sc = new THREE.Scene(), cam = new THREE.PerspectiveCamera(30, 1, .1, 60);
+  const M = (c, o = {}) => { const m = new THREE.MeshStandardMaterial(Object.assign({ color: c, roughness: .55 }, o)); m.color.convertSRGBToLinear(); return m; };
+  sc.add(new THREE.HemisphereLight(0xfff5e0, 0x23302c, .75));
+  const key = new THREE.DirectionalLight(0xffeedd, 1.1); key.position.set(4, 9, 5); key.castShadow = true; key.shadow.mapSize.set(1024, 1024); Object.assign(key.shadow.camera, { left: -6, right: 6, top: 6, bottom: -6 }); sc.add(key);
+  /* wooden tray with a canvas grain */
+  const wc = document.createElement('canvas'); wc.width = 512; wc.height = 256; const wg = wc.getContext('2d'); wg.fillStyle = '#a8743f'; wg.fillRect(0, 0, 512, 256);
+  for (let i = 0; i < 90; i++) { wg.strokeStyle = `rgba(70,40,15,${.08 + Math.random() * .12})`; wg.lineWidth = 1 + Math.random() * 2; wg.beginPath(); const y = Math.random() * 256; wg.moveTo(0, y); for (let x = 0; x <= 512; x += 32) wg.lineTo(x, y + Math.sin(x * .02 + i) * 4); wg.stroke(); }
+  const wt = new THREE.CanvasTexture(wc); wt.encoding = THREE.sRGBEncoding;
+  const wood = new THREE.MeshStandardMaterial({ map: wt, roughness: .7 });
+  const tray = new THREE.Group(); sc.add(tray);
+  const floor = new THREE.Mesh(new THREE.BoxGeometry(7.4, .16, 4.6), wood); floor.receiveShadow = true; tray.add(floor);
+  [[0, 2.3, 7.4, .2], [0, -2.3, 7.4, .2]].forEach(([x, z, w, d]) => { const b = new THREE.Mesh(new THREE.BoxGeometry(w, .5, d), wood); b.position.set(x, .25, z); b.castShadow = true; tray.add(b); });
+  [[3.7, 0], [-3.7, 0]].forEach(([x, z]) => { const b = new THREE.Mesh(new THREE.BoxGeometry(.2, .5, 4.6), wood); b.position.set(x, .25, z); b.castShadow = true; tray.add(b); });
+  const felt = new THREE.Mesh(new THREE.BoxGeometry(7, .02, 4.2), M('#2f4c47', { roughness: 1 })); felt.position.y = .09; felt.receiveShadow = true; tray.add(felt);
+  const steel = M('#d9dce0', { metalness: .95, roughness: .2 }), black = M('#1b1d1f', { roughness: .4 });
+  const items = [];
+  /* clipper */
+  { const g = new THREE.Group(); const body = new THREE.Mesh(new THREE.CylinderGeometry(.34, .42, 2.4, 24), black); body.rotation.z = Math.PI / 2; g.add(body);
+    const band = new THREE.Mesh(new THREE.CylinderGeometry(.43, .43, .3, 24), M('#b23a2c', { roughness: .35 })); band.rotation.z = Math.PI / 2; band.position.x = -.3; g.add(band);
+    const head = new THREE.Mesh(new THREE.BoxGeometry(.3, .5, .9), steel); head.position.x = 1.3; g.add(head);
+    for (let i = 0; i < 9; i++) { const t = new THREE.Mesh(new THREE.BoxGeometry(.12, .06, .04), steel); t.position.set(1.5, -.05, -.4 + i * .1); g.add(t); }
+    const cord = new THREE.Mesh(new THREE.TorusGeometry(.5, .04, 8, 30, Math.PI * 1.2), black); cord.position.set(-1.5, 0, .3); cord.rotation.x = Math.PI / 2; g.add(cord);
+    g.position.set(-1.6, .5, -1.1); g.rotation.y = .15; items.push(g); }
+  /* scissors */
+  { const g = new THREE.Group(); [-1, 1].forEach((s) => { const b = new THREE.Mesh(new THREE.BoxGeometry(2.1, .05, .14), steel); b.position.set(.9, 0, 0); const p = new THREE.Group(); p.add(b); const ring = new THREE.Mesh(new THREE.TorusGeometry(.3, .06, 10, 30), steel); ring.rotation.x = Math.PI / 2; ring.position.set(-.55, 0, s * .32); p.add(ring); const arm = new THREE.Mesh(new THREE.BoxGeometry(.5, .05, .08), steel); arm.position.set(-.2, 0, s * .16); arm.rotation.y = s * .5; p.add(arm); p.rotation.y = s * .12; p.position.y = s * .03; g.add(p); });
+    g.position.set(1.6, .25, -1.2); g.rotation.y = -.35; items.push(g); }
+  /* straight razor */
+  { const g = new THREE.Group(); const handle = new THREE.Mesh(new THREE.BoxGeometry(2, .14, .36), M('#1e2522', { roughness: .3 })); g.add(handle); const bl = new THREE.Mesh(new THREE.BoxGeometry(1.6, .04, .34), steel); bl.position.set(.1, .1, .02); g.add(bl);
+    g.position.set(-1.9, .2, .95); g.rotation.y = -.2; items.push(g); }
+  /* comb */
+  { const g = new THREE.Group(); const spine = new THREE.Mesh(new THREE.BoxGeometry(2.2, .06, .22), M('#2e6da4', { roughness: .35 })); g.add(spine); for (let i = 0; i < 26; i++) { const t = new THREE.Mesh(new THREE.BoxGeometry(.035, .05, .42), M('#2e6da4', { roughness: .35 })); t.position.set(-1.05 + i * .084, 0, -.3); g.add(t); }
+    g.position.set(.6, .17, 1.15); g.rotation.y = .1; items.push(g); }
+  /* wax jars */
+  { const g = new THREE.Group(); [['#b23a2c', 0, 0], ['#2e6da4', .95, -.25], ['#3e8b5a', .45, .7]].forEach(([c, x, z]) => { const j = new THREE.Mesh(new THREE.CylinderGeometry(.42, .42, .5, 28), M('#f2ead9', { roughness: .3 })); j.position.set(x, .25, z); j.castShadow = true; g.add(j); const lid = new THREE.Mesh(new THREE.CylinderGeometry(.45, .45, .2, 28), M(c, { roughness: .3 })); lid.position.set(x, .58, z); lid.castShadow = true; g.add(lid); });
+    g.position.set(2.2, .1, .5); items.push(g); }
+  items.forEach((g) => { g.traverse((o) => { if (o.isMesh) o.castShadow = true; }); g.userData.y0 = g.position.y; g.userData.ry0 = g.rotation.y; g.userData.k = 0; tray.add(g); });
+  lift = () => {};
+  let rx = 0, ry = 0;
+  cv.addEventListener('pointermove', (e) => { const b = cv.getBoundingClientRect(); rx = (e.clientX - b.left) / b.width - .5; ry = (e.clientY - b.top) / b.height - .5; });
+  const ray = new THREE.Raycaster(), pt = new THREE.Vector2();
+  cv.addEventListener('click', (e) => { const b = cv.getBoundingClientRect(); pt.set((e.clientX - b.left) / b.width * 2 - 1, -((e.clientY - b.top) / b.height) * 2 + 1); ray.setFromCamera(pt, cam); const hit = ray.intersectObjects(items, true)[0]; if (!hit) return; let o = hit.object; while (o && !items.includes(o)) o = o.parent; if (o) pick(items.indexOf(o)); });
+  BF.fit(r, cam, cv, (w, h) => { const d = w / h < 1.1 ? 15.5 : 13; cam.position.set(0, d * .8, d * .62); cam.lookAt(0, 0, .2); });
+  BF.loop(cv, (t) => {
+    items.forEach((g, i) => { const on = i === cur ? 1 : 0; g.userData.k += (on - g.userData.k) * .08; const k = g.userData.k; g.position.y = g.userData.y0 + k * (1.1 + Math.sin(t * 2) * .08); g.rotation.y = g.userData.ry0 + (BF.reduce ? 0 : k * t * .6); g.rotation.z = k * .12; });
+    tray.rotation.y += ((rx * .5) - tray.rotation.y) * .05; tray.rotation.x += ((ry * .2) - tray.rotation.x) * .05;
+    r.render(sc, cam);
+  });
+})();
+</script>
+</body>
+</html>

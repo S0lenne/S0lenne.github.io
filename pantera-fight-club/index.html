@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Pantera Fight Club, Chișinău</title>
+<meta name="description" content="Pantera Fight Club, Chișinău: kickboxing, sală de forță, aerobică și gimnastică pentru copii și adulți. Adresa nouă: str. Maria Drăgan 11, etajul 2.">
+<meta property="og:title" content="Pantera Fight Club">
+<meta property="og:description" content="Intră începător. Ieși campion. Înscrie-te la un antrenament de probă.">
+<meta property="og:image" content="img/champ.webp">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff7a00'/%3E%3Cpath d='M18 48V16h16a10 10 0 0 1 0 20H26v12z' fill='%230b0b0b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rubik:wght@400;500;600;700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "the club's orange poster made physical: you hit the bag before you sign up" · vibe: "black gym, panther orange, belts and sweat" · posture: drenched · axes: dark/grotesk-heavy/chromatic-orange · nav: wordmark, programmes, trial button · footer: orange slab with the new address · hero: black, head left, a real 3D heavy bag on the right that swings when you hit it · signature: a punching bag you can hit, counting your punches */
+/* Hallmark · waive 24b: spacing set to the photographs and the schedule grid */
+/* critique: fight club sites are black with red flames and stock boxers; this one uses the club's own orange, its own champions and kids, and a bag you can hit */
+:root{
+  --black:#0b0b0b; --black-2:#151515; --black-3:#1f1f1f; --line:#2c2c2c;
+  --orange:#ff7a00; --orange-deep:#e06400; --on-orange:#0b0b0b; --white:#f6f3ee; --grey:#a9a49c; --grey-2:#77726b; --veil:rgba(11,11,11,.7);
+  --font-display:'Dela Gothic One',sans-serif; --font-body:'Rubik',sans-serif;
+  --max:1280px; --gut:clamp(16px,4vw,48px); --r:14px;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--white);font:400 17px/1.6 var(--font-body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.02;margin:0;overflow-wrap:break-word;min-width:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:99;background:var(--orange);color:var(--on-orange);padding:10px 14px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;border:2px solid transparent;font:700 16px/1 var(--font-body);text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .2s var(--ease);white-space:nowrap}
+.btn svg{width:18px;height:18px}
+.btn:active{transform:scale(.96)}
+.btn-or{background:var(--orange);color:var(--on-orange)}.btn-or:hover{background:var(--white)}
+.btn-ln{border-color:var(--white);color:var(--white);background:transparent}.btn-ln:hover{background:var(--white);color:var(--black)}
+.btn-bk{background:var(--black);color:var(--white)}.btn-bk:hover{background:var(--white);color:var(--black)}
+
+.nav{position:fixed;inset:0 0 auto;z-index:60;transition:background-color .3s}
+.nav.solid{background:var(--veil);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:76px}
+.logo{text-decoration:none;margin-right:auto;line-height:1}
+.logo b{display:block;font:400 26px/1 var(--font-display);color:var(--orange)}
+.logo span{display:block;font-size:13px;color:var(--grey)}
+.nav a.l{text-decoration:none;font-weight:500;font-size:15px;color:var(--grey)}
+.nav a.l:hover{color:var(--white)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{background:none;border:0;color:var(--grey);font:700 13px/1 var(--font-body);min-width:40px;min-height:34px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--orange);color:var(--on-orange)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:15px}
+@media (max-width:920px){.nav a.l{display:none}.nav .wrap{gap:12px}}
+@media (max-width:440px){.nav .btn{display:none}}
+
+/* hero with the bag */
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;overflow:clip}
+.hero .ghost{position:absolute;inset:auto 0 4vh;text-align:center;font:400 clamp(90px,21vw,330px)/.8 var(--font-display);color:transparent;-webkit-text-stroke:1.5px var(--line);pointer-events:none;user-select:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:center;width:100%;padding-top:100px;padding-bottom:40px}
+.hero h1{font-size:clamp(50px,6.6vw,104px)}
+.hero h1 span{color:var(--orange)}
+.hero p{font-size:19px;color:var(--grey);max-width:36ch;margin-top:20px}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.bag{position:relative;height:min(80svh,720px);cursor:pointer;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.bag canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.bag .hit{position:absolute;right:0;bottom:6%;display:grid;justify-items:end;gap:2px;pointer-events:none}
+.bag .hit b{font:400 clamp(44px,5vw,72px)/1 var(--font-display);color:var(--orange)}
+.bag .hit span{color:var(--grey);font-size:15px}
+.bag .tip{position:absolute;left:0;top:12%;color:var(--grey);font-size:15px;display:flex;align-items:center;gap:8px;pointer-events:none}
+.bag .tip svg{width:22px;height:22px;color:var(--orange)}
+.bag img.still{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+.no-gl .bag{cursor:auto}.no-gl .bag canvas,.no-gl .bag .tip,.no-gl .bag .hit{display:none}.no-gl .bag img.still{display:block}
+@media (max-width:860px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.bag{height:56svh;order:-1;margin-top:-10px}.hero h1{font-size:clamp(42px,11vw,64px)}}
+
+/* moved banner */
+.moved{background:var(--orange);color:var(--on-orange)}
+.moved .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px 30px;flex-wrap:wrap;padding-top:26px;padding-bottom:26px}
+.moved b{font:400 clamp(26px,3.4vw,44px)/1.05 var(--font-display)}
+.moved span{font-weight:600}
+
+.sec{padding:clamp(80px,10vw,140px) 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:18px 40px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,56px)}
+.sh h2{font-size:clamp(44px,6.4vw,96px)}
+.sh p{color:var(--grey);max-width:42ch}
+
+/* programmes */
+.progs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.prog{position:relative;min-height:520px;border-radius:var(--r);overflow:hidden;display:grid;align-items:end;isolation:isolate;text-decoration:none}
+.prog img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .7s var(--ease)}
+.prog::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 35%,var(--black) 95%)}
+.prog:hover img{transform:scale(1.04)}
+.prog div{padding:22px;display:grid;gap:8px}
+.prog h3{font-size:clamp(22px,2.1vw,32px);overflow-wrap:normal;word-break:normal;hyphens:manual}
+.prog p{color:var(--grey);font-size:15px}
+.prog i{font-style:normal;color:var(--orange);font-weight:700;font-size:15px}
+.prog:first-child h3{color:var(--orange)}
+@media (max-width:1000px){.progs{grid-template-columns:repeat(2,minmax(0,1fr))}.prog{min-height:420px}}
+@media (max-width:560px){.progs{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:82%;overflow-x:auto;scroll-snap-type:x mandatory}.prog{scroll-snap-align:start}}
+
+/* schedule */
+.sched{width:100%;border-collapse:separate;border-spacing:6px;table-layout:fixed}
+.sched th,.sched td{padding:14px 10px;text-align:left;vertical-align:top;border-radius:10px}
+.sched thead th{font:700 15px/1.2 var(--font-body);color:var(--grey);background:transparent}
+.sched tbody th{font:400 22px/1.1 var(--font-display);color:var(--white);width:120px}
+.sched td{background:var(--black-2);font-size:15px}
+.sched td b{display:block;font-weight:700}
+.sched td span{color:var(--grey);font-size:14px}
+.sched td.k{background:color-mix(in srgb,var(--orange) 18%,var(--black-2))}
+.sched td.off{background:transparent;border:1px dashed var(--line);color:var(--grey-2)}
+.sched-wrap{overflow-x:auto}
+.sched-note{margin-top:14px;color:var(--grey-2);font-size:14px}
+@media (max-width:760px){.sched{min-width:640px}}
+
+/* champions */
+.champs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:clamp(130px,15vw,220px);gap:10px}
+.champs figure{margin:0;border-radius:var(--r);overflow:hidden;position:relative}
+.champs img{width:100%;height:100%;object-fit:cover}
+.c1{grid-column:span 2;grid-row:span 3}.c2{grid-column:span 2;grid-row:span 2}.c3{grid-column:span 2;grid-row:span 2}.c4{grid-column:span 2}.c5{grid-column:span 2}
+.champs .big{grid-column:span 2;grid-row:span 1;background:var(--orange);color:var(--on-orange);display:grid;align-content:center;padding:20px}
+.champs .big b{font:400 clamp(26px,3vw,40px)/1 var(--font-display)}
+@media (max-width:760px){.champs{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px}.c1{grid-column:span 2;grid-row:span 2}.c2,.c3,.c4,.c5,.champs .big{grid-column:span 1;grid-row:span 1}}
+
+/* prices */
+.plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.plan{background:var(--black-2);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:14px;align-content:start;transition:border-color .25s,transform .25s var(--ease)}
+.plan:hover{border-color:var(--orange);transform:translateY(-4px)}
+.plan h3{font-size:24px}
+.plan .pr{font:400 46px/1 var(--font-display);color:var(--orange)}
+.plan .pr small{font:500 15px/1 var(--font-body);color:var(--grey)}
+.plan ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;color:var(--grey);font-size:15px}
+.plan ul li::before{content:"+ ";color:var(--orange);font-weight:700}
+.plan.hot{background:var(--orange);color:var(--on-orange);border-color:var(--orange)}
+.plan.hot .pr,.plan.hot .pr small,.plan.hot ul,.plan.hot ul li::before{color:var(--on-orange)}
+@media (max-width:1000px){.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.plans{grid-template-columns:minmax(0,1fr)}}
+
+/* voices */
+.voices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.voice{border-top:3px solid var(--orange);padding-top:18px}
+.voice p{font:400 clamp(22px,2.2vw,30px)/1.2 var(--font-display)}
+.voice span{display:block;margin-top:10px;color:var(--grey);font-size:14px}
+@media (max-width:860px){.voices{grid-template-columns:minmax(0,1fr)}}
+
+/* join */
+.join{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,64px);align-items:start}
+.join-ph{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;position:sticky;top:96px}
+.join-ph img{width:100%;height:100%;object-fit:cover}
+form.jf{background:var(--black-2);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,3vw,36px);display:grid;gap:20px}
+fieldset{border:0;margin:0;padding:0}
+legend{font-weight:700;font-size:15px;margin-bottom:10px;color:var(--grey);padding:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--black);color:var(--white);font:600 15px/1 var(--font-body);cursor:pointer;transition:border-color .2s,background-color .2s,color .2s}
+.opt:hover{border-color:var(--grey)}
+.opt[aria-pressed="true"]{background:var(--orange);color:var(--on-orange);border-color:var(--orange)}
+.r2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+label{display:grid;gap:8px;font-weight:700;font-size:15px;color:var(--grey)}
+input{width:100%;min-height:52px;background:var(--black);border:1.5px solid var(--line);border-radius:12px;color:var(--white);font:400 16px/1.3 var(--font-body);padding:12px 14px;transition:border-color .2s}
+input:hover{border-color:var(--grey-2)}
+input:focus-visible{outline:3px solid var(--orange);outline-offset:1px}
+input[aria-invalid="true"]{border-color:var(--orange)}
+.err{color:var(--orange);font-weight:700;font-size:14px}
+@media (max-width:900px){.join{grid-template-columns:minmax(0,1fr)}.join-ph{position:static;aspect-ratio:16/10}}
+@media (max-width:480px){.r2{grid-template-columns:minmax(0,1fr)}}
+
+.where{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:14px;margin-top:clamp(60px,8vw,110px)}
+.where .box{background:var(--black-2);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;gap:18px;align-content:start}
+.where span{display:block;font-size:14px;color:var(--grey)}
+.where b{font:400 26px/1.15 var(--font-display)}
+.where iframe{width:100%;height:100%;min-height:380px;border:0;border-radius:var(--r);filter:grayscale(1) invert(.9)}
+@media (max-width:860px){.where{grid-template-columns:minmax(0,1fr)}}
+
+footer{background:var(--orange);color:var(--on-orange);padding:clamp(56px,8vw,96px) 0 34px;margin-top:clamp(60px,8vw,110px)}
+.fo{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(2,minmax(0,1fr));gap:30px}
+.fo .big{font:400 clamp(48px,7vw,104px)/.9 var(--font-display);text-transform:uppercase;display:block}
+.fo ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-weight:600}
+.fo a{text-decoration:none}.fo a:hover{text-decoration:underline}
+.so{display:flex;gap:10px;margin-top:20px}
+.so a{width:48px;height:48px;border-radius:50%;background:var(--black);color:var(--orange);display:grid;place-items:center;transition:background-color .2s,color .2s}
+.so a:hover{background:var(--white);color:var(--black)}
+.so svg{width:21px;height:21px}
+.fb{margin-top:44px;padding-top:20px;border-top:1px solid color-mix(in srgb,var(--black) 25%,transparent);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;font-weight:500}
+@media (max-width:800px){.fo{grid-template-columns:minmax(0,1fr)}}
+
+.js .rv{opacity:0;transform:translateY(24px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none}.prog img,.plan{transition:none}html{scroll-behavior:auto}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav"><div class="wrap">
+  <a class="logo" href="#top" aria-label="Pantera Fight Club, sus"><b>PANTERA</b><span>fight club</span></a>
+  <a class="l" href="#programe" data-ru="Программы">Programe</a>
+  <a class="l" href="#orar" data-ru="Расписание">Orar</a>
+  <a class="l" href="#campioni" data-ru="Чемпионы">Campioni</a>
+  <a class="l" href="#abonamente" data-ru="Абонементы">Abonamente</a>
+  <div class="lang" role="group" aria-label="Limba / Язык"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn btn-or" href="#inscriere" data-ru="Пробная тренировка">Antrenament de probă</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="ghost" aria-hidden="true">PANTERA</div>
+  <div class="wrap">
+    <div>
+      <h1 data-ru="Приходи новичком. Уходи чемпионом.">Intră începător. <span>Ieși campion.</span></h1>
+      <p data-ru="Кикбоксинг, тренажёрный зал, аэробика и гимнастика для детей и взрослых в Кишинёве.">Kickboxing, sală de forță, aerobică și gimnastică, pentru copii și adulți, în Chișinău.</p>
+      <div class="acts"><a class="btn btn-or" href="#inscriere" data-ru="Записаться на пробную">Înscrie-te la probă</a><a class="btn btn-ln" href="tel:+37369609906" data-ru="Позвонить">Sună la club</a></div>
+    </div>
+    <div class="bag" id="bag" role="button" tabindex="0" aria-label="Sac de box interactiv: apasă ca să lovești">
+      <canvas id="bagCanvas" aria-hidden="true"></canvas>
+      <img class="still" src="img/bag2-s.webp" alt="Sportiv lovind sacul de box în sala Pantera">
+      <div class="tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 11V7a2 2 0 1 1 4 0v4M11 10V5a2 2 0 1 1 4 0v5M15 10V7a2 2 0 1 1 4 0v6a7 7 0 0 1-7 7h-1a6 6 0 0 1-5.3-3.2L4 13.5a1.8 1.8 0 0 1 3-1.9z"/></svg><span data-ru="Ударь по мешку">Lovește sacul</span></div>
+      <div class="hit" aria-live="polite"><b id="hits">0</b><span data-ru="ударов">lovituri</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="moved"><div class="wrap"><b data-ru="Мы переехали!">Ne-am mutat!</b><span data-ru="Новый адрес: ул. Мария Драган, 11 (помещение Local, 2 этаж)">Adresa nouă: str. Maria Drăgan 11 (mag. Local, etajul 2)</span><a class="btn btn-bk" href="#contact" data-ru="Как добраться">Cum ajungi</a></div></div>
+
+<section class="sec" id="programe">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="Четыре зала в одном">Patru săli într-una</h2><p data-ru="Как на нашем плакате: Fight, Gym, Аэробика, Гимнастика.">Exact ca pe afișul nostru: Fight, Gym, Aerobică, Gimnastică.</p></div>
+    <div class="progs">
+      <a class="prog rv" href="#inscriere" data-p="Fight"><img src="img/kick.webp" alt="Antrenament de kickboxing cu lovitură de picior în ring" loading="lazy"><div><h3>Fight</h3><p data-ru="Кикбоксинг, К-1, бокс. Спарринги и турниры.">Kickboxing, K-1, box. Sparring și competiții.</p><i data-ru="Дети и взрослые">Copii și adulți</i></div></a>
+      <a class="prog rv" href="#inscriere" data-p="Gym"><img src="img/gym.webp" alt="Antrenament funcțional cu mingea medicinală în sala de forță" loading="lazy"><div><h3>Gym</h3><p data-ru="Силовые и функциональные тренировки.">Forță și antrenament funcțional.</p><i data-ru="С тренером">Cu antrenor</i></div></a>
+      <a class="prog rv" href="#inscriere" data-p="Aerobică"><img src="img/girls.webp" alt="Fete la antrenament de lovituri" loading="lazy"><div><h3 data-ru="Аэробика">Aerobică</h3><p data-ru="Кардио, тонус и хорошее настроение.">Cardio, tonus și energie bună.</p><i data-ru="Для девушек">Pentru fete și femei</i></div></a>
+      <a class="prog rv" href="#inscriere" data-p="Gimnastică"><img src="img/kids.webp" alt="Copii la antrenament de box în sală" loading="lazy"><div><h3 data-ru="Гимнастика">Gimnastică</h3><p data-ru="Гибкость, координация, дисциплина.">Flexibilitate, coordonare, disciplină.</p><i data-ru="Для детей">Pentru copii</i></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="orar" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="Расписание">Orar</h2><p data-ru="Ориентировочно, уточните группу по телефону.">Orientativ: confirmă grupa potrivită la telefon.</p></div>
+    <div class="sched-wrap rv">
+      <table class="sched">
+        <thead><tr><th scope="col"></th><th scope="col" data-ru="16:00 Дети">16:00 Copii</th><th scope="col" data-ru="17:30 Юниоры">17:30 Juniori</th><th scope="col" data-ru="19:00 Взрослые">19:00 Adulți</th></tr></thead>
+        <tbody>
+          <tr><th scope="row" data-ru="Пн">Luni</th><td class="off" data-ru="Нет">Liber</td><td class="k"><b>Fight</b><span>17:00 la 18:30</span></td><td><b>Fight + Gym</b><span>19:00 la 21:00</span></td></tr>
+          <tr><th scope="row" data-ru="Ср">Miercuri</th><td class="k"><b data-ru="Гимнастика">Gimnastică</b><span>16:00 la 17:00</span></td><td class="k"><b>Fight</b><span>17:30 la 19:00</span></td><td><b data-ru="Аэробика">Aerobică</b><span>19:00 la 20:30</span></td></tr>
+          <tr><th scope="row" data-ru="Пт">Vineri</th><td class="k"><b data-ru="Гимнастика">Gimnastică</b><span>16:00 la 17:00</span></td><td class="k"><b>Fight</b><span>17:30 la 19:00</span></td><td><b data-ru="Спарринг">Sparring</b><span>19:00 la 21:00</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sched-note" data-ru="Клуб открыт: Пн 17–21, Ср и Пт 16–21.">Clubul e deschis: luni 17:00 la 21:00, miercuri și vineri 16:00 la 21:00.</p>
+  </div>
+</section>
+
+<section class="sec" id="campioni" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="Наши чемпионы">Campionii noștri</h2><p data-ru="Пояса, кубки и Pantera Championship, наш собственный турнир.">Centuri, cupe și Pantera Championship, turneul organizat de club.</p></div>
+    <div class="champs">
+      <figure class="c1 rv"><img src="img/belt.webp" alt="Tânăr sportiv cu două centuri de campion" loading="lazy"></figure>
+      <figure class="c2 rv"><img src="img/champ.webp" alt="Ring la Pantera Championship cu sportivi și antrenori" loading="lazy"></figure>
+      <figure class="c3 rv"><img src="img/trophies.webp" alt="Masă cu cupe și centuri la gală" loading="lazy"></figure>
+      <div class="big rv"><b data-ru="Pantera Championship">Pantera Championship</b><span data-ru="наш турнир">turneul nostru</span></div>
+      <figure class="c4 rv"><img src="img/podium.webp" alt="Câștigători pe podium cu medalii" loading="lazy"></figure>
+      <figure class="c5 rv"><img src="img/team4.webp" alt="Echipa Pantera cu steagul clubului" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="abonamente" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="Абонементы">Abonamente</h2><p data-ru="Ориентировочные цены, окончательные скажет тренер.">Prețuri orientative; antrenorul îți confirmă abonamentul potrivit.</p></div>
+    <div class="plans">
+      <div class="plan rv"><h3 data-ru="Пробная">Probă</h3><div class="pr" style="font-size:32px" data-ru="1 занятие">1 lecție</div><ul><li data-ru="Знакомство с тренером">Cunoști antrenorul</li><li data-ru="Подбор группы">Alegi grupa</li></ul><a class="btn btn-ln" href="#inscriere" data-ru="Записаться">Înscrie-te</a></div>
+      <div class="plan hot rv"><h3 data-ru="Дети">Copii</h3><div class="pr">500 <small data-ru="MDL / мес">MDL / lună</small></div><ul><li data-ru="3 тренировки в неделю">3 antrenamente pe săptămână</li><li data-ru="Турниры клуба">Turneele clubului</li></ul><a class="btn btn-bk" href="#inscriere" data-ru="Записать ребёнка">Înscrie copilul</a></div>
+      <div class="plan rv"><h3 data-ru="Взрослые">Adulți</h3><div class="pr">600 <small data-ru="MDL / мес">MDL / lună</small></div><ul><li>Fight + Gym</li><li data-ru="Спарринги">Sparring</li></ul><a class="btn btn-ln" href="#inscriere" data-ru="Записаться">Înscrie-te</a></div>
+      <div class="plan rv"><h3 data-ru="Индивидуально">Individual</h3><div class="pr">250 <small data-ru="MDL / час">MDL / oră</small></div><ul><li data-ru="Один на один с тренером">Unu la unu cu antrenorul</li><li data-ru="Своё время">Ora ta</li></ul><a class="btn btn-ln" href="#inscriere" data-ru="Записаться">Înscrie-te</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="4,9 в Google">4,9 pe Google</h2><p data-ru="71 отзыв от спортсменов и родителей.">71 de recenzii de la sportivi și părinți.</p></div>
+    <div class="voices">
+      <figure class="voice rv" style="margin:0"><p>„Îmi place foarte tare acest club... Organizează multe evenimente, un club foarte activ.”</p><span>anatolia botnari</span></figure>
+      <figure class="voice rv" style="margin:0"><p>„Mă ocup de 5 ani, totul îmi place, recomand la toată lumea.”</p><span>Damian Javgurean</span></figure>
+      <figure class="voice rv" style="margin:0"><p>„O sală și un colectiv minunat!”</p><span>Gloria Baractari</span></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="inscriere" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv"><h2 data-ru="Запись">Înscriere</h2><p data-ru="Выберите программу, тренер перезвонит и предложит группу.">Alege programul, antrenorul te sună și îți propune grupa.</p></div>
+    <div class="join">
+      <div class="join-ph rv"><img src="img/coach.webp" alt="Antrenor ținând pernițele pentru un sportiv" loading="lazy"></div>
+      <form class="jf rv" id="jf" novalidate>
+        <fieldset><legend data-ru="Программа">Programul</legend><div class="opts" data-g="prog"><button type="button" class="opt" aria-pressed="true">Fight</button><button type="button" class="opt" aria-pressed="false">Gym</button><button type="button" class="opt" aria-pressed="false" data-ru="Аэробика">Aerobică</button><button type="button" class="opt" aria-pressed="false" data-ru="Гимнастика">Gimnastică</button></div></fieldset>
+        <fieldset><legend data-ru="Для кого">Pentru cine</legend><div class="opts" data-g="who"><button type="button" class="opt" aria-pressed="false" data-ru="Ребёнок 6–10">Copil 6 la 10 ani</button><button type="button" class="opt" aria-pressed="false" data-ru="Юниор 11–16">Junior 11 la 16 ani</button><button type="button" class="opt" aria-pressed="true" data-ru="Взрослый">Adult</button></div></fieldset>
+        <div class="r2"><label><span data-ru="Имя">Numele</span><input name="name" autocomplete="name" required></label><label><span data-ru="Телефон">Telefon</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+373" required></label></div>
+        <p class="err" id="jfErr" role="alert"></p>
+        <button class="btn btn-or" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+        <p style="font-size:14px;color:var(--grey-2)"><a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a></p>
+      </form>
+    </div>
+    <div class="where" id="contact">
+      <div class="box rv">
+        <div><span data-ru="Новый адрес">Adresa nouă</span><b>Str. Maria Drăgan 11, etajul 2</b></div>
+        <div><span data-ru="Телефон">Telefon</span><b><a href="tel:+37369609906" style="text-decoration:none">+373 69 609 906</a></b></div>
+        <div><span data-ru="Часы">Program</span><b data-ru="Пн 17–21, Ср и Пт 16–21">Luni 17 la 21, miercuri și vineri 16 la 21</b></div>
+        <a class="btn btn-or" href="https://www.google.com/maps/dir/?api=1&destination=str.+Maria+Dr%C4%83gan+11,+Chi%C8%99in%C4%83u" target="_blank" rel="noopener" data-ru="Маршрут">Traseu</a>
+      </div>
+      <iframe class="rv" title="Harta: str. Maria Drăgan 11, Chișinău" loading="lazy" src="https://maps.google.com/maps?q=str.%20Maria%20Dr%C4%83gan%2011%2C%20Chi%C8%99in%C4%83u&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fo">
+    <div><span class="big">Pantera</span>
+      <div class="so">
+        <a href="https://wa.me/37369609906" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+        <a href="viber://chat?number=%2B37369609906" aria-label="Viber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg></a>
+        <a href="https://www.google.com/maps/place/Pantera+Fight+Club/@47.0291358,28.8804278,17z/data=!4m6!3m5!1s0x40c97d35f1e60fc3:0x94ca29c5fe808dcd" target="_blank" rel="noopener" aria-label="Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></a>
+      </div>
+    </div>
+    <ul><li><a href="#programe" data-ru="Программы">Programe</a></li><li><a href="#orar" data-ru="Расписание">Orar</a></li><li><a href="#abonamente" data-ru="Абонементы">Abonamente</a></li><li><a href="#inscriere" data-ru="Запись">Înscriere</a></li></ul>
+    <ul><li><a href="termeni.html" data-ru="Условия">Termeni și condiții</a></li><li><a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a></li><li><a href="tel:+37369609906">+373 69 609 906</a></li></ul>
+  </div>
+  <div class="fb"><span>© 2026 Pantera Fight Club, Chișinău</span><span data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span></div>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+  let lang = 'ro'; const T = (ro, ru) => (lang === 'ru' ? ru : ro);
+  $$('[data-ru]').forEach((el) => { el.dataset.ro = el.textContent; });
+  const setLang = (l) => { lang = l; document.documentElement.lang = l; $$('[data-ru]').forEach((el) => { el.textContent = l === 'ru' ? el.dataset.ru : el.dataset.ro; }); $$('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l))); store.set('pf-lang', l); };
+  $$('.lang button').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  if (store.get('pf-lang') === 'ru') setLang('ru');
+
+  const nav = $('#nav'); const ons = () => nav.classList.toggle('solid', scrollY > 30); addEventListener('scroll', ons, { passive: true }); ons();
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -6% 0px' });
+  $$('.rv').forEach((el) => io.observe(el));
+
+  /* sign-up */
+  $$('.opts').forEach((g) => g.addEventListener('click', (e) => { const o = e.target.closest('.opt'); if (!o) return; $$('.opt', g).forEach((x) => x.setAttribute('aria-pressed', String(x === o))); }));
+  $$('.prog').forEach((p) => p.addEventListener('click', () => { const o = $$('[data-g="prog"] .opt').find((x) => x.dataset.ro === p.dataset.p || x.textContent === p.dataset.p); if (o) o.click(); }));
+  const f = $('#jf'), err = $('#jfErr');
+  f.addEventListener('submit', (e) => {
+    e.preventDefault(); err.textContent = '';
+    const bad = ['name', 'phone'].filter((n) => !f[n].value.trim() || (n === 'phone' && f.phone.value.replace(/\D/g, '').length < 8));
+    $$('input', f).forEach((i) => i.removeAttribute('aria-invalid')); bad.forEach((n) => f[n].setAttribute('aria-invalid', 'true'));
+    if (bad.length) { err.textContent = T('Scrie numele și telefonul.', 'Укажите имя и телефон.'); f[bad[0]].focus(); return; }
+    const v = (g) => $(`[data-g="${g}"] .opt[aria-pressed="true"]`).dataset.ro || $(`[data-g="${g}"] .opt[aria-pressed="true"]`).textContent;
+    const msg = `Bună ziua! Vreau la un antrenament de probă la Pantera.\nProgram: ${v('prog')}\nPentru: ${v('who')}\nNume: ${f.name.value}\nTelefon: ${f.phone.value}`;
+    window.open('https://wa.me/37369609906?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+
+  /* the heavy bag: a pendulum on a chain; click, tap or Enter to punch */
+  const canvas = $('#bagCanvas'); let ok = false; try { ok = !!(canvas.getContext('webgl2') || canvas.getContext('webgl')); } catch {}
+  if (!window.THREE || !ok) { document.documentElement.classList.add('no-gl'); return; }
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75)); renderer.outputEncoding = THREE.sRGBEncoding; renderer.shadowMap.enabled = true;
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(35, 1, .1, 60); cam.position.set(0, .2, 11);
+  scene.add(new THREE.HemisphereLight(0xfff1e0, 0x221100, .55));
+  const spot = new THREE.SpotLight(0xffffff, 2.2, 30, .55, .5); spot.position.set(3, 8, 6); spot.castShadow = true; scene.add(spot);
+  const rim = new THREE.PointLight(0xff7a00, 2.2, 14); rim.position.set(-3.5, 1, -2); scene.add(rim);
+
+  const pivot = new THREE.Group(); pivot.position.y = 4.6; scene.add(pivot);
+  // chain links
+  const linkMat = new THREE.MeshStandardMaterial({ color: 0x9a9a9a, metalness: .9, roughness: .3 });
+  for (let i = 0; i < 9; i++) { const l = new THREE.Mesh(new THREE.TorusGeometry(.12, .035, 8, 18), linkMat); l.position.y = -i * .2; l.rotation.y = i % 2 ? Math.PI / 2 : 0; l.scale.y = 1.4; pivot.add(l); }
+  // the bag: leather cylinder with stitched bands and a logo strip
+  const cv = document.createElement('canvas'); cv.width = 1024; cv.height = 512; const g = cv.getContext('2d');
+  const draw = () => {
+    g.fillStyle = '#141414'; g.fillRect(0, 0, 1024, 512);
+    for (let i = 0; i < 4000; i++) { g.fillStyle = `rgba(255,255,255,${Math.random() * .03})`; g.fillRect(Math.random() * 1024, Math.random() * 512, 2, 2); }
+    g.fillStyle = '#ff7a00'; g.fillRect(0, 196, 1024, 120);
+    g.fillStyle = '#0b0b0b'; g.font = '84px "Dela Gothic One", sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+    g.fillText('PANTERA', 256, 258); g.fillText('PANTERA', 768, 258);
+    g.strokeStyle = 'rgba(255,255,255,.12)'; g.setLineDash([10, 8]); g.lineWidth = 3; [40, 470].forEach((y) => { g.beginPath(); g.moveTo(0, y); g.lineTo(1024, y); g.stroke(); });
+  };
+  draw();
+  const tex = new THREE.CanvasTexture(cv);
+  if (document.fonts) document.fonts.load('84px "Dela Gothic One"').then(() => { draw(); tex.needsUpdate = true; }).catch(() => {}); tex.encoding = THREE.sRGBEncoding; tex.anisotropy = 8;
+  const bag = new THREE.Mesh(new THREE.CylinderGeometry(1.15, 1.15, 4.4, 64, 1), [new THREE.MeshStandardMaterial({ map: tex, roughness: .55, metalness: .05 }), new THREE.MeshStandardMaterial({ color: 0x0f0f0f, roughness: .6 }), new THREE.MeshStandardMaterial({ color: 0x0f0f0f, roughness: .6 })]);
+  bag.position.y = -4.2; bag.castShadow = true; pivot.add(bag);
+  const cap = new THREE.Mesh(new THREE.CylinderGeometry(.5, 1.15, .5, 48), new THREE.MeshStandardMaterial({ color: 0x0f0f0f, roughness: .5 })); cap.position.y = -1.75; pivot.add(cap);
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(4, 48), new THREE.ShadowMaterial({ opacity: .45 })); floor.rotation.x = -Math.PI / 2; floor.position.y = -2.4; floor.receiveShadow = true; scene.add(floor);
+  // impact ring
+  const ring = new THREE.Mesh(new THREE.RingGeometry(.9, 1, 64), new THREE.MeshBasicMaterial({ color: 0xff7a00, transparent: true, opacity: 0, side: THREE.DoubleSide })); scene.add(ring);
+
+  const size = () => { const w = canvas.clientWidth, h = canvas.clientHeight; renderer.setSize(w, h, false); cam.aspect = w / h; cam.position.z = w < 500 ? 13 : 11; cam.updateProjectionMatrix(); };
+  size(); addEventListener('resize', size);
+
+  // pendulum state: angle around z (side swing) and x (front-back)
+  const s = { az: 0, vz: 0, ax: 0, vx: 0, spin: 0, vs: 0 }; let hits = 0, ringT = 1;
+  if (!reduce) { s.vz = .6; }
+  function punch(dir) {
+    s.vz += dir * (1.1 + Math.random() * .5); s.vx += (Math.random() - .3) * .7; s.vs += dir * .8;
+    hits++; $('#hits').textContent = hits; ringT = 0; ring.position.set(dir * -1.2, -.4, 1.3); ring.lookAt(cam.position);
+    if (navigator.vibrate) navigator.vibrate(18);
+  }
+  const el = $('#bag');
+  el.addEventListener('pointerdown', (e) => { const r = el.getBoundingClientRect(); punch(e.clientX < r.left + r.width / 2 ? 1 : -1); });
+  el.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); punch(Math.random() > .5 ? 1 : -1); } });
+
+  let vis = false, raf = 0; new IntersectionObserver(([e]) => { vis = e.isIntersecting; if (vis && !raf) loop(); }).observe(canvas);
+  const clock = new THREE.Clock();
+  function loop() {
+    if (!vis) { raf = 0; return; }
+    raf = requestAnimationFrame(loop);
+    const dt = Math.min(clock.getDelta(), .033);
+    // damped pendulum
+    s.vz += (-9 * Math.sin(s.az) / 4.2) * dt; s.vz *= .993; s.az += s.vz * dt;
+    s.vx += (-9 * Math.sin(s.ax) / 4.2) * dt; s.vx *= .99; s.ax += s.vx * dt;
+    s.vs *= .985; s.spin += s.vs * dt;
+    pivot.rotation.z = THREE.MathUtils.clamp(s.az, -.7, .7); pivot.rotation.x = THREE.MathUtils.clamp(s.ax, -.5, .5); bag.rotation.y = s.spin + clock.elapsedTime * (reduce ? 0 : .1);
+    if (ringT < 1) { ringT += dt * 2.2; ring.scale.setScalar(1 + ringT * 1.6); ring.material.opacity = (1 - ringT) * .8; } else ring.material.opacity = 0;
+    renderer.render(scene, cam);
+  }
+})();
+</script>
+</body>
+</html>
