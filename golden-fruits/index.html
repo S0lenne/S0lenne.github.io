@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="ro" data-key="golden-fruits">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Like & Golden Fruits · fructe din Egipt în Chișinău</title>
+<meta name="description" content="Fructe importate direct din Egipt de Mohammad. Comandă online, cu livrare în Chișinău sau ridicare de pe str. Uzinelor 15/3. Telefon 060 968 000.">
+<meta name="theme-color" content="#1e3a8a">
+<meta property="og:title" content="Like & Golden Fruits">
+<meta property="og:description" content="Din Egipt, în Moldova: fructe proaspete cu livrare sau ridicare.">
+<meta property="og:image" content="img/hero.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231e3a8a'/%3E%3Ccircle cx='32' cy='36' r='16' fill='%23f4b41a'/%3E%3Cpath d='M32 20c2-7 9-9 13-8-2 6-8 9-13 8z' fill='%2348a838'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Onest:wght@400;500;700&display=swap">
+<style>
+/* Hallmark · shape: a fruit stall that sells by the crate, scalloped colour bands from the sand of Egypt to the blue of the Moldovan flag · genre: playful · theme: custom (after the user's reference, a bold soda-shop page) · job: buy · idea: "the stall of a Lebanese importer who brings fruit from Egypt to Chișinău: every fruit is a crate card you fill, then the order goes to his WhatsApp" · vibe: "loud, sunny, market crate, Nile to Nistru"
+ * paper: oklch(96% 0.03 85) · accent: oklch(57% 0.21 27) · display: Anton · body: Onest · hero: a pile of Egyptian fruit rendered in Blender over a giant headline and a setting sun · nav: wordmark, three links, cart, order pill · footer: address, phone and map as the close · imagery: Blender renders of scanned fruit (Poly Haven, CC0) · signature: crate cards with a quantity stepper that fill a cart which leaves as one WhatsApp order, delivery or pick-up
+ * axes: light/display-condensed/chromatic-red · posture: loud · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R3 V5 · weakest: R, the reference style is loud on purpose; kept one display face, four colours and one reveal */
+/* Hallmark · waive 80 · .sun and .pyr are the setting sun and three pyramids behind the hero fruit · they are the owner's own sign (sun, pyramids, fruit) set as flat shapes */
+
+:root {
+  --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px;
+  --text-xs: 0.8125rem; --text-sm: 0.9rem; --text-md: 1.0625rem; --text-lg: 1.25rem; --text-xl: 1.6rem;
+  --text-mega: clamp(3.6rem, 11vw, 11.5rem); --text-section: clamp(2.8rem, 6.5vw, 6rem); --text-card: clamp(1.6rem, 2.2vw, 2.1rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 560ms;
+  --container: 1280px; --gutter: 40px; --gap: 20px; --section: 120px;
+  --z-raised: 10; --z-sticky: 200; --z-nav: 300; --z-drawer: 400;
+  --color-sand: oklch(96% 0.03 85); --color-sand-2: oklch(92% 0.045 82);
+  --color-blue: oklch(36% 0.14 264); --color-blue-2: oklch(30% 0.13 264); --color-ink: oklch(22% 0.06 264); --color-ink-2: oklch(38% 0.05 264);
+  --color-gold: oklch(81% 0.16 80); --color-gold-2: oklch(87% 0.13 85); --color-sun: oklch(71% 0.18 50);
+  --color-red: oklch(57% 0.21 27); --color-red-2: oklch(51% 0.2 27); --color-leaf: oklch(62% 0.16 140); --color-white: oklch(99% 0.005 85);
+  --color-muted: oklch(45% 0.04 264); --color-rule: oklch(84% 0.04 82); --color-focus: oklch(50% 0.2 264);
+  --flag-blue: oklch(42% 0.17 264); --flag-yellow: oklch(86% 0.17 92); --flag-red: oklch(55% 0.21 27); --flag-black: oklch(18% 0 0); --shade-fruit: oklch(30% 0.08 60 / 0.35); --scrim: oklch(20% 0.05 264 / 0.5);
+  --tint-red: oklch(86% 0.08 20); --tint-yellow: oklch(92% 0.1 95); --tint-green: oklch(88% 0.09 135); --tint-orange: oklch(87% 0.1 60); --tint-dark: oklch(84% 0.05 140); --tint-brown: oklch(87% 0.05 70); --tint-pink: oklch(89% 0.06 10); --tint-pear: oklch(91% 0.07 115); --tint-apple: oklch(87% 0.08 25);
+  --font-display: "Anton", Impact, sans-serif; --font-body: "Onest", ui-sans-serif, system-ui, sans-serif;
+  --radius: 22px; --radius-pill: 999px; --shadow: 0 6px 0 var(--color-ink);
+  --chat-bg: var(--color-blue); --chat-ink: var(--color-white); --chat-paper: var(--color-white); --chat-text: var(--color-ink); --chat-bubble: var(--color-sand-2); --chat-line: var(--color-rule); --chat-field: var(--color-muted); --chat-shadow: oklch(20% 0.05 264 / 0.3); --chat-display: var(--font-body); --chat-bottom: 96px; --chat-bottom-m: 96px;
+}
+@media (max-width: 60rem) { :root { --gutter: 22px; --section: 88px; } }
+@media (max-width: 40rem) { :root { --gutter: 16px; --section: 72px; --gap: 14px; } }
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scroll-padding-top: 110px; }
+body { margin: 0; background: var(--color-sand); color: var(--color-ink); font: 400 var(--text-md)/1.55 var(--font-body); -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: 400; text-transform: uppercase; line-height: 1; letter-spacing: 0.005em; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+img { max-width: 100%; height: auto; display: block; }
+svg { display: block; }
+button, input, textarea { font: inherit; }
+[hidden] { display: none !important; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+.num { font-variant-numeric: tabular-nums; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-xs); min-height: 50px; padding: 0 var(--space-lg); border: 2px solid var(--color-ink); border-radius: var(--radius-pill); background: var(--color-red); color: var(--color-white); font: 700 var(--text-md)/1 var(--font-body); text-decoration: none; white-space: nowrap; cursor: pointer; box-shadow: 0 4px 0 var(--color-ink); transition: transform var(--dur-micro) var(--ease-out), box-shadow var(--dur-micro) var(--ease-out), background-color var(--dur-short) var(--ease-out); }
+.btn:hover { background: var(--color-red-2); transform: translateY(-1px); box-shadow: 0 5px 0 var(--color-ink); }
+.btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--color-ink); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn--light { background: var(--color-white); color: var(--color-ink); }
+.btn--light:hover { background: var(--color-gold-2); }
+
+/* the running strip */
+.strip { background: var(--color-blue); color: var(--color-gold-2); font: 700 var(--text-sm)/1 var(--font-body); overflow: hidden; white-space: nowrap; }
+.strip__run { display: inline-flex; gap: var(--space-2xl); padding: 10px 0; animation: run 38s linear infinite; }
+.strip__run span { display: inline-flex; align-items: center; gap: var(--space-xs); }
+.strip__run i { width: 7px; height: 7px; border-radius: 50%; background: var(--color-red); }
+@keyframes run { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .strip__run { animation: none; } }
+
+/* nav */
+.nav { position: sticky; top: 0; z-index: var(--z-nav); background: color-mix(in oklab, var(--color-sand) 92%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 2px solid var(--color-ink); }
+.nav .container { display: flex; align-items: center; gap: var(--space-lg); min-height: 72px; }
+.brand { display: inline-flex; align-items: center; gap: var(--space-sm); text-decoration: none; }
+.brand__mark { width: 42px; height: 42px; flex: none; }
+.brand b { font: 400 1.45rem/0.9 var(--font-display); text-transform: uppercase; color: var(--color-blue); }
+.brand small { display: block; font: 700 0.75rem/1 var(--font-body); color: var(--color-red-2); margin-top: 3px; }
+.nav__links { display: flex; gap: var(--space-lg); margin-left: auto; font-weight: 500; }
+.nav__links a { white-space: nowrap; text-decoration: none; padding: var(--space-xs) 0; border-bottom: 2px solid transparent; transition: border-color var(--dur-short) var(--ease-out); }
+.nav__links a:hover { border-color: var(--color-red); }
+.nav__end { display: flex; align-items: center; gap: var(--space-sm); }
+.lang { display: flex; border: 2px solid var(--color-ink); border-radius: var(--radius-pill); overflow: hidden; }
+.lang button { min-width: 44px; min-height: 44px; border: 0; background: transparent; color: var(--color-ink); font: 700 var(--text-xs)/1 var(--font-body); cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--color-ink); color: var(--color-sand); }
+.cartbtn { position: relative; display: grid; place-items: center; width: 50px; height: 50px; border: 2px solid var(--color-ink); border-radius: 50%; background: var(--color-gold); color: var(--color-ink); cursor: pointer; transition: transform var(--dur-micro) var(--ease-out); }
+.cartbtn:hover { transform: rotate(-6deg); }
+.cartbtn svg { width: 22px; height: 22px; }
+.cartbtn b { position: absolute; top: -6px; right: -6px; min-width: 24px; height: 24px; padding: 0 6px; border-radius: var(--radius-pill); background: var(--color-red); color: var(--color-white); font: 700 0.8rem/24px var(--font-body); text-align: center; border: 2px solid var(--color-ink); }
+.cartbtn.bump { animation: bump 420ms var(--ease-out); }
+@keyframes bump { 40% { transform: scale(1.18) rotate(-8deg); } }
+@media (max-width: 60rem) { .nav__links { display: none; } .nav__end { margin-left: auto; } }
+@media (max-width: 40rem) { .brand small { display: none; } .nav .btn { display: none; } }
+
+/* hero */
+.hero { position: relative; overflow: hidden; padding: var(--space-2xl) 0 var(--space-3xl); background: radial-gradient(120% 80% at 70% 100%, var(--color-gold-2), var(--color-sand) 60%); }
+.hero__grid { position: relative; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: center; gap: var(--space-xl); }
+.hero h1 { font-size: var(--text-mega); color: var(--color-blue); }
+.hero h1 span { display: block; color: var(--color-red); }
+.hero__lead { margin-top: var(--space-lg); font-size: var(--text-lg); max-width: 32ch; }
+.hero__acts { margin-top: var(--space-xl); display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+.hero__proof { margin-top: var(--space-lg); display: flex; flex-wrap: wrap; gap: var(--space-xs); }
+.tag { display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 34px; padding: 0 var(--space-sm); border: 2px solid var(--color-ink); border-radius: var(--radius-pill); background: var(--color-white); font: 700 var(--text-xs)/1 var(--font-body); }
+.flag { display: inline-flex; width: 22px; height: 15px; border-radius: 3px; overflow: hidden; outline: 1px solid var(--color-ink); flex: none; }
+.flag i { flex: 1; }
+.flag--md i:nth-child(1) { background: var(--flag-blue); } .flag--md i:nth-child(2) { background: var(--flag-yellow); } .flag--md i:nth-child(3) { background: var(--flag-red); }
+.flag--eg { flex-direction: column; } .flag--eg i:nth-child(1) { background: var(--flag-red); } .flag--eg i:nth-child(2) { background: var(--color-white); } .flag--eg i:nth-child(3) { background: var(--flag-black); }
+.stage { position: relative; aspect-ratio: 1; }
+.sun { position: absolute; inset: 8% 6% 18%; border-radius: 50%; background: radial-gradient(circle at 50% 40%, var(--color-gold-2), var(--color-sun) 70%); border: 2px solid var(--color-ink); }
+.pyr { position: absolute; bottom: 14%; width: 46%; aspect-ratio: 1.6; clip-path: polygon(50% 0, 100% 100%, 0 100%); background: linear-gradient(100deg, var(--color-gold) 50%, var(--color-sun) 50%); }
+.pyr--a { left: -6%; } .pyr--b { right: -4%; width: 38%; } .pyr--c { left: 30%; width: 30%; bottom: 16%; opacity: 0.85; }
+.fruitpile { position: absolute; inset: 6% -2% -2%; width: 104%; filter: drop-shadow(0 18px 18px var(--shade-fruit)); animation: float 6s ease-in-out infinite; }
+@keyframes float { 50% { transform: translateY(-10px) rotate(-1deg); } }
+@media (prefers-reduced-motion: reduce) { .fruitpile { animation: none; } }
+@media (max-width: 60rem) { .hero__grid { grid-template-columns: minmax(0, 1fr); } .stage { max-width: 460px; margin: 0 auto; width: 100%; } }
+
+/* scalloped edges between bands */
+.wave { display: block; width: 100%; height: 48px; }
+.band { position: relative; }
+.band--gold { background: var(--color-gold); }
+.band--blue { background: var(--color-blue); color: var(--color-white); }
+.band--red { background: var(--color-red); color: var(--color-white); }
+
+/* catalogue */
+.cat { padding-block: var(--space-2xl) var(--section); }
+.cat__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: var(--space-lg); }
+.cat h2 { font-size: var(--text-section); color: var(--color-ink); }
+.cat__note { margin-top: var(--space-sm); font-weight: 500; max-width: 46ch; }
+.filters { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
+.chip { min-height: 44px; padding: 0 var(--space-md); border: 2px solid var(--color-ink); border-radius: var(--radius-pill); background: var(--color-white); color: var(--color-ink); font: 700 var(--text-sm)/1 var(--font-body); white-space: nowrap; cursor: pointer; transition: background-color var(--dur-short) var(--ease-out); }
+.chip:hover { background: var(--color-sand-2); }
+.chip[aria-pressed="true"] { background: var(--color-ink); color: var(--color-gold-2); }
+.grid { margin-top: var(--space-xl); display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--gap); }
+.card { position: relative; display: grid; grid-template-rows: auto 1fr; border: 2px solid var(--color-ink); border-radius: var(--radius); background: var(--color-white); box-shadow: var(--shadow); overflow: hidden; transition: transform var(--dur-short) var(--ease-out); }
+.card:hover { transform: translateY(-4px) rotate(-0.4deg); }
+.card__pic { position: relative; aspect-ratio: 5 / 4; background: var(--tint); border-bottom: 2px solid var(--color-ink); display: grid; place-items: center; }
+.card__pic img { width: 74%; height: auto; transition: transform var(--dur-long) var(--ease-out); }
+.card:hover .card__pic img { transform: scale(1.06) rotate(4deg); }
+.card__badge { position: absolute; top: var(--space-sm); left: var(--space-sm); }
+.card__body { display: grid; gap: var(--space-sm); padding: var(--space-md); align-content: start; }
+.card h3 { font-size: var(--text-card); }
+.card__sub { font-size: var(--text-sm); color: var(--color-muted); }
+.card__row { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); margin-top: auto; }
+.price { font: 400 1.7rem/1 var(--font-display); }
+.price small { font: 500 var(--text-xs)/1 var(--font-body); color: var(--color-muted); margin-left: 2px; }
+.step { display: inline-flex; align-items: center; border: 2px solid var(--color-ink); border-radius: var(--radius-pill); overflow: hidden; background: var(--color-sand); }
+.step button { width: 44px; height: 44px; border: 0; background: transparent; color: var(--color-ink); font: 700 1.2rem/1 var(--font-body); cursor: pointer; transition: background-color var(--dur-short) var(--ease-out); }
+.step button:hover { background: var(--color-gold-2); }
+.step button:disabled { opacity: 0.35; cursor: not-allowed; }
+.step output { min-width: 3.4ch; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.add { width: 100%; }
+.card.in-cart { outline: 4px solid var(--color-leaf); outline-offset: -2px; }
+
+/* the road: Egypt to Moldova */
+.road { padding-block: var(--space-2xl) var(--section); }
+.road h2 { font-size: var(--text-section); color: var(--color-gold); }
+.road__lead { margin-top: var(--space-md); max-width: 50ch; color: var(--color-sand); font-size: var(--text-lg); }
+.road ol { list-style: none; margin: var(--space-2xl) 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap); counter-reset: s; }
+.road li { counter-increment: s; display: grid; gap: var(--space-sm); align-content: start; padding: var(--space-lg); border: 2px solid var(--color-gold); border-radius: var(--radius); }
+.road li::before { content: counter(s); font: 400 3.2rem/1 var(--font-display); color: var(--color-gold); }
+.road li b { font: 400 1.6rem/1 var(--font-display); text-transform: uppercase; }
+.road li p { color: var(--color-sand); }
+@media (max-width: 40rem) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .card h3 { font-size: 1.35rem; } .card__body { padding: var(--space-sm); gap: var(--space-xs); } .card__sub { display: none; } .card__row { flex-direction: column; align-items: stretch; } .step { justify-content: space-between; } .price { font-size: 1.4rem; } }
+@media (max-width: 60rem) { .road ol { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 40rem) { .road ol { grid-template-columns: minmax(0, 1fr); } }
+
+/* about + tiktok */
+.who { padding: var(--section) 0; }
+.who__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-2xl); align-items: start; }
+.who h2 { font-size: var(--text-section); color: var(--color-blue); }
+.who blockquote { margin: var(--space-xl) 0 0; padding: var(--space-lg); border: 2px solid var(--color-ink); border-radius: var(--radius); background: var(--color-white); box-shadow: var(--shadow); font-size: var(--text-xl); line-height: 1.3; font-weight: 500; }
+.who cite { display: block; margin-top: var(--space-sm); font: 500 var(--text-sm)/1.3 var(--font-body); font-style: normal; color: var(--color-muted); }
+.stats { margin-top: var(--space-xl); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); }
+.stats div { padding: var(--space-md) 0; border-top: 2px solid var(--color-ink); }
+.stats b { display: block; font: 400 clamp(3rem, 6vw, 4.6rem)/0.9 var(--font-display); color: var(--color-red); }
+.stats span { font-weight: 500; }
+.tt { border: 2px solid var(--color-ink); border-radius: var(--radius); background: var(--color-white); box-shadow: var(--shadow); padding: var(--space-md); display: grid; gap: var(--space-md); }
+.tt__head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); }
+.tt__head b { font: 400 1.6rem/1 var(--font-display); text-transform: uppercase; }
+.tt__frame { min-height: 520px; border-radius: 14px; overflow: hidden; background: var(--color-sand-2); display: grid; }
+.tt__frame blockquote { margin: 0 !important; max-width: 100% !important; min-width: 0 !important; }
+.tt__fall { display: grid; place-items: center; text-align: center; gap: var(--space-md); padding: var(--space-xl); }
+@media (max-width: 60rem) { .who__grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* visit */
+.visit { padding-block: var(--space-2xl) var(--section); text-align: center; }
+.visit h2 { font-size: var(--text-section); }
+.visit p { margin: var(--space-md) auto 0; max-width: 44ch; font-size: var(--text-lg); }
+.visit__acts { margin-top: var(--space-xl); display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-sm); }
+.map { margin-top: var(--space-2xl); aspect-ratio: 21 / 8; border: 2px solid var(--color-ink); border-radius: var(--radius); overflow: hidden; background: var(--color-sand-2); box-shadow: var(--shadow); }
+.map iframe { width: 100%; height: 100%; border: 0; }
+@media (max-width: 60rem) { .map { aspect-ratio: 4 / 3; } }
+
+.foot { padding: var(--space-xl) 0 calc(var(--space-xl) + 70px); border-top: 2px solid var(--color-ink); font-size: var(--text-sm); }
+.foot .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-md); }
+.foot nav { display: flex; gap: var(--space-lg); }
+.foot small { display: block; width: 100%; color: var(--color-muted); }
+
+/* the cart drawer */
+.fab { position: fixed; z-index: var(--z-sticky); left: 50%; bottom: var(--space-md); transform: translate(-50%, 140%); display: flex; align-items: center; gap: var(--space-md); padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-lg); border: 2px solid var(--color-ink); border-radius: var(--radius-pill); background: var(--color-ink); color: var(--color-white); box-shadow: 0 6px 0 var(--color-red); transition: transform var(--dur-long) var(--ease-out); font-weight: 700; }
+.fab.on { transform: translate(-50%, 0); }
+.fab .btn { min-height: 46px; box-shadow: none; border-color: var(--color-red); }
+.scrim { position: fixed; inset: 0; z-index: var(--z-drawer); background: var(--scrim); opacity: 0; visibility: hidden; transition: opacity var(--dur-short) var(--ease-out), visibility 0s linear var(--dur-short); }
+.drawer { position: fixed; z-index: calc(var(--z-drawer) + 1); top: 0; right: 0; bottom: 0; width: min(460px, 100%); display: grid; grid-template-rows: auto minmax(0, 1fr) auto; background: var(--color-sand); border-left: 2px solid var(--color-ink); transform: translateX(105%); transition: transform var(--dur-long) var(--ease-out); visibility: hidden; }
+.cart-open .scrim { opacity: 1; visibility: visible; transition: opacity var(--dur-short) var(--ease-out); }
+.cart-open .drawer { transform: none; visibility: visible; }
+.drawer__head { display: flex; align-items: center; justify-content: space-between; padding: var(--space-md) var(--space-lg); border-bottom: 2px solid var(--color-ink); background: var(--color-gold); }
+.drawer__head h2 { font-size: 2.2rem; }
+.x { width: 46px; height: 46px; border: 2px solid var(--color-ink); border-radius: 50%; background: var(--color-white); cursor: pointer; display: grid; place-items: center; }
+.x svg { width: 18px; height: 18px; }
+.drawer__body { overflow-y: auto; padding: var(--space-lg); display: grid; gap: var(--space-lg); align-content: start; overscroll-behavior: contain; }
+.lines { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-sm); }
+.line { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: var(--space-sm); align-items: center; padding: var(--space-xs); border: 2px solid var(--color-ink); border-radius: 16px; background: var(--color-white); }
+.line img { width: 56px; height: 56px; border-radius: 12px; background: var(--tint); padding: var(--space-2xs); }
+.line b { display: block; font-weight: 700; }
+.line span { font-size: var(--text-sm); color: var(--color-muted); }
+.line .step button { width: 38px; height: 38px; }
+.empty { text-align: center; padding: var(--space-xl) 0; color: var(--color-muted); }
+fieldset { margin: 0; padding: 0; border: 0; display: grid; gap: var(--space-sm); }
+legend, label { font-weight: 700; font-size: var(--text-sm); padding: 0; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--color-ink); border-radius: var(--radius-pill); overflow: hidden; background: var(--color-white); }
+.seg button { min-height: 48px; border: 0; background: transparent; font-weight: 700; cursor: pointer; color: var(--color-ink); }
+.seg button[aria-pressed="true"] { background: var(--color-blue); color: var(--color-white); }
+.field { display: grid; gap: var(--space-2xs); }
+input, textarea { width: 100%; min-height: 48px; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-ink); border-radius: 14px; background: var(--color-white); color: var(--color-ink); font-size: var(--text-md); }
+textarea { min-height: 84px; resize: vertical; }
+input:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 1px; }
+[aria-invalid="true"] { border-color: var(--color-red); background: var(--tint-pink); }
+.err { min-height: 1.3em; color: var(--color-red-2); font-weight: 700; font-size: var(--text-sm); }
+.hint { font-size: var(--text-sm); color: var(--color-muted); }
+.drawer__foot { padding: var(--space-md) var(--space-lg) var(--space-lg); border-top: 2px solid var(--color-ink); background: var(--color-white); display: grid; gap: var(--space-sm); }
+.total { display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; }
+.total b { font: 400 2rem/1 var(--font-display); }
+
+.js .rv { opacity: 0; transform: translateY(24px); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); }
+.js .rv.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .js .rv { opacity: 1; transform: none; } *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<div class="strip" aria-hidden="true"><div class="strip__run">
+  <span><i></i>Fructe din Egipt</span><span><i></i>Livrare în Chișinău</span><span><i></i>Ridicare: str. Uzinelor 15/3</span><span><i></i>Comandă pe WhatsApp</span><span><i></i>060 968 000</span>
+  <span><i></i>Fructe din Egipt</span><span><i></i>Livrare în Chișinău</span><span><i></i>Ridicare: str. Uzinelor 15/3</span><span><i></i>Comandă pe WhatsApp</span><span><i></i>060 968 000</span>
+</div></div>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="#top"><svg class="brand__mark" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="20" fill="var(--color-blue)" stroke="var(--color-ink)" stroke-width="2"/><circle cx="21" cy="24" r="10" fill="var(--color-gold)"/><path d="M21 14c1.5-5 6-6.5 9-6-1.5 4.5-5.5 6.5-9 6z" fill="var(--color-leaf)"/></svg><span><b>Like &amp; Golden Fruits</b><small data-ru="Фрукты из Египта">Fructe din Egipt</small></span></a>
+    <nav class="nav__links" aria-label="Secțiuni"><a href="#catalog" data-ru="Каталог">Catalog</a><a href="#drum" data-ru="Путь фруктов">Drumul fructelor</a><a href="#mohammad" data-ru="О нас">Despre noi</a><a href="#vino" data-ru="Контакты">Contact</a></nav>
+    <div class="nav__end">
+      <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+      <button class="cartbtn" type="button" id="cartBtn" aria-label="Coșul de comandă"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><b id="count" class="num">0</b></button>
+      <a class="btn" href="#catalog" data-ru="Заказать">Comandă</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="container hero__grid">
+    <div>
+      <h1 id="h1"><span data-ru="Из Египта">Din Egipt</span><span data-ru="в Молдову" style="color:var(--color-blue)">în Moldova</span></h1>
+      <p class="hero__lead" data-ru="Свежие фрукты, которые Мохаммад привозит прямо из Египта. Закажите онлайн: доставка по Кишинёву или самовывоз.">Fructe proaspete aduse de Mohammad direct din Egipt. Comandă online, cu livrare în Chișinău sau ridicare.</p>
+      <div class="hero__acts"><a class="btn" href="#catalog" data-ru="Смотреть каталог">Vezi catalogul</a><a class="btn btn--light" href="tel:+37360968000">060 968 000</a></div>
+      <div class="hero__proof"><span class="tag"><span class="flag flag--eg" aria-hidden="true"><i></i><i></i><i></i></span><span data-ru="Импорт из Египта">Import din Egipt</span></span><span class="tag"><span class="flag flag--md" aria-hidden="true"><i></i><i></i><i></i></span><span data-ru="Доставка по Кишинёву">Livrare în Chișinău</span></span></div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="sun"></div><div class="pyr pyr--a"></div><div class="pyr pyr--c"></div><div class="pyr pyr--b"></div>
+      <img class="fruitpile" src="img/hero.webp" width="900" height="900" alt="" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="band band--gold">
+  <svg class="wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" style="background:var(--color-gold)"><path d="M0 0h1440v8c-40 0-40 40-80 40s-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40S40 8 0 8Z" fill="var(--color-gold-2)"/></svg>
+  <section class="cat container" id="catalog" aria-labelledby="h-cat">
+    <div class="cat__head">
+      <div>
+        <h2 id="h-cat" class="rv" data-ru="Каталог">Catalogul</h2>
+        <p class="cat__note" data-ru="Демо-каталог: товары и цены будут заменены на настоящие. Выберите количество, и заказ уйдёт в WhatsApp.">Catalog demonstrativ: produsele și prețurile se înlocuiesc cu cele reale. Alege cantitatea, iar comanda pleacă pe WhatsApp.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtru" id="filters">
+        <button class="chip" type="button" aria-pressed="true" data-f="all" data-ru="Все">Toate</button>
+        <button class="chip" type="button" aria-pressed="false" data-f="citrice" data-ru="Цитрусы">Citrice</button>
+        <button class="chip" type="button" aria-pressed="false" data-f="exotice" data-ru="Экзотика">Exotice</button>
+        <button class="chip" type="button" aria-pressed="false" data-f="clasice" data-ru="Классика">Clasice</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+</div>
+
+<div class="band band--blue">
+  <svg class="wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" style="background:var(--color-blue)"><path d="M0 0h1440v8c-40 0-40 40-80 40s-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40S40 8 0 8Z" fill="var(--color-gold)"/></svg>
+  <section class="road container" id="drum" aria-labelledby="h-road">
+    <h2 id="h-road" class="rv" data-ru="От Нила до Днестра">De la Nil la Nistru</h2>
+    <p class="road__lead" data-ru="Мохаммад сам выбирает фрукты в Египте и привозит их в Кишинёв. Путь каждого ящика:">Mohammad alege fructele în Egipt și le aduce la Chișinău. Drumul fiecărei lăzi:</p>
+    <ol>
+      <li class="rv"><b data-ru="Выбор в Египте">Alese în Egipt</b><p data-ru="Фрукты от египетских производителей, отобранные для импорта.">Fructe de la producători din Egipt, alese pentru import.</p></li>
+      <li class="rv"><b data-ru="Импорт">Import</b><p data-ru="Ящики едут прямо к нам, без лишних посредников.">Lăzile vin direct la noi, fără intermediari în plus.</p></li>
+      <li class="rv"><b data-ru="Склад в Кишинёве">Depozit în Chișinău</b><p data-ru="Улица Узинелор 15/3: здесь можно забрать заказ.">Str. Uzinelor 15/3: aici puteți ridica comanda.</p></li>
+      <li class="rv"><b data-ru="К вашей двери">La ușa ta</b><p data-ru="Доставка по Кишинёву или самовывоз, как вам удобно.">Livrare în Chișinău sau ridicare, cum vă e comod.</p></li>
+    </ol>
+  </section>
+</div>
+
+<section class="who" id="mohammad" aria-labelledby="h-who">
+  <div class="container who__grid">
+    <div>
+      <h2 id="h-who" class="rv" data-ru="Король фруктов">Regele fructelor</h2>
+      <blockquote class="rv">„Sunt Mohammad H. din Liban, import fructe din Egypt și trăiesc în Moldova.”<cite data-ru="Мохаммад, из его профиля в TikTok">Mohammad, din profilul lui de TikTok</cite></blockquote>
+      <div class="stats">
+        <div class="rv"><b class="num">11,6K</b><span data-ru="подписчиков в TikTok">urmăritori pe TikTok</span></div>
+        <div class="rv"><b class="num">67,8K</b><span data-ru="лайков на видео">aprecieri la video</span></div>
+      </div>
+    </div>
+    <div class="tt rv">
+      <div class="tt__head"><b data-ru="Свежее из TikTok">Proaspăt pe TikTok</b><a class="btn btn--light" href="https://www.tiktok.com/@mohamad_regele_fructelor" target="_blank" rel="noopener" data-ru="Смотреть">Urmărește</a></div>
+      <div class="tt__frame" id="ttFrame">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@mohamad_regele_fructelor" data-unique-id="mohamad_regele_fructelor" data-embed-type="creator" style="max-width:780px;min-width:288px">
+          <section class="tt__fall"><p data-ru="Здесь видео Мохаммада о фруктах из Египта.">Aici apar video-urile lui Mohammad cu fructele din Egipt.</p><a class="btn" href="https://www.tiktok.com/@mohamad_regele_fructelor" target="_blank" rel="noopener">@mohamad_regele_fructelor</a></section>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band band--red">
+  <svg class="wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" style="background:var(--color-red)"><path d="M0 0h1440v8c-40 0-40 40-80 40s-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40-40-40-80-40-40 40-80 40S40 8 0 8Z" fill="var(--color-sand)"/></svg>
+  <section class="visit container" id="vino" aria-labelledby="h-visit">
+    <h2 id="h-visit" class="rv" data-ru="Хочется экзотики? Заезжайте">Poftă de ceva exotic? Treci pe la noi</h2>
+    <p data-ru="Улица Узинелор 15/3, Кишинёв. Позвоните или напишите в WhatsApp, и заказ будет готов.">Str. Uzinelor 15/3, Chișinău. Sună sau scrie pe WhatsApp și comanda te așteaptă.</p>
+    <div class="visit__acts"><a class="btn btn--light" href="tel:+37360968000">060 968 000</a><a class="btn btn--light" href="https://wa.me/37360968000" target="_blank" rel="noopener">WhatsApp</a></div>
+    <div class="map"><iframe title="Harta: str. Uzinelor 15/3, Chișinău" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Strada%20Uzinelor%2015%2F3%2C%20Chi%C8%99in%C4%83u&amp;output=embed"></iframe></div>
+  </section>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <span>Like &amp; Golden Fruits<br>str. Uzinelor 15/3, Chișinău<br><a href="tel:+37360968000">060 968 000</a></span>
+    <nav aria-label="Pagini legale"><a href="termeni.html" data-ru="Условия">Termeni</a><a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a></nav>
+    <small>Imaginile fructelor: randări 3D din modele Poly Haven (CC0). Previzualizare realizată de Solenne; catalog demonstrativ.</small>
+  </div>
+</footer>
+
+<div class="fab" id="fab" aria-live="polite"><span id="fabText"></span><button class="btn" type="button" id="fabGo" data-ru="Корзина">Vezi coșul</button></div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="h-cart">
+  <div class="drawer__head"><h2 id="h-cart" data-ru="Ваш заказ">Comanda ta</h2><button class="x" type="button" id="close" aria-label="Închide coșul"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4"/></svg></button></div>
+  <form class="drawer__body" id="order" novalidate>
+    <ul class="lines" id="lines"></ul>
+    <fieldset>
+      <legend data-ru="Как получить">Cum o primești</legend>
+      <div class="seg" id="mode"><button type="button" aria-pressed="true" data-m="livrare" data-ru="Доставка">Livrare</button><button type="button" aria-pressed="false" data-m="ridicare" data-ru="Самовывоз">Ridicare</button></div>
+      <p class="hint" id="modeHint"></p>
+    </fieldset>
+    <div class="field" id="addrField"><label for="addr" data-ru="Адрес в Кишинёве">Adresa în Chișinău</label><input id="addr" name="addr" autocomplete="street-address"></div>
+    <div class="field"><label for="when" data-ru="Когда удобно">Când vă convine</label><input id="when" name="when" placeholder="ex. mâine după ora 17"></div>
+    <div class="field"><label for="name" data-ru="Имя">Numele</label><input id="name" name="name" autocomplete="name" required></div>
+    <div class="field"><label for="phone" data-ru="Телефон">Telefonul</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+    <div class="field"><label for="note" data-ru="Комментарий">Comentariu (opțional)</label><textarea id="note" name="note"></textarea></div>
+    <p class="err" role="alert" id="err"></p>
+  </form>
+  <div class="drawer__foot">
+    <div class="total"><span data-ru="Итого (ориентировочно)">Total orientativ</span><b class="num" id="total">0 lei</b></div>
+    <button class="btn" type="submit" form="order" id="send" data-ru="Отправить заказ в WhatsApp">Trimite comanda pe WhatsApp</button>
+    <p class="hint" data-ru="Цену и наличие подтверждаем в WhatsApp.">Prețul și stocul le confirmăm pe WhatsApp.</p>
+  </div>
+</aside>
+
+<script src="bf-core.js"></script>
+<script>
+window.BF_CHAT = {
+  name: 'Lina', phone: '37360968000',
+  role: { ro: 'asistenta Like & Golden Fruits', ru: 'помощница Like & Golden Fruits' },
+  hello: { ro: 'Bună! Sunt Lina. Vă spun ce fructe avem, cum comandați, livrarea sau ridicarea. Ce vă interesează?', ru: 'Здравствуйте! Я Лина. Подскажу, какие есть фрукты, как заказать, доставку или самовывоз. Что вас интересует?' },
+  topics: [
+    { k: ['pret', 'cost', 'cat', 'цена', 'сколько', 'стоит'], generic: true, chip: { ro: 'Prețuri', ru: 'Цены' }, ro: 'Prețurile din catalog sunt orientative și se confirmă pe WhatsApp, după stoc.', ru: 'Цены в каталоге ориентировочные, подтверждаем в WhatsApp по наличию.' },
+    { k: ['livrare', 'livrati', 'доставка', 'привез'], generic: true, chip: { ro: 'Livrare', ru: 'Доставка' }, ro: 'Livrăm în Chișinău. Alegeți fructele, apoi „Livrare” în coș și scrieți adresa.', ru: 'Доставляем по Кишинёву. Выберите фрукты, затем «Доставка» в корзине и укажите адрес.' },
+    { k: ['ridic', 'adresa', 'unde', 'depozit', 'адрес', 'где', 'самовывоз'], generic: true, chip: { ro: 'Unde sunteți?', ru: 'Где вы?' }, ro: 'Str. Uzinelor 15/3, Chișinău. Puteți ridica comanda de acolo.', ru: 'Улица Узинелор 15/3, Кишинёв. Заказ можно забрать там.' },
+    { k: ['telefon', 'suna', 'numar', 'телефон', 'номер'], generic: true, ro: 'Telefon și WhatsApp: 060 968 000.', ru: 'Телефон и WhatsApp: 060 968 000.' },
+    { k: ['egipt', 'egypt', 'unde vin', 'египет', 'откуда'], chip: { ro: 'De unde sunt?', ru: 'Откуда фрукты?' }, ro: 'Fructele sunt importate de Mohammad din Egipt.', ru: 'Фрукты Мохаммад импортирует из Египта.' }
+  ],
+  wa: { ro: 'Pentru asta e mai simplu direct pe WhatsApp:', ru: 'Для этого проще написать в WhatsApp:' }
+};
+</script>
+<script src="bf-chat.js"></script>
+<script>
+(() => {
+  const { $, $$, T } = BF;
+  const PHONE = '37360968000';
+  /* demo catalogue: replace with the real products and prices */
+  const P = [
+    { id: 'rodii', img: 'pomegranate', tint: '--tint-red', f: 'exotice', ro: 'Rodii', ru: 'Гранаты', sro: 'dulci-acrișoare, cu boabe mari', sru: 'кисло-сладкие, крупное зерно', p: 45, u: 'kg', step: 1 },
+    { id: 'portocale', img: 'orange', tint: '--tint-orange', f: 'citrice', ro: 'Portocale', ru: 'Апельсины', sro: 'pentru suc și desert', sru: 'для сока и десерта', p: 28, u: 'kg', step: 1 },
+    { id: 'lamai', img: 'lemon', tint: '--tint-yellow', f: 'citrice', ro: 'Lămâi', ru: 'Лимоны', sro: 'zemoase, coajă subțire', sru: 'сочные, тонкая кожура', p: 35, u: 'kg', step: 1 },
+    { id: 'lime', img: 'lime', tint: '--tint-green', f: 'citrice', ro: 'Lime', ru: 'Лайм', sro: 'pentru limonadă', sru: 'для лимонада', p: 60, u: 'kg', step: 0.5 },
+    { id: 'avocado', img: 'avocado', tint: '--tint-dark', f: 'exotice', ro: 'Avocado', ru: 'Авокадо', sro: 'Hass, gata de mâncat', sru: 'Хасс, готов к еде', p: 22, u: 'buc', step: 1 },
+    { id: 'lychee', img: 'lychee', tint: '--tint-pink', f: 'exotice', ro: 'Lychee', ru: 'Личи', sro: 'parfumat, dulce', sru: 'ароматный, сладкий', p: 120, u: 'kg', step: 0.5 },
+    { id: 'kiwi', img: 'kiwi', tint: '--tint-brown', f: 'exotice', ro: 'Kiwi', ru: 'Киви', sro: 'acrișor, plin de vitamina C', sru: 'кисловатый, витамин C', p: 40, u: 'kg', step: 1 },
+    { id: 'pere', img: 'pears', tint: '--tint-pear', f: 'clasice', ro: 'Pere asiatice', ru: 'Азиатские груши', sro: 'crocante, zemoase', sru: 'хрустящие, сочные', p: 55, u: 'kg', step: 1 },
+    { id: 'mere', img: 'apple', tint: '--tint-apple', f: 'clasice', ro: 'Mere roșii', ru: 'Красные яблоки', sro: 'dulci, crocante', sru: 'сладкие, хрустящие', p: 20, u: 'kg', step: 1 }
+  ];
+  const cart = new Map();
+  const fmt = (n) => (Math.round(n * 10) / 10).toString().replace('.', ',');
+  const unit = (u) => (u === 'kg' ? 'kg' : T('buc', 'шт'));
+  const EG = '<span class="flag flag--eg" aria-hidden="true"><i></i><i></i><i></i></span>';
+
+  const grid = $('#grid');
+  const render = () => {
+    grid.innerHTML = P.map((x) => `<article class="card rv in" data-id="${x.id}" data-f="${x.f}" style="--tint:var(${x.tint})">
+      <div class="card__pic"><span class="tag card__badge">${EG}${T('Egipt', 'Египет')}</span><img src="img/${x.img}.webp" width="480" height="480" loading="lazy" alt="${T(x.ro, x.ru)}"></div>
+      <div class="card__body"><h3>${T(x.ro, x.ru)}</h3><p class="card__sub">${T(x.sro, x.sru)}</p>
+        <div class="card__row"><span class="price num">${x.p}<small>lei/${unit(x.u)}</small></span>
+          <div class="step" role="group" aria-label="${T('Cantitate', 'Количество')} ${T(x.ro, x.ru)}"><button type="button" data-d="-1" aria-label="${T('Mai puțin', 'Меньше')}">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="${T('Mai mult', 'Больше')}">+</button></div></div>
+      </div></article>`).join('');
+    sync(); filter();
+  };
+  const sync = () => {
+    $$('.card', grid).forEach((c) => { const q = cart.get(c.dataset.id) || 0; $('output', c).textContent = q ? `${fmt(q)} ${unit(P.find((x) => x.id === c.dataset.id).u)}` : '0'; $('[data-d="-1"]', c).disabled = !q; c.classList.toggle('in-cart', q > 0); });
+    let items = 0, sum = 0; cart.forEach((q, id) => { const x = P.find((p) => p.id === id); items++; sum += q * x.p; });
+    $('#count').textContent = items; $('#total').textContent = `${Math.round(sum)} lei`;
+    $('#fab').classList.toggle('on', items > 0 && !document.documentElement.classList.contains('cart-open'));
+    $('#fabText').textContent = items ? `${items} ${T(items === 1 ? 'produs' : 'produse', items === 1 ? 'товар' : 'товара')} · ${Math.round(sum)} lei` : '';
+    $('#lines').innerHTML = items ? [...cart].map(([id, q]) => { const x = P.find((p) => p.id === id); return `<li class="line" data-id="${id}" style="--tint:var(${x.tint})"><img src="img/${x.img}.webp" alt=""><div><b>${T(x.ro, x.ru)}</b><span>${fmt(q)} ${unit(x.u)} · ${Math.round(q * x.p)} lei</span></div><div class="step"><button type="button" data-d="-1" aria-label="${T('Mai puțin', 'Меньше')}">−</button><button type="button" data-d="1" aria-label="${T('Mai mult', 'Больше')}">+</button></div></li>`; }).join('') : `<li class="empty">${T('Coșul e gol. Alege fructe din catalog.', 'Корзина пуста. Выберите фрукты в каталоге.')}</li>`;
+  };
+  const change = (id, d) => { const x = P.find((p) => p.id === id); const q = Math.max(0, Math.round(((cart.get(id) || 0) + d * x.step) * 10) / 10); q ? cart.set(id, q) : cart.delete(id); sync(); if (d > 0) { const b = $('#cartBtn'); b.classList.remove('bump'); void b.offsetWidth; b.classList.add('bump'); } };
+  document.addEventListener('click', (e) => { const b = e.target.closest('.step button'); if (!b) return; const host = b.closest('[data-id]'); if (host) change(host.dataset.id, +b.dataset.d); });
+
+  /* filters */
+  const filter = () => { const f = $('#filters [aria-pressed="true"]').dataset.f; $$('.card', grid).forEach((c) => (c.hidden = f !== 'all' && c.dataset.f !== f)); };
+  $('#filters').addEventListener('click', (e) => { const b = e.target.closest('.chip'); if (!b) return; $$('#filters .chip').forEach((x) => x.setAttribute('aria-pressed', String(x === b))); filter(); });
+
+  /* drawer */
+  const open = (on) => { document.documentElement.classList.toggle('cart-open', on); sync(); if (on) setTimeout(() => $('#close').focus(), 50); else $('#cartBtn').focus(); };
+  $('#cartBtn').addEventListener('click', () => open(true)); $('#fabGo').addEventListener('click', () => open(true));
+  $('#close').addEventListener('click', () => open(false)); $('#scrim').addEventListener('click', () => open(false));
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && document.documentElement.classList.contains('cart-open')) open(false); });
+
+  /* delivery or pick-up */
+  let mode = 'livrare';
+  const setMode = (m) => { mode = m; $$('#mode button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.m === m))); $('#addrField').hidden = m !== 'livrare'; $('#modeHint').textContent = m === 'livrare' ? T('Livrăm în Chișinău. Costul livrării îl confirmăm pe WhatsApp.', 'Доставляем по Кишинёву. Стоимость доставки подтвердим в WhatsApp.') : T('Ridicați de pe str. Uzinelor 15/3, Chișinău.', 'Самовывоз: улица Узинелор 15/3, Кишинёв.'); };
+  $('#mode').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) setMode(b.dataset.m); });
+
+  /* send to WhatsApp */
+  $('#order').addEventListener('submit', (e) => {
+    e.preventDefault(); const f = e.target, err = $('#err'); err.textContent = '';
+    $$('input', f).forEach((i) => i.removeAttribute('aria-invalid'));
+    const bad = []; if (!cart.size) { err.textContent = T('Adaugă cel puțin un fruct din catalog.', 'Добавьте хотя бы один фрукт из каталога.'); return; }
+    if (!f.name.value.trim()) bad.push(f.name); if (f.phone.value.replace(/\D/g, '').length < 8) bad.push(f.phone); if (mode === 'livrare' && !f.addr.value.trim()) bad.push(f.addr);
+    if (bad.length) { bad.forEach((i) => i.setAttribute('aria-invalid', 'true')); err.textContent = T('Completează câmpurile marcate.', 'Заполните отмеченные поля.'); bad[0].focus(); return; }
+    let sum = 0; const lines = [...cart].map(([id, q]) => { const x = P.find((p) => p.id === id); sum += q * x.p; return `• ${x.ro}: ${fmt(q)} ${x.u === 'kg' ? 'kg' : 'buc'} (${Math.round(q * x.p)} lei)`; });
+    const msg = `Bună ziua! Comandă de pe site:\n${lines.join('\n')}\nTotal orientativ: ${Math.round(sum)} lei\n${mode === 'livrare' ? `Livrare la: ${f.addr.value.trim()}` : 'Ridicare: str. Uzinelor 15/3'}` + (f.when.value.trim() ? `\nCând: ${f.when.value.trim()}` : '') + (f.note.value.trim() ? `\nComentariu: ${f.note.value.trim()}` : '') + `\nNume: ${f.name.value.trim()}\nTelefon: ${f.phone.value.trim()}`;
+    window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+  });
+
+  BF.onLang(() => { render(); setMode(mode); });
+  BF.init();
+
+  /* TikTok creator embed: loads only when the section is near */
+  new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { const s = document.createElement('script'); s.src = 'https://www.tiktok.com/embed.js'; s.async = true; document.body.appendChild(s); o.disconnect(); } }, { rootMargin: '600px' }).observe($('#ttFrame'));
+})();
+</script>
+</body>
+</html>
