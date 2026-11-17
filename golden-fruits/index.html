@@ -8,21 +8,21 @@
 <meta name="theme-color" content="#1e3a8a">
 <meta property="og:title" content="Like & Golden Fruits">
 <meta property="og:description" content="Din Egipt, în Moldova: fructe proaspete cu livrare sau ridicare.">
-<meta property="og:image" content="img/hero.webp">
+<meta property="og:image" content="img/pile.svg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231e3a8a'/%3E%3Ccircle cx='32' cy='36' r='16' fill='%23f4b41a'/%3E%3Cpath d='M32 20c2-7 9-9 13-8-2 6-8 9-13 8z' fill='%2348a838'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Onest:wght@400;500;700&display=swap">
 <style>
 /* Hallmark · shape: a fruit stall that sells by the crate, scalloped colour bands from the sand of Egypt to the blue of the Moldovan flag · genre: playful · theme: custom (after the user's reference, a bold soda-shop page) · job: buy · idea: "the stall of a Lebanese importer who brings fruit from Egypt to Chișinău: every fruit is a crate card you fill, then the order goes to his WhatsApp" · vibe: "loud, sunny, market crate, Nile to Nistru"
- * paper: oklch(96% 0.03 85) · accent: oklch(57% 0.21 27) · display: Anton · body: Onest · hero: a pile of Egyptian fruit rendered in Blender over a giant headline and a setting sun · nav: wordmark, three links, cart, order pill · footer: address, phone and map as the close · imagery: Blender renders of scanned fruit (Poly Haven, CC0) · signature: crate cards with a quantity stepper that fill a cart which leaves as one WhatsApp order, delivery or pick-up
+ * paper: oklch(96% 0.03 85) · accent: oklch(57% 0.21 27) · display: Anton · body: Onest · hero: a pile of Egyptian fruit rendered in Blender over a giant headline and a setting sun · nav: wordmark, three links, cart, order pill · footer: address, phone and map as the close · imagery: flat illustrated fruit drawn for the page (the user's reference) · signature: crate cards with a quantity stepper that fill a cart which leaves as one WhatsApp order, delivery or pick-up
  * axes: light/display-condensed/chromatic-red · posture: loud · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R3 V5 · weakest: R, the reference style is loud on purpose; kept one display face, four colours and one reveal */
-/* Hallmark · waive 80 · .sun and .pyr are the setting sun and three pyramids behind the hero fruit · they are the owner's own sign (sun, pyramids, fruit) set as flat shapes */
+/* Hallmark · waive 80 · .fruitpile, .card__pic img, .sun and .pyr · flat fruit illustrations and the sun and pyramids of the owner's own sign, asked for by the user with a reference picture */
 
 :root {
   --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px;
   --text-xs: 0.8125rem; --text-sm: 0.9rem; --text-md: 1.0625rem; --text-lg: 1.25rem; --text-xl: 1.6rem;
-  --text-mega: clamp(3.6rem, 11vw, 11.5rem); --text-section: clamp(2.8rem, 6.5vw, 6rem); --text-card: clamp(1.6rem, 2.2vw, 2.1rem);
+  --text-mega: clamp(3.4rem, 8.6vw, 9.5rem); --text-section: clamp(2.8rem, 6.5vw, 6rem); --text-card: clamp(1.6rem, 2.2vw, 2.1rem);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 560ms;
   --container: 1280px; --gutter: 40px; --gap: 20px; --section: 120px;
   --z-raised: 10; --z-sticky: 200; --z-nav: 300; --z-drawer: 400;
@@ -99,7 +99,8 @@ a { color: inherit; }
 /* hero */
 .hero { position: relative; overflow: hidden; padding: var(--space-2xl) 0 var(--space-3xl); background: radial-gradient(120% 80% at 70% 100%, var(--color-gold-2), var(--color-sand) 60%); }
 .hero__grid { position: relative; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: center; gap: var(--space-xl); }
-.hero h1 { font-size: var(--text-mega); color: var(--color-blue); }
+.hero h1 { font-size: var(--text-mega); color: var(--color-blue); line-height: 1.04; }
+.hero h1 span + span { margin-top: 0.08em; }
 .hero h1 span { display: block; color: var(--color-red); }
 .hero__lead { margin-top: var(--space-lg); font-size: var(--text-lg); max-width: 32ch; }
 .hero__acts { margin-top: var(--space-xl); display: flex; flex-wrap: wrap; gap: var(--space-sm); }
@@ -113,7 +114,7 @@ a { color: inherit; }
 .sun { position: absolute; inset: 8% 6% 18%; border-radius: 50%; background: radial-gradient(circle at 50% 40%, var(--color-gold-2), var(--color-sun) 70%); border: 2px solid var(--color-ink); }
 .pyr { position: absolute; bottom: 14%; width: 46%; aspect-ratio: 1.6; clip-path: polygon(50% 0, 100% 100%, 0 100%); background: linear-gradient(100deg, var(--color-gold) 50%, var(--color-sun) 50%); }
 .pyr--a { left: -6%; } .pyr--b { right: -4%; width: 38%; } .pyr--c { left: 30%; width: 30%; bottom: 16%; opacity: 0.85; }
-.fruitpile { position: absolute; inset: 6% -2% -2%; width: 104%; filter: drop-shadow(0 18px 18px var(--shade-fruit)); animation: float 6s ease-in-out infinite; }
+.fruitpile { position: absolute; left: -4%; right: -4%; bottom: 4%; width: 108%; animation: float 6s ease-in-out infinite; }
 @keyframes float { 50% { transform: translateY(-10px) rotate(-1deg); } }
 @media (prefers-reduced-motion: reduce) { .fruitpile { animation: none; } }
 @media (max-width: 60rem) { .hero__grid { grid-template-columns: minmax(0, 1fr); } .stage { max-width: 460px; margin: 0 auto; width: 100%; } }
@@ -134,11 +135,12 @@ a { color: inherit; }
 .chip { min-height: 44px; padding: 0 var(--space-md); border: 2px solid var(--color-ink); border-radius: var(--radius-pill); background: var(--color-white); color: var(--color-ink); font: 700 var(--text-sm)/1 var(--font-body); white-space: nowrap; cursor: pointer; transition: background-color var(--dur-short) var(--ease-out); }
 .chip:hover { background: var(--color-sand-2); }
 .chip[aria-pressed="true"] { background: var(--color-ink); color: var(--color-gold-2); }
-.grid { margin-top: var(--space-xl); display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--gap); }
+.grid { margin-top: var(--space-xl); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }
+@media (max-width: 60rem) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .card { position: relative; display: grid; grid-template-rows: auto 1fr; border: 2px solid var(--color-ink); border-radius: var(--radius); background: var(--color-white); box-shadow: var(--shadow); overflow: hidden; transition: transform var(--dur-short) var(--ease-out); }
 .card:hover { transform: translateY(-4px) rotate(-0.4deg); }
 .card__pic { position: relative; aspect-ratio: 5 / 4; background: var(--tint); border-bottom: 2px solid var(--color-ink); display: grid; place-items: center; }
-.card__pic img { width: 74%; height: auto; transition: transform var(--dur-long) var(--ease-out); }
+.card__pic img { width: 52%; height: auto; transition: transform var(--dur-long) var(--ease-out); }
 .card:hover .card__pic img { transform: scale(1.06) rotate(4deg); }
 .card__badge { position: absolute; top: var(--space-sm); left: var(--space-sm); }
 .card__body { display: grid; gap: var(--space-sm); padding: var(--space-md); align-content: start; }
@@ -272,7 +274,7 @@ input:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-foc
     </div>
     <div class="stage" aria-hidden="true">
       <div class="sun"></div><div class="pyr pyr--a"></div><div class="pyr pyr--c"></div><div class="pyr pyr--b"></div>
-      <img class="fruitpile" src="img/hero.webp" width="900" height="900" alt="" fetchpriority="high">
+      <img class="fruitpile" src="img/pile.svg" width="640" height="460" alt="" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -346,7 +348,7 @@ input:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-foc
   <div class="container">
     <span>Like &amp; Golden Fruits<br>str. Uzinelor 15/3, Chișinău<br><a href="tel:+37360968000">060 968 000</a></span>
     <nav aria-label="Pagini legale"><a href="termeni.html" data-ru="Условия">Termeni</a><a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a></nav>
-    <small>Imaginile fructelor: randări 3D din modele Poly Haven (CC0). Previzualizare realizată de Solenne; catalog demonstrativ.</small>
+    <small>Ilustrațiile fructelor: realizate pentru acest site. Previzualizare realizată de Solenne; catalog demonstrativ.</small>
   </div>
 </footer>
 
@@ -398,15 +400,15 @@ window.BF_CHAT = {
   const PHONE = '37360968000';
   /* demo catalogue: replace with the real products and prices */
   const P = [
-    { id: 'rodii', img: 'pomegranate', tint: '--tint-red', f: 'exotice', ro: 'Rodii', ru: 'Гранаты', sro: 'dulci-acrișoare, cu boabe mari', sru: 'кисло-сладкие, крупное зерно', p: 45, u: 'kg', step: 1 },
+    { id: 'mango', img: 'mango', tint: '--tint-orange', f: 'exotice', ro: 'Mango', ru: 'Манго', sro: 'dulce, copt la soare', sru: 'сладкое, спелое', p: 70, u: 'kg', step: 0.5 },
     { id: 'portocale', img: 'orange', tint: '--tint-orange', f: 'citrice', ro: 'Portocale', ru: 'Апельсины', sro: 'pentru suc și desert', sru: 'для сока и десерта', p: 28, u: 'kg', step: 1 },
-    { id: 'lamai', img: 'lemon', tint: '--tint-yellow', f: 'citrice', ro: 'Lămâi', ru: 'Лимоны', sro: 'zemoase, coajă subțire', sru: 'сочные, тонкая кожура', p: 35, u: 'kg', step: 1 },
-    { id: 'lime', img: 'lime', tint: '--tint-green', f: 'citrice', ro: 'Lime', ru: 'Лайм', sro: 'pentru limonadă', sru: 'для лимонада', p: 60, u: 'kg', step: 0.5 },
-    { id: 'avocado', img: 'avocado', tint: '--tint-dark', f: 'exotice', ro: 'Avocado', ru: 'Авокадо', sro: 'Hass, gata de mâncat', sru: 'Хасс, готов к еде', p: 22, u: 'buc', step: 1 },
-    { id: 'lychee', img: 'lychee', tint: '--tint-pink', f: 'exotice', ro: 'Lychee', ru: 'Личи', sro: 'parfumat, dulce', sru: 'ароматный, сладкий', p: 120, u: 'kg', step: 0.5 },
-    { id: 'kiwi', img: 'kiwi', tint: '--tint-brown', f: 'exotice', ro: 'Kiwi', ru: 'Киви', sro: 'acrișor, plin de vitamina C', sru: 'кисловатый, витамин C', p: 40, u: 'kg', step: 1 },
-    { id: 'pere', img: 'pears', tint: '--tint-pear', f: 'clasice', ro: 'Pere asiatice', ru: 'Азиатские груши', sro: 'crocante, zemoase', sru: 'хрустящие, сочные', p: 55, u: 'kg', step: 1 },
-    { id: 'mere', img: 'apple', tint: '--tint-apple', f: 'clasice', ro: 'Mere roșii', ru: 'Красные яблоки', sro: 'dulci, crocante', sru: 'сладкие, хрустящие', p: 20, u: 'kg', step: 1 }
+    { id: 'rodii', img: 'rodie', tint: '--tint-red', f: 'exotice', ro: 'Rodii', ru: 'Гранаты', sro: 'dulci-acrișoare, cu boabe mari', sru: 'кисло-сладкие, крупное зерно', p: 45, u: 'kg', step: 1 },
+    { id: 'lamai', img: 'lamai', tint: '--tint-yellow', f: 'citrice', ro: 'Lămâi', ru: 'Лимоны', sro: 'zemoase, coajă subțire', sru: 'сочные, тонкая кожура', p: 35, u: 'kg', step: 1 },
+    { id: 'capsuni', img: 'capsuni', tint: '--tint-pink', f: 'clasice', ro: 'Căpșuni', ru: 'Клубника', sro: 'dulci, parfumate', sru: 'сладкая, ароматная', p: 90, u: 'kg', step: 0.5 },
+    { id: 'struguri', img: 'struguri', tint: '--tint-pear', f: 'clasice', ro: 'Struguri', ru: 'Виноград', sro: 'fără sâmburi', sru: 'без косточек', p: 50, u: 'kg', step: 0.5 },
+    { id: 'pepene', img: 'pepene', tint: '--tint-green', f: 'clasice', ro: 'Pepene verde', ru: 'Арбуз', sro: 'zemos, de vară', sru: 'сочный, летний', p: 12, u: 'kg', step: 1 },
+    { id: 'avocado', img: 'avocado', tint: '--tint-dark', f: 'exotice', ro: 'Avocado', ru: 'Авокадо', sro: 'gata de mâncat', sru: 'готов к еде', p: 22, u: 'buc', step: 1 },
+    { id: 'curmale', img: 'curmale', tint: '--tint-brown', f: 'exotice', ro: 'Curmale', ru: 'Финики', sro: 'moi, dulci ca mierea', sru: 'мягкие, медовые', p: 80, u: 'kg', step: 0.5 }
   ];
   const cart = new Map();
   const fmt = (n) => (Math.round(n * 10) / 10).toString().replace('.', ',');
@@ -416,7 +418,7 @@ window.BF_CHAT = {
   const grid = $('#grid');
   const render = () => {
     grid.innerHTML = P.map((x) => `<article class="card rv in" data-id="${x.id}" data-f="${x.f}" style="--tint:var(${x.tint})">
-      <div class="card__pic"><span class="tag card__badge">${EG}${T('Egipt', 'Египет')}</span><img src="img/${x.img}.webp" width="480" height="480" loading="lazy" alt="${T(x.ro, x.ru)}"></div>
+      <div class="card__pic"><span class="tag card__badge">${EG}${T('Egipt', 'Египет')}</span><img src="img/${x.img}.svg" width="220" height="224" loading="lazy" alt="${T(x.ro, x.ru)}"></div>
       <div class="card__body"><h3>${T(x.ro, x.ru)}</h3><p class="card__sub">${T(x.sro, x.sru)}</p>
         <div class="card__row"><span class="price num">${x.p}<small>lei/${unit(x.u)}</small></span>
           <div class="step" role="group" aria-label="${T('Cantitate', 'Количество')} ${T(x.ro, x.ru)}"><button type="button" data-d="-1" aria-label="${T('Mai puțin', 'Меньше')}">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="${T('Mai mult', 'Больше')}">+</button></div></div>
@@ -429,7 +431,7 @@ window.BF_CHAT = {
     $('#count').textContent = items; $('#total').textContent = `${Math.round(sum)} lei`;
     $('#fab').classList.toggle('on', items > 0 && !document.documentElement.classList.contains('cart-open'));
     $('#fabText').textContent = items ? `${items} ${T(items === 1 ? 'produs' : 'produse', items === 1 ? 'товар' : 'товара')} · ${Math.round(sum)} lei` : '';
-    $('#lines').innerHTML = items ? [...cart].map(([id, q]) => { const x = P.find((p) => p.id === id); return `<li class="line" data-id="${id}" style="--tint:var(${x.tint})"><img src="img/${x.img}.webp" alt=""><div><b>${T(x.ro, x.ru)}</b><span>${fmt(q)} ${unit(x.u)} · ${Math.round(q * x.p)} lei</span></div><div class="step"><button type="button" data-d="-1" aria-label="${T('Mai puțin', 'Меньше')}">−</button><button type="button" data-d="1" aria-label="${T('Mai mult', 'Больше')}">+</button></div></li>`; }).join('') : `<li class="empty">${T('Coșul e gol. Alege fructe din catalog.', 'Корзина пуста. Выберите фрукты в каталоге.')}</li>`;
+    $('#lines').innerHTML = items ? [...cart].map(([id, q]) => { const x = P.find((p) => p.id === id); return `<li class="line" data-id="${id}" style="--tint:var(${x.tint})"><img src="img/${x.img}.svg" alt=""><div><b>${T(x.ro, x.ru)}</b><span>${fmt(q)} ${unit(x.u)} · ${Math.round(q * x.p)} lei</span></div><div class="step"><button type="button" data-d="-1" aria-label="${T('Mai puțin', 'Меньше')}">−</button><button type="button" data-d="1" aria-label="${T('Mai mult', 'Больше')}">+</button></div></li>`; }).join('') : `<li class="empty">${T('Coșul e gol. Alege fructe din catalog.', 'Корзина пуста. Выберите фрукты в каталоге.')}</li>`;
   };
   const change = (id, d) => { const x = P.find((p) => p.id === id); const q = Math.max(0, Math.round(((cart.get(id) || 0) + d * x.step) * 10) / 10); q ? cart.set(id, q) : cart.delete(id); sync(); if (d > 0) { const b = $('#cartBtn'); b.classList.remove('bump'); void b.offsetWidth; b.classList.add('bump'); } };
   document.addEventListener('click', (e) => { const b = e.target.closest('.step button'); if (!b) return; const host = b.closest('[data-id]'); if (host) change(host.dataset.id, +b.dataset.d); });
