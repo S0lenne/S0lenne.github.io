@@ -21,6 +21,11 @@
   .bfc-m.bot{align-self:flex-start;background:var(--chat-bubble);color:var(--chat-text);border-bottom-left-radius:4px}
   .bfc-m.me{align-self:flex-end;background:var(--chat-bg);color:var(--chat-ink);border-bottom-right-radius:4px}
   .bfc-m a{color:inherit;font-weight:700}
+  .bfc-typing{display:flex;gap:5px;align-items:center;padding:14px 16px}
+  .bfc-typing i{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.35;animation:bfcDot 1s infinite ease-in-out}
+  .bfc-typing i:nth-child(2){animation-delay:.15s}.bfc-typing i:nth-child(3){animation-delay:.3s}
+  @keyframes bfcDot{30%{opacity:1;transform:translateY(-3px)}}
+  @media (prefers-reduced-motion:reduce){.bfc-typing i{animation:none;opacity:.6}}
   .bfc-chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px}
   .bfc-chips button{min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--chat-line);background:transparent;color:var(--chat-text);font:500 14px/1 inherit;cursor:pointer}
   .bfc-chips button:hover{border-color:var(--chat-bg)} .bfc-chips button:focus-visible,.bfc-form input:focus-visible,.bfc-form button:focus-visible{outline:2px solid var(--chat-bg);outline-offset:2px}
@@ -41,6 +46,7 @@
   const btn = root.querySelector('.bfc-btn'), log = root.querySelector('.bfc-log'), chips = root.querySelector('.bfc-chips'), form = root.querySelector('.bfc-form'), input = form.q;
   btn.setAttribute('aria-label', t({ ro: `Deschide chatul cu ${C.name}`, ru: `Открыть чат с ${C.name}` }));
   const add = (html, who = 'bot') => { const m = document.createElement('div'); m.className = 'bfc-m ' + who; m.innerHTML = html; log.appendChild(m); log.scrollTop = log.scrollHeight; };
+  const reply = (html) => { const d = document.createElement('div'); d.className = 'bfc-m bot bfc-typing'; d.setAttribute('aria-label', '…'); d.innerHTML = '<i></i><i></i><i></i>'; log.appendChild(d); log.scrollTop = log.scrollHeight; setTimeout(() => { d.remove(); add(html); }, 900 + Math.min(String(html).length * 4, 900)); };
   const wa = () => `<a href="https://wa.me/${C.phone}" target="_blank" rel="noopener">WhatsApp</a>`;
   const answer = (q) => {
     const n = ' ' + norm(q) + ' ';
@@ -59,8 +65,8 @@
   const open = (v) => { root.classList.toggle('bfc-open', v); btn.setAttribute('aria-expanded', String(v)); btn.setAttribute('aria-label', v ? t({ ro: 'Închide chatul', ru: 'Закрыть чат' }) : t({ ro: `Deschide chatul cu ${C.name}`, ru: `Открыть чат с ${C.name}` })); if (v) { paint(); if (!greeted) { greeted = true; add(t(C.hello)); } setTimeout(() => input.focus({ preventScroll: true }), 60); } };
   btn.addEventListener('click', () => open(!root.classList.contains('bfc-open')));
   addEventListener('keydown', (e) => { if (e.key === 'Escape' && root.classList.contains('bfc-open')) { open(false); btn.focus(); } });
-  chips.addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; const tp = C.topics[+b.dataset.i]; add(b.textContent, 'me'); setTimeout(() => add(t(tp).replace('{wa}', wa())), 260); });
-  form.addEventListener('submit', (e) => { e.preventDefault(); const q = input.value.trim(); if (!q) return; add(q.replace(/</g, '&lt;'), 'me'); input.value = ''; setTimeout(() => add(answer(q)), 320); });
+  chips.addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; const tp = C.topics[+b.dataset.i]; add(b.textContent, 'me'); reply(t(tp).replace('{wa}', wa())); });
+  form.addEventListener('submit', (e) => { e.preventDefault(); const q = input.value.trim(); if (!q) return; add(q.replace(/</g, '&lt;'), 'me'); input.value = ''; reply(answer(q)); });
   new MutationObserver(paint).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
   window.BFChat = { open: () => open(true), ask: (q) => answer(q) };
 })();
